@@ -1,0 +1,332 @@
+.page {
+  overflow-x: hidden;
+}
+
+/* ---------- Nav ---------- */
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 6vw;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--paper);
+  letter-spacing: 0.01em;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+  color: rgba(247, 245, 240, 0.85);
+}
+
+.nav-links a {
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--dawn);
+}
+
+.nav-cta {
+  border: 1px solid rgba(247, 245, 240, 0.35);
+  padding: 8px 16px;
+  border-radius: 999px;
+}
+
+.nav-cta:hover {
+  border-color: var(--dawn);
+  color: var(--dawn) !important;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative;
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 140px 6vw 80px;
+  background-image:
+    linear-gradient(180deg, rgba(15,27,45,0.90) 0%, rgba(24,40,64,0.86) 45%, rgba(58,51,80,0.55) 72%, rgba(168,90,62,0.35) 88%, rgba(255,179,71,0.22) 100%),
+    url('https://loremflickr.com/1600/1000/switzerland,alps,mountains');
+  background-size: cover;
+  background-position: center;
+  flex-wrap: wrap;
+}
+
+.hero-copy {
+  max-width: 560px;
+  flex: 1 1 420px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dawn);
+  background: rgba(255, 179, 71, 0.12);
+  border: 1px solid rgba(255, 179, 71, 0.3);
+  padding: 6px 12px;
+  border-radius: 999px;
+  margin-bottom: 24px;
+}
+
+.headline {
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  line-height: 1.08;
+  font-weight: 500;
+  color: var(--paper);
+  letter-spacing: -0.01em;
+}
+
+.headline-accent {
+  color: var(--dawn);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.subhead {
+  margin-top: 24px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: rgba(247, 245, 240, 0.75);
+  max-width: 460px;
+}
+
+.hero-actions {
+  margin-top: 36px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--dawn);
+  color: var(--midnight);
+  font-weight: 600;
+  font-size: 15px;
+  padding: 13px 24px;
+  border-radius: 999px;
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(255, 179, 71, 0.28);
+}
+
+.btn-ghost {
+  font-size: 15px;
+  color: rgba(247, 245, 240, 0.85);
+  border-bottom: 1px solid rgba(247, 245, 240, 0.4);
+  padding-bottom: 2px;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-ghost:hover {
+  color: var(--dawn);
+  border-color: var(--dawn);
+}
+
+.hero-visual {
+  flex: 1 1 340px;
+  display: flex;
+  justify-content: center;
+}
+
+.route-svg {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+}
+
+.route-path {
+  stroke-dasharray: 6 8;
+  stroke-dashoffset: 260;
+  animation: dashmove 2.6s ease-out forwards;
+}
+
+@keyframes dashmove {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.route-label {
+  font-family: var(--font-body);
+  font-size: 11px;
+  fill: rgba(247, 245, 240, 0.75);
+}
+
+/* ---------- How it works ---------- */
+.how {
+  padding: 100px 6vw 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--coral);
+  font-weight: 600;
+}
+
+.section-title {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 500;
+  margin-top: 10px;
+  color: var(--ink);
+  max-width: 560px;
+}
+
+.steps {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.step-card {
+  background: #fff;
+  border: 1px solid rgba(22, 27, 34, 0.08);
+  border-radius: 16px;
+  padding: 28px 24px;
+  position: relative;
+}
+
+.step-index {
+  position: absolute;
+  top: 20px;
+  right: 22px;
+  font-family: var(--font-display);
+  font-size: 13px;
+  color: rgba(22, 27, 34, 0.25);
+}
+
+.step-icon {
+  color: var(--coral);
+  margin-bottom: 18px;
+}
+
+.step-title {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.step-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--mute);
+}
+
+/* ---------- Trending ---------- */
+.trending {
+  padding: 60px 6vw 100px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.trending-strip {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.trend-card {
+  border-radius: 16px;
+  padding: 22px;
+  display: flex;
+  align-items: flex-end;
+  min-height: 200px;
+  position: relative;
+  overflow: hidden;
+  color: var(--paper);
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.trend-card:hover {
+  transform: translateY(-4px);
+}
+
+.trend-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(15,27,45,0) 40%, rgba(15,27,45,0.85) 100%);
+}
+
+.trend-info {
+  position: relative;
+  z-index: 1;
+}
+
+.trend-name {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.trend-tag {
+  font-size: 13px;
+  opacity: 0.85;
+  margin-top: 4px;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  padding: 40px 6vw;
+  border-top: 1px solid rgba(22, 27, 34, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer .nav-brand {
+  color: var(--ink);
+}
+
+.footer-text {
+  font-size: 13px;
+  color: var(--mute);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 860px) {
+  .steps {
+    grid-template-columns: 1fr;
+  }
+  .hero {
+    padding-top: 120px;
+  }
+}
