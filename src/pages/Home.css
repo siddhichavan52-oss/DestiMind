@@ -1,0 +1,36 @@
+.home-page {
+  min-height: 100vh;
+}
+
+.home-hero {
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 140px 6vw 80px;
+  background: linear-gradient(180deg, #0F1B2D 0%, #182840 52%, #3A3350 76%, #A85A3E 90%, #FFB347 100%);
+}
+
+.home-hero .headline {
+  max-width: 640px;
+}
+
+.home-hero .subhead {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-placeholder {
+  margin-top: 40px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px dashed rgba(247, 245, 240, 0.4);
+  color: rgba(247, 245, 240, 0.7);
+  font-size: 13px;
+  padding: 14px 22px;
+  border-radius: 12px;
+}
