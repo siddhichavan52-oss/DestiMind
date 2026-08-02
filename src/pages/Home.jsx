@@ -2,6 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Compass, Sparkles, ArrowRight } from 'lucide-react';
 import { getSession, logoutUser } from '../utils/auth';
 import './Home.css';
+import PreferenceForm from '../components/PreferenceForm';
 
 export default function Home() {
   const navigate = useNavigate();
@@ -52,11 +53,7 @@ export default function Home() {
           match you with real destinations in seconds.
         </p>
 
-        {/* Person 2's PreferenceForm.jsx drops in here */}
-        <div className="form-placeholder">
-          <ArrowRight size={16} strokeWidth={2} />
-          Preference form goes here
-        </div>
+        <PreferenceForm />
       </section>
     </div>
   );
