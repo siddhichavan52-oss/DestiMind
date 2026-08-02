@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import {
   MapPin, Sun, Snowflake, CloudSun, Palmtree, Sparkles,
   Mountain, Waves, Landmark, Music, Trees, UtensilsCrossed,
@@ -41,6 +42,7 @@ export default function PreferenceForm() {
   const [error, setError] = useState('');
   const [searching, setSearching] = useState(false);
   const [confirmed, setConfirmed] = useState(false);
+  const navigate = useNavigate();
 
   function toggleVibe(vibe) {
     setVibes((prev) =>
@@ -80,10 +82,17 @@ export default function PreferenceForm() {
     console.log('Preferences submitted:', preferences);
 
     setTimeout(() => {
-      setSearching(false);
-      setConfirmed(true);
-      setTimeout(() => setConfirmed(false), 4000);
-    }, 1000);
+  setSearching(false);
+  setConfirmed(true);
+
+  // Show success message briefly, then navigate to Results page
+  setTimeout(() => {
+    navigate("/results", {
+      state: preferences,
+    });
+  }, 1000);
+
+}, 1000);
   }
 
   const budgetPct = ((budget - 10000) / (300000 - 10000)) * 100;
