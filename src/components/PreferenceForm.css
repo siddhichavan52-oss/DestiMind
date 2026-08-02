@@ -1,0 +1,327 @@
+.pref-form {
+  margin-top: 40px;
+  width: min(600px, 90vw);
+  background: rgba(247, 245, 240, 0.07);
+  border: 1px solid rgba(247, 245, 240, 0.16);
+  border-radius: 20px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+  animation: pref-rise 0.5s ease both;
+}
+
+@keyframes pref-rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pref-form-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 4px;
+}
+
+.pref-heading-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pref-eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--teal);
+}
+
+.pref-title {
+  font-size: 22px;
+  color: var(--paper);
+}
+
+.pref-subtitle {
+  font-size: 13px;
+  color: rgba(247, 245, 240, 0.65);
+}
+
+/* Signature compass dial */
+.compass-dial {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.compass-dial svg {
+  overflow: visible;
+}
+
+.compass-track {
+  fill: rgba(15, 27, 45, 0.4);
+  stroke: rgba(247, 245, 240, 0.18);
+  stroke-width: 3;
+}
+
+.compass-progress {
+  fill: none;
+  stroke: var(--teal);
+  stroke-width: 3;
+  stroke-linecap: round;
+  transform-origin: 40px 40px;
+  transform: rotate(-90deg);
+  transition: stroke-dashoffset 0.4s ease;
+}
+
+.compass-needle {
+  transform-origin: 40px 40px;
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.needle-north {
+  fill: var(--coral);
+}
+
+.needle-south {
+  fill: rgba(247, 245, 240, 0.35);
+}
+
+.compass-hub {
+  fill: var(--paper);
+}
+
+.compass-caption {
+  font-size: 11px;
+  color: rgba(247, 245, 240, 0.6);
+  letter-spacing: 0.02em;
+}
+
+.compass-searching .compass-needle {
+  animation: compass-spin 0.9s linear infinite;
+}
+
+.compass-searching .compass-progress {
+  stroke: var(--dawn);
+}
+
+@keyframes compass-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.match-estimate {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: rgba(247, 245, 240, 0.75);
+  padding: 10px 14px;
+  border: 1px dashed rgba(247, 245, 240, 0.25);
+  border-radius: 10px;
+}
+
+.match-estimate strong {
+  color: var(--dawn);
+  font-family: var(--font-display);
+}
+
+.pref-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 560px) {
+  .pref-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pref-form-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.pref-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pref-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--paper);
+}
+
+.pref-hint {
+  font-weight: 400;
+  color: rgba(247, 245, 240, 0.5);
+}
+
+.pref-value {
+  margin-left: auto;
+  font-family: var(--font-display);
+  font-weight: 500;
+  color: var(--dawn);
+}
+
+.pref-select {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(247, 245, 240, 0.25);
+  background: var(--midnight);
+  color: var(--paper);
+  font-family: var(--font-body);
+  font-size: 14px;
+  transition: border-color 0.18s ease;
+}
+
+.pref-select:focus {
+  outline: none;
+  border-color: var(--teal);
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(247, 245, 240, 0.3);
+  background: transparent;
+  color: rgba(247, 245, 240, 0.85);
+  font-size: 13px;
+  transition: border-color 0.18s ease, background 0.18s ease, transform 0.12s ease;
+}
+
+.chip:hover {
+  border-color: var(--dawn);
+  transform: translateY(-1px);
+}
+
+.chip-active {
+  background: var(--dawn);
+  border-color: var(--dawn);
+  color: var(--midnight);
+  font-weight: 600;
+}
+
+.pref-slider {
+  --fill: 0%;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: linear-gradient(
+    to right,
+    var(--coral) 0%,
+    var(--dawn) var(--fill),
+    rgba(247, 245, 240, 0.2) var(--fill),
+    rgba(247, 245, 240, 0.2) 100%
+  );
+  outline: none;
+}
+
+.pref-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 3px solid var(--coral);
+  cursor: pointer;
+  transition: transform 0.12s ease;
+}
+
+.pref-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+.pref-slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 3px solid var(--coral);
+  cursor: pointer;
+}
+
+.pref-error {
+  color: var(--coral);
+  font-size: 13px;
+  margin: 0;
+}
+
+.pref-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--coral);
+  color: var(--paper);
+  border: none;
+  padding: 14px 24px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: transform 0.18s ease, background 0.18s ease;
+}
+
+.pref-submit:hover:not(:disabled) {
+  background: var(--dawn);
+  color: var(--midnight);
+  transform: translateY(-1px);
+}
+
+.pref-submit:disabled {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
+.pref-confirm {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--teal);
+  background: rgba(79, 209, 197, 0.12);
+  border: 1px solid rgba(79, 209, 197, 0.35);
+  padding: 12px 16px;
+  border-radius: 12px;
+  animation: pref-rise 0.3s ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pref-form,
+  .pref-confirm {
+    animation: none;
+  }
+
+  .compass-searching .compass-needle {
+    animation: none;
+  }
+}
