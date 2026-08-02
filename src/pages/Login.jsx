@@ -52,7 +52,7 @@ export default function Login() {
   }
 
   return (
-    <div className="auth-page">
+    <div className="auth-page auth-page--login">
       <Link to="/" className="auth-brand">
         <Compass size={20} strokeWidth={1.75} />
         <span>DestiMind</span>
