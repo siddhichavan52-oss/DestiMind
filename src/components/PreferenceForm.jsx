@@ -470,11 +470,6 @@ export default function PreferenceForm() {
       groupSize: groupSize ? Number(groupSize) : null,
       placesVisitedBefore: placesVisited,
     };
-    // TODO: once backend is ready, send `preferences` to the API and
-    // navigate to /results with the response. `placesVisitedBefore`,
-    // `travelMode` and `groupType`/`groupSize` aren't used for matching
-    // yet — they're captured now so the recommendation model has rich
-    // signal to train on later.
    console.log("Preferences submitted:", preferences);
 
 setTimeout(() => {
