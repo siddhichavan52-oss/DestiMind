@@ -5,8 +5,8 @@ export default function DestinationDetails() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const destination = location.state?.destination;
-
+  const destination = location.state;
+  console.log("Destination Data:", destination);
   if (!destination) {
     return <h2>No destination selected</h2>;
   }

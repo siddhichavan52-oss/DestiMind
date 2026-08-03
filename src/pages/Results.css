@@ -3,8 +3,8 @@
   padding: 40px;
 
   background-image:
-    linear-gradient(rgba(255,255,255,0.45), rgba(255,255,255,0.45)),
-    url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=2000&auto=format&fit=crop");
+    linear-gradient(rgba(255,246,236,0.5), rgba(255,246,236,0.5)),
+    url("https://images.unsplash.com/photo-1495616811223-4d98c6e9c869?w=2000&auto=format&fit=crop");
 
   background-size: cover;
   background-position: center;
@@ -20,13 +20,13 @@
 }
 
 .results-header h1 {
-  color: #1d3557;
+  color: #99341C;
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
 
 .results-header p {
-  color: #4b6584;
+  color: #8A5F63;
   font-size: 16px;
 }
 
@@ -42,11 +42,11 @@
 
 .preferences-summary span {
   background: white;
-  color: #1d3557;
+  color: #99341C;
   padding: 10px 18px;
   border-radius: 30px;
-  border: 1px solid #dbeafe;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid #FFD9B0;
+  box-shadow: 0 5px 15px rgba(153, 52, 28, 0.1);
   font-weight: 500;
 }
 
@@ -65,13 +65,13 @@
   width: 350px;
   padding: 12px 16px;
   border-radius: 10px;
-  border: 1px solid #cbd5e1;
+  border: 1px solid #F0C7A8;
   font-size: 15px;
   outline: none;
 }
 
 .search-box input:focus {
-  border-color: #3b82f6;
+  border-color: #FF7A59;
 }
 
 .filter-bar {
@@ -83,14 +83,14 @@
 .filter-bar select {
   padding: 12px 16px;
   border-radius: 10px;
-  border: 1px solid #cbd5e1;
+  border: 1px solid #F0C7A8;
   background: white;
   cursor: pointer;
   font-size: 15px;
 }
 
 .filter-bar select:focus {
-  border-color: #3b82f6;
+  border-color: #FF7A59;
 }
 
 /* Results Count */
@@ -98,7 +98,7 @@
 .results-count {
   text-align: center;
   margin-bottom: 20px;
-  color: #475569;
+  color: #7A4A4E;
   font-size: 16px;
   font-weight: 600;
 }
@@ -111,12 +111,40 @@
   gap: 30px;
 }
 
+/* Explore Button */
+
+.explore-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 14px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #FF7A59 0%, #C64E63 100%);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+  box-shadow: 0 6px 16px rgba(232, 92, 61, 0.3);
+}
+
+.explore-btn:hover {
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(232, 92, 61, 0.4);
+}
+
+.explore-btn:active {
+  transform: translateY(0);
+  filter: brightness(0.97);
+}
+
 /* No Results */
 
 .no-results {
   text-align: center;
   margin-top: 60px;
-  color: #64748b;
+  color: #9A6E70;
   font-size: 22px;
 }
 
