@@ -48,18 +48,15 @@ export default function DestinationCard({ destination }) {
 
 
         <button
-          onClick={() =>
-            navigate("/destination", {
-              state: {
-                destination: destination
-              }
-            })
-          }
-        >
-
-          Explore
-
-        </button>
+  className="explore-btn"
+  onClick={() =>
+    navigate("/destination", {
+      state: destination,
+    })
+  }
+>
+  Explore Destination
+</button>
 
 
       </div>
