@@ -1,12 +1,33 @@
+import { useMemo } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Compass, Sparkles, ArrowRight } from 'lucide-react';
+import { Compass } from 'lucide-react';
 import { getSession, logoutUser } from '../utils/auth';
 import './Home.css';
 import PreferenceForm from '../components/PreferenceForm';
 
+import morningBg from '../assets/morning.png';
+import afternoonBg from '../assets/afternoon.png';
+import eveningBg from '../assets/evening.png';
+import nightBg from '../assets/night.png';
+
+const HERO_PHOTOS = {
+  morning: morningBg,
+  afternoon: afternoonBg,
+  evening: eveningBg,
+  night: nightBg,
+};
+
+function getDaypart(hour) {
+  if (hour >= 5 && hour < 12) return 'morning';
+  if (hour >= 12 && hour < 17) return 'afternoon';
+  if (hour >= 17 && hour < 20) return 'evening';
+  return 'night';
+}
+
 export default function Home() {
   const navigate = useNavigate();
   const session = getSession();
+  const daypart = useMemo(() => getDaypart(new Date().getHours()), []);
 
   function handleLogout() {
     logoutUser();
@@ -40,13 +61,10 @@ export default function Home() {
         </nav>
       </header>
 
-      <section className="home-hero">
-        <span className="eyebrow">
-          <Sparkles size={14} strokeWidth={2} />
-          Ready when you are
-        </span>
+      <section className="home-hero" style={{ '--hero-img': `url(${HERO_PHOTOS[daypart]})` }}>
+        <div className="hero-glow"></div>
         <h1 className="headline">
-          Let's find <span className="headline-accent">your next place.</span>
+          Discover the <span className="headline-accent">extraordinary.</span>
         </h1>
         <p className="subhead">
           Set your continent, weather, budget and vibe below — DestiMind will
