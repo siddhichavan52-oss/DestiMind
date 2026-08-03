@@ -29,25 +29,25 @@ const trending = [
     name: 'Manali, India',
     tag: 'Quiet · 18°C',
     match: 92,
-    image: 'https://loremflickr.com/500/400/manali,himalayas',
+    image: 'https://images.unsplash.com/photo-1574988050647-33c6773e5e9a?auto=format&fit=crop&w=800&q=80',
   },
   {
     name: 'Goa, India',
     tag: 'Lively · 29°C',
     match: 88,
-    image: 'https://loremflickr.com/500/400/goa,beach,india',
+    image: 'https://images.unsplash.com/photo-1695453463057-aa5d48d9e3d4?auto=format&fit=crop&w=800&q=80',
   },
   {
     name: 'Havelock Island',
     tag: 'Quiet · 27°C',
     match: 95,
-    image: 'https://loremflickr.com/500/400/andaman,island,beach',
+    image: 'https://images.unsplash.com/photo-1586359716568-3e1907e4cf9f?auto=format&fit=crop&w=800&q=80',
   },
   {
     name: 'Jaisalmer, India',
     tag: 'Moderate · 24°C',
     match: 84,
-    image: 'https://loremflickr.com/500/400/jaisalmer,desert,fort',
+    image: 'https://images.unsplash.com/photo-1732022648903-737e66c18b08?auto=format&fit=crop&w=800&q=80',
   },
 ];
 

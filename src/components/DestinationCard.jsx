@@ -1,70 +1,71 @@
-import "./DestinationCard.css";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import "./DestinationCard.css";
 
-export default function DestinationCard({
-  name,
-  image,
-  price,
-  match,
-  weather,
-  crowd,
-  continent,
-}) {
+
+export default function DestinationCard({ destination }) {
+
   const navigate = useNavigate();
-  const [favorite, setFavorite] = useState(false);
-  function handleExplore() {
-    navigate("/destination", {
-      state: {
-        name,
-        image,
-        price,
-        match,
-        weather,
-        crowd,
-        continent,
-      },
-    });
-  }
+
 
   return (
-    <div className="card">
-       <button
-    className="favorite-btn"
-    onClick={() => setFavorite(!favorite)}
-  >
-    {favorite ? "❤️" : "🤍"}
-  </button>
-      <img src={image} alt={name} />
+
+    <div className="destination-card">
+
+
+      <img
+        src={destination.image}
+        alt={destination.name}
+      />
+
 
       <div className="card-content">
-        <h2>{name}</h2>
 
-        <div className="price">
-          ₹{price.toLocaleString()}
-        </div>
 
-        <div className="badges">
-          <span className="match">
-            {match}% Match
-          </span>
+        <h2>
+          {destination.name}
+        </h2>
 
-          <span className="weather">
-            {weather}
-          </span>
 
-          <span className="crowd">
-            {crowd}
-          </span>
-        </div>
+        <p>
+          📍 {destination.country}
+        </p>
+
+
+        <p>
+          ⭐ {destination.rating}/5
+        </p>
+
+
+        <p>
+          🎯 {destination.match}% Match
+        </p>
+
+
+        <p>
+          💰 ₹{destination.price.toLocaleString()}
+        </p>
+
+
 
         <button
-          className="explore-btn"
-          onClick={handleExplore}
+          onClick={() =>
+            navigate("/destination", {
+              state: {
+                destination: destination
+              }
+            })
+          }
         >
-          Explore Destination
+
+          Explore
+
         </button>
+
+
       </div>
+
+
     </div>
+
   );
 }
