@@ -1,4 +1,5 @@
 .auth-page {
+  position: relative;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -6,10 +7,21 @@
   justify-content: center;
   gap: 32px;
   padding: 40px 20px;
-  background: linear-gradient(180deg, #0F1B2D 0%, #182840 60%, #2C3E5C 100%);
+  background-size: cover;
+  background-position: center;
+}
+
+.auth-page--login {
+  background-image: url('https://images.unsplash.com/photo-1505832018823-50331d70d237?auto=format&fit=crop&w=1600&q=70');
+}
+
+.auth-page--signup {
+  background-image: url('https://images.unsplash.com/photo-1771533680002-5210c217a16f?auto=format&fit=crop&w=1600&q=70');
 }
 
 .auth-brand {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -17,15 +29,18 @@
   font-size: 19px;
   font-weight: 500;
   color: var(--paper);
+  text-shadow: 0 2px 12px rgba(15, 27, 45, 0.55);
 }
 
 .auth-card {
+  position: relative;
+  z-index: 1;
   width: 100%;
   max-width: 400px;
   background: var(--paper);
   border-radius: 20px;
   padding: 36px 32px;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.4);
 }
 
 .auth-eyebrow {

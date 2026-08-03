@@ -1,12 +1,29 @@
+import { useMemo } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Compass, Sparkles, ArrowRight } from 'lucide-react';
+import { Compass } from 'lucide-react';
 import { getSession, logoutUser } from '../utils/auth';
 import './Home.css';
 import PreferenceForm from '../components/PreferenceForm';
 
+
+
+const HERO_PHOTOS = {
+  morning: 'https://images.unsplash.com/photo-1764694875522-4c17b2d7c26b?fm=jpg&q=80&w=1920&auto=format&fit=crop',
+  afternoon: 'https://images.unsplash.com/photo-1731925116590-c27d25490ea0?fm=jpg&q=80&w=1920&auto=format&fit=crop',
+  evening: 'https://images.unsplash.com/photo-1784570269737-21da4658a609?fm=jpg&q=80&w=1920&auto=format&fit=crop',
+  night: 'https://images.unsplash.com/photo-1768590238617-1753353cee60?fm=jpg&q=80&w=1920&auto=format&fit=crop',
+};
+function getDaypart(hour) {
+  if (hour >= 5 && hour < 12) return 'morning';
+  if (hour >= 12 && hour < 17) return 'afternoon';
+  if (hour >= 17 && hour < 20) return 'evening';
+  return 'night';
+}
+
 export default function Home() {
   const navigate = useNavigate();
   const session = getSession();
+  const daypart = useMemo(() => getDaypart(new Date().getHours()), []);
 
   function handleLogout() {
     logoutUser();
@@ -40,13 +57,10 @@ export default function Home() {
         </nav>
       </header>
 
-      <section className="home-hero">
-        <span className="eyebrow">
-          <Sparkles size={14} strokeWidth={2} />
-          Ready when you are
-        </span>
+      <section className="home-hero" style={{ '--hero-img': `url(${HERO_PHOTOS[daypart]})` }}>
+        <div className="hero-glow"></div>
         <h1 className="headline">
-          Let's find <span className="headline-accent">your next place.</span>
+          Discover the <span className="headline-accent">extraordinary.</span>
         </h1>
         <p className="subhead">
           Set your continent, weather, budget and vibe below — DestiMind will
