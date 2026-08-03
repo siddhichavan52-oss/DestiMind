@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Country, State } from 'country-state-city';
 import {
   MapPin, Globe2, Sun, Snowflake, CloudSun, Palmtree, Sparkles,
@@ -358,6 +359,7 @@ export default function PreferenceForm() {
   const [error, setError] = useState('');
   const [searching, setSearching] = useState(false);
   const [confirmed, setConfirmed] = useState(false);
+  const navigate = useNavigate();
 
   const countryOptions = useMemo(() => {
     const active = CONTINENTS.find((c) => c.label === continent);
@@ -468,19 +470,23 @@ export default function PreferenceForm() {
       groupSize: groupSize ? Number(groupSize) : null,
       placesVisitedBefore: placesVisited,
     };
-    // TODO: once backend is ready, send `preferences` to the API and
-    // navigate to /results with the response. `placesVisitedBefore`,
-    // `travelMode` and `groupType`/`groupSize` aren't used for matching
-    // yet — they're captured now so the recommendation model has rich
-    // signal to train on later.
-    console.log('Preferences submitted:', preferences);
+   console.log("Preferences submitted:", preferences);
 
-    setTimeout(() => {
-      setSearching(false);
-      setConfirmed(true);
-      setTimeout(() => setConfirmed(false), 4000);
-    }, 1100);
-  }
+setTimeout(() => {
+  setSearching(false);
+  setConfirmed(true);
+
+  // Show success message briefly, then navigate to Results page
+  setTimeout(() => {
+    setConfirmed(false);
+    navigate("/results", {
+      state: preferences,
+    });
+  }, 1000);
+
+}, 1100);
+}
+
 
   const budgetPct = ((budget - budgetRange.min) / (budgetRange.max - budgetRange.min)) * 100;
   const daysPct = ((days - 1) / (30 - 1)) * 100;
