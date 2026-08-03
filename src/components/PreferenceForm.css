@@ -957,6 +957,11 @@
   margin-top: 1px;
 }
 
+.insight-mini-strong {
+  background: rgba(255, 179, 71, 0.12);
+  border-color: rgba(255, 179, 71, 0.24);
+}
+
 .insight-mini span {
   font-size: 10.5px;
   text-transform: uppercase;
@@ -1045,4 +1050,3 @@
     grid-template-columns: 1fr;
   }
 }
-

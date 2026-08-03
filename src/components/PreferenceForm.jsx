@@ -6,16 +6,9 @@ import {
   Mountain, Waves, Landmark, Music, Trees, UtensilsCrossed,
   Wallet, ArrowRight, Check, Plane, TrainFront,
   Car, Ship, Users, User, Heart, UsersRound, History, X, Plus, Lock, Stamp,
-  Route, CalendarDays,
+  CalendarDays,
 } from 'lucide-react';
 import './PreferenceForm.css';
-
-/* ------------------------------------------------------------------ */
-/*  Location data — continents map to a curated set of popular travel  */
-/*  countries. Country -> State/Province lists come from the real      */
-/*  `country-state-city` dataset already in package.json, so the       */
-/*  state dropdown is genuine geographic data, not guesswork.          */
-/* ------------------------------------------------------------------ */
 
 const CONTINENTS = [
   { label: 'Europe', codes: ['FR', 'IT', 'ES', 'CH', 'GR', 'DE', 'PT', 'GB', 'NL', 'IS'] },
@@ -26,9 +19,6 @@ const CONTINENTS = [
   { label: 'North America', codes: ['US', 'CA', 'MX', 'CU', 'CR'] },
 ];
 
-// Cost-of-travel tier per destination country. Drives the budget
-// slider's range/default so ₹40,000 means something different for
-// Thailand than it does for Switzerland, instead of one-size-fits-all.
 const COUNTRY_TIER = {
   IN: 'value', TH: 'value', VN: 'value', ID: 'value', LK: 'value', MA: 'value',
   EG: 'value', MX: 'value', PE: 'value', CO: 'value', EC: 'value', CU: 'value',
@@ -46,106 +36,9 @@ const TIER_RANGES = {
 };
 
 const TIER_COST_HINTS = {
-  value: {
-    label: 'Budget friendly',
-    daily: [2500, 6500],
-    route: 'Public transport + short local rides',
-    stay: 'Hostels, homestays, simple hotels',
-    note: 'Great for students and short relaxed trips.',
-  },
-  mid: {
-    label: 'Comfort balanced',
-    daily: [6500, 14000],
-    route: 'Flights or trains between cities + cabs locally',
-    stay: 'Good 3-star stays and central hotels',
-    note: 'Best mix of comfort, sightseeing and food.',
-  },
-  premium: {
-    label: 'Premium destination',
-    daily: [14000, 32000],
-    route: 'Flights, fast trains and private transfers',
-    stay: 'Boutique hotels, resorts or premium stays',
-    note: 'Plan more buffer for hotels, transport and paid attractions.',
-  },
-};
-
-const COUNTRY_TRIP_DATA = {
-  IN: {
-    places: ['Goa beaches', 'Jaipur forts', 'Manali mountains'],
-    routes: ['Flight/train to a metro hub', 'Intercity train or cab', 'Local autos and cabs'],
-    seasons: 'October to March is comfortable for most tourist routes.',
-  },
-  JP: {
-    places: ['Tokyo city walk', 'Kyoto temples', 'Mount Fuji day trip'],
-    routes: ['Flight to Tokyo/Osaka', 'JR trains between cities', 'Metro for local travel'],
-    seasons: 'March-April and October-November are very popular.',
-  },
-  TH: {
-    places: ['Bangkok markets', 'Phuket beaches', 'Chiang Mai temples'],
-    routes: ['Flight to Bangkok', 'Domestic flight or bus', 'Tuk-tuk and ferries locally'],
-    seasons: 'November to February gives pleasant weather.',
-  },
-  ID: {
-    places: ['Bali cafes', 'Ubud rice terraces', 'Nusa Penida'],
-    routes: ['Flight to Denpasar', 'Scooter/cab for local travel', 'Ferry for islands'],
-    seasons: 'May to September is usually best for Bali.',
-  },
-  AE: {
-    places: ['Dubai Marina', 'Desert safari', 'Abu Dhabi day trip'],
-    routes: ['Flight to Dubai/Abu Dhabi', 'Metro inside Dubai', 'Cab for desert and day trips'],
-    seasons: 'November to March is best because summers are very hot.',
-  },
-  SG: {
-    places: ['Marina Bay', 'Sentosa', 'Gardens by the Bay'],
-    routes: ['Flight to Singapore', 'MRT for almost everything', 'Short cab rides at night'],
-    seasons: 'Works year-round, with brief rain showers common.',
-  },
-  MV: {
-    places: ['Resort island', 'Snorkelling lagoon', 'Sunset cruise'],
-    routes: ['Flight to Male', 'Speedboat or seaplane transfer', 'Resort-based travel'],
-    seasons: 'December to April is the dry, premium season.',
-  },
-  FR: {
-    places: ['Paris museums', 'Nice coast', 'Loire castles'],
-    routes: ['Flight to Paris', 'TGV train between cities', 'Metro inside Paris'],
-    seasons: 'April-June and September-October are comfortable.',
-  },
-  IT: {
-    places: ['Rome ruins', 'Florence art', 'Venice canals'],
-    routes: ['Flight to Rome/Milan', 'High-speed trains', 'Walking and metro locally'],
-    seasons: 'April-June and September are ideal for sightseeing.',
-  },
-  CH: {
-    places: ['Zurich old town', 'Interlaken', 'Lucerne lake'],
-    routes: ['Flight to Zurich/Geneva', 'Swiss trains', 'Cable cars for mountains'],
-    seasons: 'June-September for lakes, December-February for snow.',
-  },
-  ES: {
-    places: ['Barcelona', 'Madrid museums', 'Seville streets'],
-    routes: ['Flight to Madrid/Barcelona', 'AVE trains', 'Metro and walking'],
-    seasons: 'April-June and September-October avoid peak heat.',
-  },
-  US: {
-    places: ['New York', 'California coast', 'National parks'],
-    routes: ['International flight', 'Domestic flights for long distances', 'Car rental for parks'],
-    seasons: 'Season depends by region, so pick weather before final route.',
-  },
-  CA: {
-    places: ['Toronto', 'Banff', 'Vancouver'],
-    routes: ['Flight to a major city', 'Domestic flight/train', 'Car for nature routes'],
-    seasons: 'June-September for outdoors, December-March for snow.',
-  },
-  AU: {
-    places: ['Sydney harbour', 'Melbourne lanes', 'Gold Coast'],
-    routes: ['Flight to Sydney/Melbourne', 'Domestic flights', 'Trams/cabs locally'],
-    seasons: 'September-November and March-May are comfortable.',
-  },
-};
-
-const DEFAULT_TRIP_DATA = {
-  places: ['Capital city highlights', 'Old town or heritage walk', 'Popular nature escape'],
-  routes: ['Flight to the main city', 'Train/bus for nearby regions', 'Local cabs or public transport'],
-  seasons: 'Check season and weather before booking because costs change by month.',
+  value: { label: 'Budget friendly', daily: [2500, 6500] },
+  mid: { label: 'Comfort balanced', daily: [6500, 14000] },
+  premium: { label: 'Premium destination', daily: [14000, 32000] },
 };
 
 function formatRs(value) {
@@ -159,57 +52,39 @@ function getBudgetBand(budget, days, hint) {
   return 'balanced';
 }
 
-function buildTripInsight({ countryCode, countryName, stateName, budget, days, weather, vibes }) {
+function buildTripInsight({ countryCode, countryName, stateName, budget, days }) {
   if (!countryCode) return null;
   const tier = COUNTRY_TIER[countryCode] || 'mid';
   const hint = TIER_COST_HINTS[tier];
-  const data = COUNTRY_TRIP_DATA[countryCode] || DEFAULT_TRIP_DATA;
   const destination = stateName || countryName;
   const totalLow = hint.daily[0] * days;
   const totalHigh = hint.daily[1] * days;
   const band = getBudgetBand(budget, days, hint);
-  const vibeText = vibes.length ? vibes.slice(0, 2).join(' + ') : 'sightseeing';
 
   const bandCopy = {
-    tight: 'Keep the plan compact: choose one base city, public transport and free attractions.',
-    balanced: 'This is a practical range for a clean stay, food, transport and a few paid experiences.',
-    comfortable: 'You have room for better stays, smoother transfers and one or two special experiences.',
+    tight: 'Selected budget is below the suggested minimum, so keep the plan compact.',
+    balanced: 'This range covers a clean stay, food, local transport and basic sightseeing.',
+    comfortable: 'This budget gives extra room for better stays, transfers and paid experiences.',
   };
 
   const bandLabel = {
-    tight: 'Budget is a little tight',
+    tight: 'Below suggested minimum',
     balanced: 'Good fit for this trip',
     comfortable: 'Comfortable plan possible',
   };
-
-  const weatherCopy = weather
-    ? `${weather} works best with ${vibeText.toLowerCase()} focused places.`
-    : 'Pick weather to make this suggestion more focused.';
-
-  const itinerary = [
-    `Day 1: Arrive in ${destination}, check in, then keep the evening for a relaxed local walk.`,
-    `Day 2: Cover the main attraction route and add one ${vibeText.toLowerCase()} experience.`,
-    `Day 3: Try local food, shopping or a short nearby escape before departure.`,
-  ];
 
   return {
     destination,
     tierLabel: hint.label,
     estimatedTotal: `${formatRs(totalLow)} - ${formatRs(totalHigh)}`,
+    minimumBudget: formatRs(totalLow),
     dailyRange: `${formatRs(hint.daily[0])} - ${formatRs(hint.daily[1])}/day`,
     band,
     bandLabel: bandLabel[band],
     bandCopy: bandCopy[band],
-    weatherCopy,
-    route: hint.route,
-    stay: hint.stay,
-    note: hint.note,
-    seasons: data.seasons,
-    places: data.places,
-    routes: data.routes,
-    itinerary,
   };
 }
+
 const WEATHER_OPTIONS = [
   { label: 'Beach & Warm', icon: Sun },
   { label: 'Cold & Snowy', icon: Snowflake },
@@ -245,10 +120,6 @@ const GROUP_TYPES = [
 
 const PLACE_SUGGESTIONS = ['Goa', 'Bali', 'Dubai', 'Paris', 'Bangkok', 'Maldives', 'Manali', 'Singapore'];
 
-// The five compulsory picks, in the order the route map visualises them.
-// Waypoints arc gently upward like a real flight-route map, and the
-// colour drifts teal -> amber -> coral across the journey (sunrise to
-// sunset), matching the home hero's own gradient direction.
 const WAYPOINTS = [
   { key: 'continent', label: 'Continent', icon: Globe2, x: 22, y: 64, color: '#4FD1C5' },
   { key: 'country', label: 'Country', icon: MapPin, x: 104, y: 24, color: '#7BCDBA' },
@@ -470,23 +341,27 @@ export default function PreferenceForm() {
       groupSize: groupSize ? Number(groupSize) : null,
       placesVisitedBefore: placesVisited,
     };
-   console.log("Preferences submitted:", preferences);
+    // TODO: once backend is ready, send `preferences` to the API and
+    // use the response instead of (or alongside) the local preferences
+    // object below. `placesVisitedBefore`, `travelMode` and
+    // `groupType`/`groupSize` aren't used for matching yet — they're
+    // captured now so the recommendation model has rich signal to
+    // train on later.
+    console.log('Preferences submitted:', preferences);
 
-setTimeout(() => {
-  setSearching(false);
-  setConfirmed(true);
+    setTimeout(() => {
+      setSearching(false);
+      setConfirmed(true);
 
-  // Show success message briefly, then navigate to Results page
-  setTimeout(() => {
-    setConfirmed(false);
-    navigate("/results", {
-      state: preferences,
-    });
-  }, 1000);
-
-}, 1100);
-}
-
+      // Show the success message briefly, then move on to the Results page.
+      setTimeout(() => {
+        setConfirmed(false);
+        navigate('/results', {
+          state: preferences,
+        });
+      }, 1000);
+    }, 1100);
+  }
 
   const budgetPct = ((budget - budgetRange.min) / (budgetRange.max - budgetRange.min)) * 100;
   const daysPct = ((days - 1) / (30 - 1)) * 100;
@@ -648,6 +523,11 @@ setTimeout(() => {
               </div>
 
               <div className="budget-insight-grid">
+                <div className="insight-mini insight-mini-strong">
+                  <Lock size={15} strokeWidth={2.3} />
+                  <span>Minimum suggested budget</span>
+                  <strong>{tripInsight.minimumBudget}</strong>
+                </div>
                 <div className="insight-mini">
                   <Wallet size={15} strokeWidth={2.3} />
                   <span>Daily spend</span>
@@ -658,43 +538,9 @@ setTimeout(() => {
                   <span>Budget fit</span>
                   <strong>{tripInsight.bandLabel}</strong>
                 </div>
-                <div className="insight-mini">
-                  <Route size={15} strokeWidth={2.3} />
-                  <span>Common route</span>
-                  <strong>{tripInsight.route}</strong>
-                </div>
               </div>
 
               <p className="budget-readout">{tripInsight.bandCopy}</p>
-              <p className="budget-readout">{tripInsight.weatherCopy}</p>
-
-              <div className="demo-suggestions">
-                <div>
-                  <span className="demo-suggestion-title">Places to show</span>
-                  <div className="chip-row">
-                    {tripInsight.places.map((place) => <span className="chip chip-tag" key={place}>{place}</span>)}
-                  </div>
-                </div>
-                <div>
-                  <span className="demo-suggestion-title">Route sample</span>
-                  <ol className="route-steps">
-                    {tripInsight.routes.map((step) => <li key={step}>{step}</li>)}
-                  </ol>
-                </div>
-              </div>
-
-              <div>
-                <span className="demo-suggestion-title">Sample itinerary</span>
-                <div className="itinerary-list">
-                  {tripInsight.itinerary.map((item) => <span key={item}>{item}</span>)}
-                </div>
-              </div>
-
-              <div className="budget-note-row">
-                <span>{tripInsight.stay}</span>
-                <span>{tripInsight.seasons}</span>
-                <span>{tripInsight.note}</span>
-              </div>
             </div>
           )}
         </Section>
@@ -797,8 +643,3 @@ setTimeout(() => {
     </form>
   );
 }
-
-
-
-
-
