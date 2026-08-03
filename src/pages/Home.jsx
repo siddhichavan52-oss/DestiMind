@@ -5,18 +5,14 @@ import { getSession, logoutUser } from '../utils/auth';
 import './Home.css';
 import PreferenceForm from '../components/PreferenceForm';
 
-import morningBg from '../assets/morning.png';
-import afternoonBg from '../assets/afternoon.png';
-import eveningBg from '../assets/evening.png';
-import nightBg from '../assets/night.png';
+
 
 const HERO_PHOTOS = {
-  morning: morningBg,
-  afternoon: afternoonBg,
-  evening: eveningBg,
-  night: nightBg,
+  morning: 'https://images.unsplash.com/photo-1764694875522-4c17b2d7c26b?fm=jpg&q=80&w=1920&auto=format&fit=crop',
+  afternoon: 'https://images.unsplash.com/photo-1731925116590-c27d25490ea0?fm=jpg&q=80&w=1920&auto=format&fit=crop',
+  evening: 'https://images.unsplash.com/photo-1784570269737-21da4658a609?fm=jpg&q=80&w=1920&auto=format&fit=crop',
+  night: 'https://images.unsplash.com/photo-1768590238617-1753353cee60?fm=jpg&q=80&w=1920&auto=format&fit=crop',
 };
-
 function getDaypart(hour) {
   if (hour >= 5 && hour < 12) return 'morning';
   if (hour >= 12 && hour < 17) return 'afternoon';
