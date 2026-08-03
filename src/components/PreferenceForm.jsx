@@ -1,5 +1,5 @@
-import { useMemo, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useMemo, useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { Country, State } from 'country-state-city';
 import {
   MapPin, Globe2, Sun, Snowflake, CloudSun, Palmtree, Sparkles,
@@ -8,6 +8,8 @@ import {
   Car, Ship, Users, User, Heart, UsersRound, History, X, Plus, Lock, Stamp,
   CalendarDays,
 } from 'lucide-react';
+import { getSession } from '../utils/auth';
+import { getProfile, PROFILE_UPDATED_EVENT } from '../utils/profile';
 import './PreferenceForm.css';
 
 const CONTINENTS = [
@@ -41,30 +43,56 @@ const TIER_COST_HINTS = {
   premium: { label: 'Premium destination', daily: [14000, 32000] },
 };
 
+// Rough per-person, one-way-equivalent transport cost by mode.
+// Used only to shape the budget estimate — not sent anywhere.
+const TRAVEL_MODE_COST = {
+  Flight: 9000,
+  Train: 2500,
+  'Road Trip': 1800,
+  Cruise: 15000,
+  Flexible: 5000,
+};
+
 function formatRs(value) {
-  return `Rs. ${value.toLocaleString('en-IN')}`;
+  return `Rs. ${Math.round(value).toLocaleString('en-IN')}`;
 }
 
-function getBudgetBand(budget, days, hint) {
-  const daily = budget / Math.max(days, 1);
-  if (daily < hint.daily[0]) return 'tight';
-  if (daily > hint.daily[1]) return 'comfortable';
+// budget is treated as the TOTAL trip budget spread across the whole group,
+// so we compare it against the group-scaled daily hint, not a per-person one.
+function getBudgetBand(budget, days, groupSize, hint) {
+  const dailyForGroup = budget / Math.max(days, 1);
+  const dailyMin = hint.daily[0] * groupSize;
+  const dailyMax = hint.daily[1] * groupSize;
+  if (dailyForGroup < dailyMin) return 'tight';
+  if (dailyForGroup > dailyMax) return 'comfortable';
   return 'balanced';
 }
 
-function buildTripInsight({ countryCode, countryName, stateName, budget, days }) {
-  if (!countryCode) return null;
+function buildTripInsight({ countryCode, countryName, stateName, budget, days, groupType, groupSize, travelMode }) {
+  if (!countryCode || !groupType || !travelMode) return null;
+
   const tier = COUNTRY_TIER[countryCode] || 'mid';
   const hint = TIER_COST_HINTS[tier];
   const destination = stateName || countryName;
-  const totalLow = hint.daily[0] * days;
-  const totalHigh = hint.daily[1] * days;
-  const band = getBudgetBand(budget, days, hint);
+  const size = Math.max(Number(groupSize) || 1, 1);
+
+  const travelCostPerPerson = TRAVEL_MODE_COST[travelMode] ?? TRAVEL_MODE_COST.Flexible;
+  const travelTotal = travelCostPerPerson * size;
+
+  const stayLow = hint.daily[0] * days * size;
+  const stayHigh = hint.daily[1] * days * size;
+
+  const totalLow = stayLow + travelTotal;
+  const totalHigh = stayHigh + travelTotal;
+
+  const band = getBudgetBand(budget, days, size, hint);
+
+  const groupWord = size === 1 ? 'traveller' : 'travellers';
 
   const bandCopy = {
-    tight: 'Selected budget is below the suggested minimum, so keep the plan compact.',
-    balanced: 'This range covers a clean stay, food, local transport and basic sightseeing.',
-    comfortable: 'This budget gives extra room for better stays, transfers and paid experiences.',
+    tight: `Selected budget is below the suggested minimum for ${size} ${groupWord} travelling by ${travelMode.toLowerCase()}, so keep the plan compact.`,
+    balanced: `This range covers stays, food and local transport for ${size} ${groupWord}, plus around ${formatRs(travelTotal)} for ${travelMode.toLowerCase()} to get there.`,
+    comfortable: `This budget gives extra room for better stays and paid experiences for ${size} ${groupWord}, on top of ~${formatRs(travelTotal)} for ${travelMode.toLowerCase()}.`,
   };
 
   const bandLabel = {
@@ -78,7 +106,9 @@ function buildTripInsight({ countryCode, countryName, stateName, budget, days })
     tierLabel: hint.label,
     estimatedTotal: `${formatRs(totalLow)} - ${formatRs(totalHigh)}`,
     minimumBudget: formatRs(totalLow),
-    dailyRange: `${formatRs(hint.daily[0])} - ${formatRs(hint.daily[1])}/day`,
+    dailyRange: `${formatRs(hint.daily[0])} - ${formatRs(hint.daily[1])}/person/day`,
+    transportEstimate: formatRs(travelTotal),
+    groupSize: size,
     band,
     bandLabel: bandLabel[band],
     bandCopy: bandCopy[band],
@@ -231,6 +261,28 @@ export default function PreferenceForm() {
   const [searching, setSearching] = useState(false);
   const [confirmed, setConfirmed] = useState(false);
   const navigate = useNavigate();
+  const [homeProfile, setHomeProfile] = useState(null);
+
+  useEffect(() => {
+    const session = getSession();
+    if (!session) return;
+
+    function loadHomeProfile() {
+      setHomeProfile(getProfile(session.email));
+    }
+
+    loadHomeProfile();
+    window.addEventListener(PROFILE_UPDATED_EVENT, loadHomeProfile);
+    window.addEventListener('storage', loadHomeProfile);
+    return () => {
+      window.removeEventListener(PROFILE_UPDATED_EVENT, loadHomeProfile);
+      window.removeEventListener('storage', loadHomeProfile);
+    };
+  }, []);
+
+  const travelingFromLabel = homeProfile
+    ? [homeProfile.city, homeProfile.state, homeProfile.country].filter(Boolean).join(', ')
+    : '';
 
   const countryOptions = useMemo(() => {
     const active = CONTINENTS.find((c) => c.label === continent);
@@ -308,6 +360,10 @@ export default function PreferenceForm() {
     return Math.max(3, Math.round(base));
   }, [progress, vibes.length, stateCode]);
 
+  // Budget only becomes meaningful once we know the destination tier,
+  // the group size, and the mode of travel — all three shape the estimate.
+  const readyForBudget = !!(countryCode && groupType && travelMode);
+
   function handleSubmit(e) {
     e.preventDefault();
     if (!continent || !countryCode) {
@@ -315,8 +371,18 @@ export default function PreferenceForm() {
       setConfirmed(false);
       return;
     }
-    if (!weather || !travelMode || !groupType) {
-      setError('A few more picks needed: weather, mode of travel and group.');
+    if (!groupType) {
+      setError('Please tell us who is coming.');
+      setConfirmed(false);
+      return;
+    }
+    if (!travelMode) {
+      setError('Please pick a mode of travel.');
+      setConfirmed(false);
+      return;
+    }
+    if (!weather) {
+      setError('Please pick a weather preference.');
       setConfirmed(false);
       return;
     }
@@ -343,9 +409,8 @@ export default function PreferenceForm() {
     };
     // TODO: once backend is ready, send `preferences` to the API and
     // use the response instead of (or alongside) the local preferences
-    // object below. `placesVisitedBefore`, `travelMode` and
-    // `groupType`/`groupSize` aren't used for matching yet — they're
-    // captured now so the recommendation model has rich signal to
+    // object below. `placesVisitedBefore` isn't used for matching yet —
+    // it's captured now so the recommendation model has rich signal to
     // train on later.
     console.log('Preferences submitted:', preferences);
 
@@ -373,15 +438,16 @@ export default function PreferenceForm() {
     stateName,
     budget,
     days,
-    weather,
-    vibes,
-  }), [countryCode, countryName, stateName, budget, days, weather, vibes]);
+    groupType,
+    groupSize,
+    travelMode,
+  }), [countryCode, countryName, stateName, budget, days, groupType, groupSize, travelMode]);
   const summaryRows = [
     { key: 'where', icon: MapPin, label: 'Where', value: countryName ? `${countryName}${stateName ? `, ${stateName}` : ''}` : null },
-    { key: 'weather', icon: Sun, label: 'Weather', value: weather || null },
-    { key: 'budget', icon: Wallet, label: 'Budget', value: countryCode ? `₹${budget.toLocaleString()}` : null },
-    { key: 'mode', icon: Plane, label: 'Mode', value: travelMode || null },
     { key: 'group', icon: Users, label: 'Group', value: groupType ? `${groupType}${groupSize ? ` · ${groupSize}` : ''}` : null },
+    { key: 'mode', icon: Plane, label: 'Mode', value: travelMode || null },
+    { key: 'budget', icon: Wallet, label: 'Budget', value: readyForBudget ? `₹${budget.toLocaleString()}` : null },
+    { key: 'weather', icon: Sun, label: 'Weather', value: weather || null },
   ];
 
   return (
@@ -415,6 +481,20 @@ export default function PreferenceForm() {
 
       <div className="pf-body">
         <Section icon={Globe2} label="Where to">
+          <div className="pf-from-row">
+            <span className="pf-from-label">
+              <MapPin size={13} strokeWidth={2.25} />
+              Traveling from
+            </span>
+            {travelingFromLabel ? (
+              <span className="pf-from-pill">{travelingFromLabel}</span>
+            ) : (
+              <Link to="/profile" className="pf-from-empty">
+                Set your home location →
+              </Link>
+            )}
+          </div>
+
           <div className="pref-grid pref-grid-3">
             <div className="pref-field">
               <label className="pref-label">Continent</label>
@@ -462,17 +542,43 @@ export default function PreferenceForm() {
           </div>
         </Section>
 
+        <Section icon={Users} label="Who's coming">
+          <div className="chip-row">
+            {GROUP_TYPES.map(({ label, icon: Icon, suggested }) => (
+              <button type="button" key={label} className={`chip ${groupType === label ? 'chip-active' : ''}`} onClick={() => handleGroupType(label, suggested)}>
+                <Icon size={14} strokeWidth={2} />{label}
+              </button>
+            ))}
+          </div>
+          {groupType && groupType !== 'Solo' && (
+            <div className="group-size-row">
+              <label htmlFor="group-size">Number of travellers</label>
+              <input id="group-size" type="number" min="2" max="40" value={groupSize} onChange={(e) => setGroupSize(e.target.value)} className="group-size-input" />
+            </div>
+          )}
+        </Section>
+
+        <Section icon={Plane} label="Getting there">
+          <div className="chip-row">
+            {TRAVEL_MODES.map(({ label, icon: Icon }) => (
+              <button type="button" key={label} className={`chip ${travelMode === label ? 'chip-active' : ''}`} onClick={() => setTravelMode(label)}>
+                <Icon size={14} strokeWidth={2} />{label}
+              </button>
+            ))}
+          </div>
+        </Section>
+
         <Section icon={Wallet} label="Budget & length">
           <div className="pref-grid">
             <div className="pref-field">
               <label className="pref-label">
                 Budget
-                {countryCode
+                {readyForBudget
                   ? <span className="pref-value">₹{budget.toLocaleString()}</span>
                   : <span className="pref-value pref-value-muted"><Lock size={11} strokeWidth={2} /> locked</span>}
               </label>
               <div className="slider-wrap">
-                {countryCode && (
+                {readyForBudget && (
                   <span className="slider-bubble" style={{ left: `${budgetPct}%` }}>
                     ₹{Math.round(budget / 1000)}k
                   </span>
@@ -485,11 +591,15 @@ export default function PreferenceForm() {
                   value={budget}
                   onChange={(e) => setBudget(Number(e.target.value))}
                   className="pref-slider"
-                  disabled={!countryCode}
-                  style={{ '--fill': `${countryCode ? budgetPct : 0}%` }}
+                  disabled={!readyForBudget}
+                  style={{ '--fill': `${readyForBudget ? budgetPct : 0}%` }}
                 />
               </div>
-              {countryCode && <p className="pref-microcopy">Range tuned to {countryName}'s typical trip cost.</p>}
+              {readyForBudget ? (
+                <p className="pref-microcopy">Range tuned to {countryName}'s typical trip cost for {groupSize || 1} {Number(groupSize) === 1 ? 'traveller' : 'travellers'} by {travelMode.toLowerCase()}.</p>
+              ) : (
+                <p className="pref-microcopy">Pick a country, who's coming, and how you're travelling to unlock this.</p>
+              )}
             </div>
 
             <div className="pref-field">
@@ -513,7 +623,7 @@ export default function PreferenceForm() {
             <div className={`budget-insight budget-insight-${tripInsight.band}`}>
               <div className="budget-insight-main">
                 <div>
-                  <span className="budget-kicker">Rough idea for {tripInsight.destination}</span>
+                  <span className="budget-kicker">Rough idea for {tripInsight.destination} · {tripInsight.groupSize} {tripInsight.groupSize === 1 ? 'traveller' : 'travellers'}</span>
                   <h3>{tripInsight.tierLabel} trip estimate</h3>
                 </div>
                 <div className="budget-total">
@@ -530,7 +640,7 @@ export default function PreferenceForm() {
                 </div>
                 <div className="insight-mini">
                   <Wallet size={15} strokeWidth={2.3} />
-                  <span>Daily spend</span>
+                  <span>Stay & food</span>
                   <strong>{tripInsight.dailyRange}</strong>
                 </div>
                 <div className="insight-mini">
@@ -565,32 +675,6 @@ export default function PreferenceForm() {
               ))}
             </div>
           </div>
-        </Section>
-
-        <Section icon={Plane} label="Getting there">
-          <div className="chip-row">
-            {TRAVEL_MODES.map(({ label, icon: Icon }) => (
-              <button type="button" key={label} className={`chip ${travelMode === label ? 'chip-active' : ''}`} onClick={() => setTravelMode(label)}>
-                <Icon size={14} strokeWidth={2} />{label}
-              </button>
-            ))}
-          </div>
-        </Section>
-
-        <Section icon={Users} label="Who's coming">
-          <div className="chip-row">
-            {GROUP_TYPES.map(({ label, icon: Icon, suggested }) => (
-              <button type="button" key={label} className={`chip ${groupType === label ? 'chip-active' : ''}`} onClick={() => handleGroupType(label, suggested)}>
-                <Icon size={14} strokeWidth={2} />{label}
-              </button>
-            ))}
-          </div>
-          {groupType && groupType !== 'Solo' && (
-            <div className="group-size-row">
-              <label htmlFor="group-size">Number of travellers</label>
-              <input id="group-size" type="number" min="2" max="40" value={groupSize} onChange={(e) => setGroupSize(e.target.value)} className="group-size-input" />
-            </div>
-          )}
         </Section>
 
         <Section icon={History} label="Been there before?" hint="(optional)">

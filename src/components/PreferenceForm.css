@@ -1050,3 +1050,48 @@
     grid-template-columns: 1fr;
   }
 }
+
+.pf-from-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.pf-from-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 4px;
+  font-size: 11.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: rgba(247, 245, 240, 0.55);
+  white-space: nowrap;
+}
+
+.pf-from-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255, 179, 71, 0.16);
+  border: 1px solid rgba(255, 179, 71, 0.45);
+  color: var(--dawn);
+  font-size: 12.5px;
+  font-weight: 700;
+}
+
+.pf-from-empty {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--dawn);
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(255, 179, 71, 0.5);
+}
+
+.pf-from-empty:hover {
+  color: var(--coral);
+}
