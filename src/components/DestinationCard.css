@@ -1,160 +1,263 @@
-.card {
-  background: #ffffff;
-  border-radius: 18px;
+/* ============================================================
+   DestinationCard — dark glass card matching Home.css tokens
+   (--teal, --dawn, --coral, --midnight, --font-display)
+   ============================================================ */
+
+.destination-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 22px;
   overflow: hidden;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
-  transition: all 0.3s ease;
+
+  background: rgba(15, 27, 45, 0.55);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+  transition:
+    transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.4s ease;
 }
 
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+.destination-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(79, 209, 197, 0.4);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(79, 209, 197, 0.15);
 }
 
 /* Image */
 
-.card-image {
+.card-image-wrap {
   position: relative;
+  height: 210px;
+  overflow: hidden;
 }
 
-.card-image img {
+.card-image {
   width: 100%;
-  height: 220px;
+  height: 100%;
   object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Favourite Button */
+.destination-card:hover .card-image {
+  transform: scale(1.08);
+}
 
-.fav-btn {
+.card-image-wrap::after {
+  content: "";
   position: absolute;
-  top: 15px;
-  right: 15px;
-  width: 42px;
-  height: 42px;
-  border: none;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.95);
-  cursor: pointer;
-  font-size: 20px;
-  transition: 0.3s;
-}
-
-.fav-btn:hover {
-  transform: scale(1.1);
-}
-
-/* Card Content */
-
-.card-content {
-  padding: 18px;
-}
-
-.card h2 {
-  margin: 0;
-  font-size: 24px;
-  color: #1d3557;
-}
-
-.price {
-  margin: 12px 0;
-  font-size: 22px;
-  font-weight: bold;
-  color: #2563eb;
-}
-
-/* Badges */
-
-.badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 18px 0;
-}
-
-.badges span {
-  padding: 7px 14px;
-  border-radius: 30px;
-  font-size: 13px;
-  font-weight: 600;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(15, 27, 45, 0) 40%, rgba(15, 27, 45, 0.92) 100%);
 }
 
 .match-badge {
-  background: #d1fae5;
-  color: #065f46;
-}
-
-.weather-badge {
-  background: #dbeafe;
-  color: #1e40af;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+  background: linear-gradient(135deg, var(--teal), #2f8f86);
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  box-shadow: 0 6px 16px rgba(79, 209, 197, 0.4);
 }
 
 .crowd-badge {
-  background: #ede9fe;
-  color: #5b21b6;
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+  background: rgba(15, 27, 45, 0.55);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 999px;
 }
 
-/* Explore Button */
+/* Body */
 
-.explore-btn {
-  width: 100%;
-  padding: 15px 24px;
-  margin-top: 18px;
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 22px;
+}
 
-  border: none;
-  border-radius: 999px;
-
-  background: linear-gradient(135deg, #ff7b72, #ffb347);
-  color: #ffffff;
-
-  font-size: 16px;
-  font-weight: 700;
-  letter-spacing: 0.4px;
-
-  cursor: pointer;
-  transition: all 0.35s ease;
-
-  box-shadow:
-    0 8px 22px rgba(255, 123, 114, 0.35),
-    0 3px 8px rgba(0,0,0,0.12);
-
+.card-title-row {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 10px;
 }
 
-.explore-btn::after {
-  content: "➜";
+.card-title-row h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.01em;
+}
+
+.card-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--dawn);
+  white-space: nowrap;
+}
+
+.card-rating::before {
+  content: "★";
+  font-size: 14px;
+}
+
+.card-location {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+}
+
+.card-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.55);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.card-meta .dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.card-footer {
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.card-price {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.price-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.price-value {
+  font-family: var(--font-display);
   font-size: 18px;
-  transition: transform 0.3s ease;
+  font-weight: 800;
+  color: #fff;
+}
+
+/* Explore button — signature gradient with a shimmer sweep on hover */
+
+.explore-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 20px;
+  border: none;
+  border-radius: 999px;
+  overflow: hidden;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, var(--dawn), var(--coral));
+  background-size: 160% 160%;
+  background-position: 0% 0%;
+  color: var(--midnight, #0f1b2d);
+  font-size: 13.5px;
+  font-weight: 700;
+  white-space: nowrap;
+
+  box-shadow: 0 10px 24px rgba(255, 111, 94, 0.35);
+  transition:
+    transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.3s ease,
+    background-position 0.5s ease;
+}
+
+.explore-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.55), transparent);
+  transform: translateX(-120%);
+  transition: transform 0.6s ease;
 }
 
 .explore-btn:hover {
-  transform: translateY(-4px) scale(1.02);
-  box-shadow:
-    0 14px 30px rgba(255,123,114,0.45),
-    0 8px 18px rgba(0,0,0,0.15);
-
-  background: linear-gradient(135deg, #ff6b6b, #ff9f43);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 16px 34px rgba(255, 111, 94, 0.5);
+  background-position: 100% 0%;
 }
 
-.explore-btn:hover::after {
-  transform: translateX(6px);
+.explore-btn:hover::before {
+  transform: translateX(120%);
 }
 
 .explore-btn:active {
-  transform: scale(0.98);
+  transform: translateY(0) scale(0.97);
 }
-.country-name{
-    margin:6px 0 12px;
-    color:#64748b;
-    font-size:15px;
-    font-weight:500;
+
+.btn-arrow {
+  position: relative;
+  transition: transform 0.3s ease;
 }
-.destination-card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 15px;
-  display: block;
+
+.explore-btn:hover .btn-arrow {
+  transform: translateX(3px);
+}
+
+/* Responsive */
+
+@media (max-width: 480px) {
+  .card-image-wrap {
+    height: 180px;
+  }
+
+  .card-footer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .explore-btn {
+    justify-content: center;
+  }
 }
