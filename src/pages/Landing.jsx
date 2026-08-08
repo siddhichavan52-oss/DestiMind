@@ -6,6 +6,76 @@ import {
 } from 'lucide-react';
 import './Landing.css';
 
+// Nine mood-based scenes across the day, keyed to IST regardless of the
+// visitor's own device timezone. Swap any of these Unsplash URLs / picsum
+// placeholders for your own art whenever you like — the keys are what matter.
+const HERO_PHOTOS = {
+  midnight: 'https://picsum.photos/seed/destimind-midnight/1920/1080',
+  dawn: 'https://picsum.photos/seed/destimind-dawn/1920/1080',
+  morning: 'https://images.unsplash.com/photo-1764694875522-4c17b2d7c26b?fm=jpg&q=80&w=1920&auto=format&fit=crop',
+  afternoon: 'https://images.unsplash.com/photo-1731925116590-c27d25490ea0?fm=jpg&q=80&w=1920&auto=format&fit=crop',
+  lateAfternoon: 'https://picsum.photos/seed/destimind-late-afternoon/1920/1080',
+  earlyEvening: 'https://images.unsplash.com/photo-1784570269737-21da4658a609?fm=jpg&q=80&w=1920&auto=format&fit=crop',
+  midEvening: 'https://picsum.photos/seed/destimind-mid-evening/1920/1080',
+  lateEvening: 'https://picsum.photos/seed/destimind-late-evening/1920/1080',
+  night: 'https://images.unsplash.com/photo-1768590238617-1753353cee60?fm=jpg&q=80&w=1920&auto=format&fit=crop',
+};
+
+// Ordered boundaries covering a full 24h day. Each entry's `until` is the
+// hour+minute (in IST, 24h clock) where that scene ends and the next begins.
+const DAYPART_BOUNDARIES = [
+  { key: 'midnight', until: [4, 0] },        // 00:00 – 03:59
+  { key: 'dawn', until: [6, 0] },             // 04:00 – 05:59
+  { key: 'morning', until: [10, 0] },         // 06:00 – 09:59
+  { key: 'afternoon', until: [14, 0] },       // 10:00 – 13:59
+  { key: 'lateAfternoon', until: [17, 0] },   // 14:00 – 16:59
+  { key: 'earlyEvening', until: [18, 30] },   // 17:00 – 18:29
+  { key: 'midEvening', until: [20, 0] },      // 18:30 – 19:59
+  { key: 'lateEvening', until: [22, 0] },     // 20:00 – 21:59
+  { key: 'night', until: [24, 0] },           // 22:00 – 23:59
+];
+
+/** Reads the current wall-clock time in IST (Asia/Kolkata), independent of
+ * whatever timezone the visitor's browser/device is actually set to. */
+function getISTTime() {
+  const parts = new Intl.DateTimeFormat('en-GB', {
+    timeZone: 'Asia/Kolkata',
+    hour: 'numeric',
+    minute: 'numeric',
+    hour12: false,
+  }).formatToParts(new Date());
+
+  const hour = Number(parts.find((p) => p.type === 'hour')?.value ?? 0) % 24;
+  const minute = Number(parts.find((p) => p.type === 'minute')?.value ?? 0);
+  return { hour, minute };
+}
+
+function getDaypart({ hour, minute }) {
+  const minutesNow = hour * 60 + minute;
+
+  for (const { key, until } of DAYPART_BOUNDARIES) {
+    const untilMinutes = until[0] * 60 + until[1];
+    if (minutesNow < untilMinutes) return key;
+  }
+
+  return 'midnight';
+}
+
+/** Re-evaluates the IST daypart every minute so the hero scene updates live
+ * if someone leaves the tab open across a boundary, without needing a refresh. */
+function useISTDaypart() {
+  const [daypart, setDaypart] = useState(() => getDaypart(getISTTime()));
+
+  useEffect(() => {
+    const tick = () => setDaypart(getDaypart(getISTTime()));
+    tick();
+    const id = setInterval(tick, 60 * 1000);
+    return () => clearInterval(id);
+  }, []);
+
+  return daypart;
+}
+
 const steps = [
   {
     icon: SlidersHorizontal,
@@ -140,6 +210,7 @@ export default function Landing() {
   const [stepsRef, stepsVisible] = useReveal();
   const [whyRef, whyVisible] = useReveal();
   const [trendingRef, trendingVisible] = useReveal();
+  const daypart = useISTDaypart();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -160,7 +231,7 @@ export default function Landing() {
         </nav>
       </header>
 
-      <section className="hero">
+      <section className="hero" style={{ '--hero-img': `url(${HERO_PHOTOS[daypart]})` }}>
         <div className="hero-copy">
           <span className="eyebrow">
             <Sparkles size={14} strokeWidth={2} />

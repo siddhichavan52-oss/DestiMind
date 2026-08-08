@@ -14,6 +14,7 @@
   justify-content: space-between;
   padding: 28px 6vw;
   background: transparent;
+  -webkit-backdrop-filter: blur(0px);
   backdrop-filter: blur(0px);
   transition: background 0.35s ease, padding 0.35s ease, box-shadow 0.35s ease, backdrop-filter 0.35s ease;
 }
@@ -21,6 +22,7 @@
 .nav.scrolled {
   padding: 16px 6vw;
   background: rgba(15, 27, 45, 0.72);
+  -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
   box-shadow: 0 1px 0 rgba(247, 245, 240, 0.08);
 }
@@ -58,6 +60,7 @@
   padding: 8px 16px;
   border-radius: 999px;
   background: rgba(15, 27, 45, 0.35);
+  -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
 }
@@ -79,9 +82,10 @@
   background-image:
     radial-gradient(ellipse 720px 480px at center, rgba(15,27,45,0.6) 0%, rgba(15,27,45,0.35) 45%, rgba(15,27,45,0.05) 75%, transparent 100%),
     linear-gradient(180deg, rgba(15,27,45,0.55) 0%, rgba(15,27,45,0.30) 40%, rgba(15,27,45,0.20) 70%, rgba(15,27,45,0.45) 100%),
-    url('https://images.unsplash.com/photo-1471115853179-bb1d604434e0?auto=format&fit=crop&w=1800&q=70');
+    var(--hero-img);
   background-size: cover;
   background-position: center;
+  transition: background-image 0.8s ease;
 }
 
 .hero-copy {
@@ -103,6 +107,7 @@
   color: var(--dawn);
   background: rgba(15, 27, 45, 0.55);
   border: 1px solid rgba(255, 179, 71, 0.55);
+  -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   padding: 6px 12px;
   border-radius: 999px;
@@ -179,6 +184,7 @@
   border: 1px solid rgba(247, 245, 240, 0.4);
   border-radius: 999px;
   padding: 12px 20px;
+  -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
   text-shadow: 0 1px 8px rgba(15, 27, 45, 0.5);
   transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
