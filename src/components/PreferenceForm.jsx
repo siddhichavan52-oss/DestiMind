@@ -6,7 +6,7 @@ import {
   Mountain, Waves, Landmark, Music, Trees, UtensilsCrossed,
   Wallet, ArrowRight, Check, Plane, TrainFront,
   Car, Ship, Users, User, Heart, UsersRound, History, X, Plus, Lock, Stamp,
-  CalendarDays,
+  CalendarDays, Calendar, Briefcase, BedDouble, ShieldCheck,
 } from 'lucide-react';
 import { getSession } from '../utils/auth';
 import { getProfile, PROFILE_UPDATED_EVENT } from '../utils/profile';
@@ -55,6 +55,25 @@ const TRAVEL_MODE_COST = {
 
 function formatRs(value) {
   return `Rs. ${Math.round(value).toLocaleString('en-IN')}`;
+}
+
+// Inclusive day-count between two yyyy-mm-dd date strings (trip length = nights + 1 travel day).
+function daysBetween(start, end) {
+  if (!start || !end) return null;
+  const startDate = new Date(`${start}T00:00:00`);
+  const endDate = new Date(`${end}T00:00:00`);
+  const diff = Math.round((endDate - startDate) / (1000 * 60 * 60 * 24));
+  return diff >= 0 ? diff + 1 : null;
+}
+
+function formatDateLabel(value) {
+  if (!value) return '';
+  const d = new Date(`${value}T00:00:00`);
+  return d.toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
+}
+
+function todayISO() {
+  return new Date().toISOString().slice(0, 10);
 }
 
 // budget is treated as the TOTAL trip budget spread across the whole group,
@@ -149,6 +168,22 @@ const GROUP_TYPES = [
 ];
 
 const PLACE_SUGGESTIONS = ['Goa', 'Bali', 'Dubai', 'Paris', 'Bangkok', 'Maldives', 'Manali', 'Singapore'];
+
+const TRIP_PURPOSES = [
+  { label: 'Leisure', icon: Palmtree },
+  { label: 'Honeymoon', icon: Heart },
+  { label: 'Business', icon: Briefcase },
+  { label: 'Adventure', icon: Mountain },
+  { label: 'Celebration', icon: Sparkles },
+];
+
+const STAY_OPTIONS = [
+  { label: 'Hotel', icon: BedDouble },
+  { label: 'Resort', icon: Palmtree },
+  { label: 'Hostel / Budget', icon: Users },
+  { label: 'Homestay / Airbnb', icon: MapPin },
+  { label: 'Flexible', icon: Sparkles },
+];
 
 const WAYPOINTS = [
   { key: 'continent', label: 'Continent', icon: Globe2, x: 22, y: 64, color: '#4FD1C5' },
@@ -247,15 +282,20 @@ export default function PreferenceForm() {
 
   const [weather, setWeather] = useState('');
   const [vibes, setVibes] = useState([]);
-  const [budgetRange, setBudgetRange] = useState(TIER_RANGES.mid);
+  const [baseRange, setBaseRange] = useState(TIER_RANGES.mid);
   const [budget, setBudget] = useState(TIER_RANGES.mid.default);
   const [days, setDays] = useState(5);
+  const [startDate, setStartDate] = useState('');
+  const [endDate, setEndDate] = useState('');
+  const [dateError, setDateError] = useState('');
 
   const [travelMode, setTravelMode] = useState('');
   const [groupType, setGroupType] = useState('');
   const [groupSize, setGroupSize] = useState('');
   const [placesVisited, setPlacesVisited] = useState([]);
   const [placeInput, setPlaceInput] = useState('');
+  const [tripPurpose, setTripPurpose] = useState('');
+  const [stayPreference, setStayPreference] = useState('');
 
   const [error, setError] = useState('');
   const [searching, setSearching] = useState(false);
@@ -309,8 +349,29 @@ export default function PreferenceForm() {
     setStateCode('');
     const tier = COUNTRY_TIER[code] || 'mid';
     const range = TIER_RANGES[tier];
-    setBudgetRange(range);
+    setBaseRange(range);
     setBudget(range.default);
+  }
+
+  // Selecting dates auto-computes the trip length instead of the user
+  // guessing it, and flags an obviously invalid range.
+  function handleStartDate(value) {
+    setStartDate(value);
+    if (endDate && value > endDate) {
+      setEndDate('');
+    }
+    setDateError('');
+  }
+
+  function handleEndDate(value) {
+    if (startDate && value < startDate) {
+      setDateError('Return date can\'t be before your departure date.');
+      return;
+    }
+    setDateError('');
+    setEndDate(value);
+    const computed = daysBetween(startDate, value);
+    if (computed) setDays(Math.min(computed, 30));
   }
 
   function toggleVibe(vibe) {
@@ -364,6 +425,34 @@ export default function PreferenceForm() {
   // the group size, and the mode of travel — all three shape the estimate.
   const readyForBudget = !!(countryCode && groupType && travelMode);
 
+  const groupSizeNum = Math.max(Number(groupSize) || 1, 1);
+
+  // Once a travel mode is picked, its average ticket price (round trip, per
+  // person) is reserved off the top of the budget range — the slider can no
+  // longer drop below what getting there actually costs.
+  const transportFloor = travelMode
+    ? (TRAVEL_MODE_COST[travelMode] ?? TRAVEL_MODE_COST.Flexible) * groupSizeNum
+    : 0;
+
+  const budgetRange = useMemo(() => {
+    const min = baseRange.min + transportFloor;
+    const max = Math.max(baseRange.max, min + baseRange.step);
+    return { ...baseRange, min, max, default: Math.max(baseRange.default, min) };
+  }, [baseRange, transportFloor]);
+
+  // Keep the current slider value inside whatever range the transport lock
+  // just produced, so it never gets stranded below the new floor.
+  useEffect(() => {
+    setBudget((prev) => {
+      if (prev < budgetRange.min) return budgetRange.min;
+      if (prev > budgetRange.max) return budgetRange.max;
+      return prev;
+    });
+  }, [budgetRange.min, budgetRange.max]);
+
+  const tripLength = startDate && endDate ? daysBetween(startDate, endDate) : null;
+  const datesConfirmed = !!(startDate && endDate && tripLength);
+
   function handleSubmit(e) {
     e.preventDefault();
     if (!continent || !countryCode) {
@@ -386,6 +475,11 @@ export default function PreferenceForm() {
       setConfirmed(false);
       return;
     }
+    if (!startDate || !endDate) {
+      setError('Please choose your travel start and end dates.');
+      setConfirmed(false);
+      return;
+    }
     setError('');
     setSearching(true);
     setConfirmed(false);
@@ -402,10 +496,15 @@ export default function PreferenceForm() {
       vibes,
       budget,
       days,
+      startDate,
+      endDate,
       travelMode,
+      transportBudgetLocked: transportFloor,
       groupType,
       groupSize: groupSize ? Number(groupSize) : null,
       placesVisitedBefore: placesVisited,
+      tripPurpose: tripPurpose || null,
+      stayPreference: stayPreference || null,
     };
     // TODO: once backend is ready, send `preferences` to the API and
     // use the response instead of (or alongside) the local preferences
@@ -444,6 +543,7 @@ export default function PreferenceForm() {
   }), [countryCode, countryName, stateName, budget, days, groupType, groupSize, travelMode]);
   const summaryRows = [
     { key: 'where', icon: MapPin, label: 'Where', value: countryName ? `${countryName}${stateName ? `, ${stateName}` : ''}` : null },
+    { key: 'when', icon: Calendar, label: 'When', value: datesConfirmed ? `${formatDateLabel(startDate)} · ${tripLength}d` : null },
     { key: 'group', icon: Users, label: 'Group', value: groupType ? `${groupType}${groupSize ? ` · ${groupSize}` : ''}` : null },
     { key: 'mode', icon: Plane, label: 'Mode', value: travelMode || null },
     { key: 'budget', icon: Wallet, label: 'Budget', value: readyForBudget ? `₹${budget.toLocaleString()}` : null },
@@ -558,6 +658,37 @@ export default function PreferenceForm() {
           )}
         </Section>
 
+        <Section icon={Calendar} label="When are you travelling">
+          <div className="pref-grid">
+            <div className="pref-field">
+              <label className="pref-label" htmlFor="trip-start">Start date</label>
+              <input
+                id="trip-start" type="date" className="pref-select pref-date"
+                min={todayISO()} value={startDate}
+                onChange={(e) => handleStartDate(e.target.value)}
+              />
+            </div>
+            <div className="pref-field">
+              <label className="pref-label" htmlFor="trip-end">End date</label>
+              <input
+                id="trip-end" type="date" className="pref-select pref-date"
+                min={startDate || todayISO()} value={endDate}
+                onChange={(e) => handleEndDate(e.target.value)}
+                disabled={!startDate}
+              />
+            </div>
+          </div>
+          {dateError && <p className="pref-error">{dateError}</p>}
+          {datesConfirmed ? (
+            <p className="pref-microcopy pref-dates-confirmed">
+              <CalendarDays size={13} strokeWidth={2.25} />
+              {formatDateLabel(startDate)} → {formatDateLabel(endDate)} · auto-calculated to <strong>{tripLength} {tripLength === 1 ? 'day' : 'days'}</strong>
+            </p>
+          ) : (
+            <p className="pref-microcopy">Pick your start and end date — we'll work out the trip length for you.</p>
+          )}
+        </Section>
+
         <Section icon={Plane} label="Getting there">
           <div className="chip-row">
             {TRAVEL_MODES.map(({ label, icon: Icon }) => (
@@ -566,6 +697,12 @@ export default function PreferenceForm() {
               </button>
             ))}
           </div>
+          {travelMode && (
+            <p className="pref-microcopy pref-transport-lock">
+              <Lock size={12} strokeWidth={2.25} />
+              ~{formatRs(TRAVEL_MODE_COST[travelMode] ?? TRAVEL_MODE_COST.Flexible)}/person avg. {travelMode.toLowerCase()} fare · {formatRs(transportFloor)} reserved for {groupSizeNum} {groupSizeNum === 1 ? 'traveller' : 'travellers'} in your budget floor below.
+            </p>
+          )}
         </Section>
 
         <Section icon={Wallet} label="Budget & length">
@@ -605,7 +742,10 @@ export default function PreferenceForm() {
             <div className="pref-field">
               <label className="pref-label">
                 Trip length
-                <span className="pref-value">{days} {days === 1 ? 'day' : 'days'}</span>
+                <span className="pref-value">
+                  {datesConfirmed && <CalendarDays size={11} strokeWidth={2.25} />}
+                  {days} {days === 1 ? 'day' : 'days'}
+                </span>
               </label>
               <div className="slider-wrap">
                 <span className="slider-bubble" style={{ left: `${daysPct}%` }}>{days}d</span>
@@ -613,9 +753,15 @@ export default function PreferenceForm() {
                   type="range" min="1" max="30" value={days}
                   onChange={(e) => setDays(Number(e.target.value))}
                   className="pref-slider"
+                  disabled={datesConfirmed}
                   style={{ '--fill': `${daysPct}%` }}
                 />
               </div>
+              <p className="pref-microcopy">
+                {datesConfirmed
+                  ? 'Auto-calculated from your travel dates above.'
+                  : 'Set your travel dates above, or drag this manually.'}
+              </p>
             </div>
           </div>
 
@@ -644,6 +790,11 @@ export default function PreferenceForm() {
                   <strong>{tripInsight.dailyRange}</strong>
                 </div>
                 <div className="insight-mini">
+                  <ShieldCheck size={15} strokeWidth={2.3} />
+                  <span>Transport (locked)</span>
+                  <strong>{tripInsight.transportEstimate}</strong>
+                </div>
+                <div className="insight-mini">
                   <CalendarDays size={15} strokeWidth={2.3} />
                   <span>Budget fit</span>
                   <strong>{tripInsight.bandLabel}</strong>
@@ -670,6 +821,29 @@ export default function PreferenceForm() {
             <div className="chip-row">
               {VIBE_OPTIONS.map(({ label, icon: Icon }) => (
                 <button type="button" key={label} className={`chip ${vibes.includes(label) ? 'chip-active' : ''}`} onClick={() => toggleVibe(label)}>
+                  <Icon size={14} strokeWidth={2} />{label}
+                </button>
+              ))}
+            </div>
+          </div>
+        </Section>
+
+        <Section icon={Briefcase} label="A bit more about the trip" hint="(optional)">
+          <div className="pref-field">
+            <label className="pref-label pref-label-sub">What's this trip for?</label>
+            <div className="chip-row">
+              {TRIP_PURPOSES.map(({ label, icon: Icon }) => (
+                <button type="button" key={label} className={`chip ${tripPurpose === label ? 'chip-active' : ''}`} onClick={() => setTripPurpose(tripPurpose === label ? '' : label)}>
+                  <Icon size={14} strokeWidth={2} />{label}
+                </button>
+              ))}
+            </div>
+          </div>
+          <div className="pref-field">
+            <label className="pref-label pref-label-sub">Where would you like to stay?</label>
+            <div className="chip-row">
+              {STAY_OPTIONS.map(({ label, icon: Icon }) => (
+                <button type="button" key={label} className={`chip ${stayPreference === label ? 'chip-active' : ''}`} onClick={() => setStayPreference(stayPreference === label ? '' : label)}>
                   <Icon size={14} strokeWidth={2} />{label}
                 </button>
               ))}
