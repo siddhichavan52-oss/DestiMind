@@ -1,6 +1,6 @@
 import { useMemo, useState, useEffect, useCallback, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Country, State } from 'country-state-city';
+import { State, City } from 'country-state-city';
 import {
   MapPin, Globe2, Sun, Snowflake, CloudSun, Palmtree, Sparkles,
   Mountain, Waves, Landmark, Music, Trees, UtensilsCrossed,
@@ -12,14 +12,10 @@ import { getSession } from '../utils/auth';
 import { getProfile, PROFILE_UPDATED_EVENT } from '../utils/profile';
 import './PreferenceForm.css';
 
-const CONTINENTS = [
-  { label: 'Europe', codes: ['FR', 'IT', 'ES', 'CH', 'GR', 'DE', 'PT', 'GB', 'NL', 'IS'] },
-  { label: 'Asia', codes: ['IN', 'JP', 'TH', 'ID', 'VN', 'AE', 'SG', 'LK', 'MV', 'CN'] },
-  { label: 'Africa', codes: ['ZA', 'KE', 'MA', 'EG', 'TZ', 'MU', 'NA'] },
-  { label: 'Oceania', codes: ['AU', 'NZ', 'FJ', 'PF'] },
-  { label: 'South America', codes: ['BR', 'AR', 'PE', 'CL', 'CO', 'EC'] },
-  { label: 'North America', codes: ['US', 'CA', 'MX', 'CU', 'CR'] },
-];
+// DestiMind is India-only for now, so the destination country is fixed
+// and the picker below only asks for state (required) and city (optional).
+const COUNTRY_CODE = 'IN';
+const COUNTRY_NAME = 'India';
 
 const COUNTRY_TIER = {
   IN: 'value', TH: 'value', VN: 'value', ID: 'value', LK: 'value', MA: 'value',
@@ -186,11 +182,10 @@ const STAY_OPTIONS = [
 ];
 
 const WAYPOINTS = [
-  { key: 'continent', label: 'Continent', icon: Globe2, x: 22, y: 64, color: '#4FD1C5' },
-  { key: 'country', label: 'Country', icon: MapPin, x: 104, y: 24, color: '#7BCDBA' },
-  { key: 'weather', label: 'Weather', icon: Sun, x: 186, y: 60, color: '#FFB347' },
-  { key: 'travelMode', label: 'Mode', icon: Plane, x: 268, y: 22, color: '#FF9A63' },
-  { key: 'groupType', label: 'Group', icon: Users, x: 344, y: 56, color: '#FF6F5E' },
+  { key: 'state', label: 'State', icon: MapPin, x: 22, y: 64, color: '#7BCDBA' },
+  { key: 'weather', label: 'Weather', icon: Sun, x: 129, y: 24, color: '#FFB347' },
+  { key: 'travelMode', label: 'Mode', icon: Plane, x: 236, y: 60, color: '#FF9A63' },
+  { key: 'groupType', label: 'Group', icon: Users, x: 344, y: 22, color: '#FF6F5E' },
 ];
 
 function arcPath(a, b) {
@@ -276,15 +271,16 @@ function Section({ icon: Icon, label, hint, children }) {
 }
 
 export default function PreferenceForm() {
-  const [continent, setContinent] = useState('');
-  const [countryCode, setCountryCode] = useState('');
+  const countryCode = COUNTRY_CODE;
   const [stateCode, setStateCode] = useState('');
+  const [cityName, setCityName] = useState('');
 
   const [weather, setWeather] = useState('');
   const [vibes, setVibes] = useState([]);
-  const [baseRange, setBaseRange] = useState(TIER_RANGES.mid);
-  const [budget, setBudget] = useState(TIER_RANGES.mid.default);
-  const [days, setDays] = useState(5);
+  const indiaTier = COUNTRY_TIER[COUNTRY_CODE] || 'mid';
+  const [baseRange, setBaseRange] = useState(TIER_RANGES[indiaTier]);
+  const [budget, setBudget] = useState(TIER_RANGES[indiaTier].default);
+  const [days, setDays] = useState(0);
   const [startDate, setStartDate] = useState('');
   const [endDate, setEndDate] = useState('');
   const [dateError, setDateError] = useState('');
@@ -324,33 +320,18 @@ export default function PreferenceForm() {
     ? [homeProfile.city, homeProfile.state, homeProfile.country].filter(Boolean).join(', ')
     : '';
 
-  const countryOptions = useMemo(() => {
-    const active = CONTINENTS.find((c) => c.label === continent);
-    if (!active) return [];
-    return active.codes
-      .map((code) => Country.getCountryByCode(code))
-      .filter(Boolean)
-      .sort((a, b) => a.name.localeCompare(b.name));
-  }, [continent]);
-
   const stateOptions = useMemo(() => {
-    if (!countryCode) return [];
     return State.getStatesOfCountry(countryCode).sort((a, b) => a.name.localeCompare(b.name));
   }, [countryCode]);
 
-  function handleContinentChange(value) {
-    setContinent(value);
-    setCountryCode('');
-    setStateCode('');
-  }
+  const cityOptions = useMemo(() => {
+    if (!stateCode) return [];
+    return City.getCitiesOfState(countryCode, stateCode).sort((a, b) => a.name.localeCompare(b.name));
+  }, [countryCode, stateCode]);
 
-  function handleCountryChange(code) {
-    setCountryCode(code);
-    setStateCode('');
-    const tier = COUNTRY_TIER[code] || 'mid';
-    const range = TIER_RANGES[tier];
-    setBaseRange(range);
-    setBudget(range.default);
+  function handleStateChange(code) {
+    setStateCode(code);
+    setCityName('');
   }
 
   // Selecting dates auto-computes the trip length instead of the user
@@ -359,7 +340,9 @@ export default function PreferenceForm() {
     setStartDate(value);
     if (endDate && value > endDate) {
       setEndDate('');
+      setDays(0);
     }
+    if (!value) setDays(0);
     setDateError('');
   }
 
@@ -370,8 +353,12 @@ export default function PreferenceForm() {
     }
     setDateError('');
     setEndDate(value);
+    if (!value) {
+      setDays(0);
+      return;
+    }
     const computed = daysBetween(startDate, value);
-    if (computed) setDays(Math.min(computed, 30));
+    setDays(computed ? Math.min(computed, 30) : 0);
   }
 
   function toggleVibe(vibe) {
@@ -405,8 +392,7 @@ export default function PreferenceForm() {
   }
 
   const filled = {
-    continent: !!continent,
-    country: !!countryCode,
+    state: !!stateCode,
     weather: !!weather,
     travelMode: !!travelMode,
     groupType: !!groupType,
@@ -418,8 +404,9 @@ export default function PreferenceForm() {
     base *= Math.pow(0.55, progress);
     if (vibes.length > 1) base *= Math.pow(0.85, vibes.length - 1);
     if (stateCode) base *= 0.6;
+    if (cityName) base *= 0.5;
     return Math.max(3, Math.round(base));
-  }, [progress, vibes.length, stateCode]);
+  }, [progress, vibes.length, stateCode, cityName]);
 
   // Budget only becomes meaningful once we know the destination tier,
   // the group size, and the mode of travel — all three shape the estimate.
@@ -455,8 +442,8 @@ export default function PreferenceForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    if (!continent || !countryCode) {
-      setError('Please pick a continent, then a country.');
+    if (!stateCode) {
+      setError('Please pick a state.');
       setConfirmed(false);
       return;
     }
@@ -484,14 +471,14 @@ export default function PreferenceForm() {
     setSearching(true);
     setConfirmed(false);
 
-    const countryName = Country.getCountryByCode(countryCode)?.name || '';
+    const countryName = COUNTRY_NAME;
     const stateName = stateCode ? State.getStateByCodeAndCountry(stateCode, countryCode)?.name || '' : '';
 
     const preferences = {
-      continent,
       country: countryName,
       countryCode,
       state: stateName || null,
+      city: cityName || null,
       weather,
       vibes,
       budget,
@@ -528,8 +515,7 @@ export default function PreferenceForm() {
   }
 
   const budgetPct = ((budget - budgetRange.min) / (budgetRange.max - budgetRange.min)) * 100;
-  const daysPct = ((days - 1) / (30 - 1)) * 100;
-  const countryName = countryCode ? Country.getCountryByCode(countryCode)?.name : '';
+  const countryName = COUNTRY_NAME;
   const stateName = stateCode ? State.getStateByCodeAndCountry(stateCode, countryCode)?.name : '';
   const tripInsight = useMemo(() => buildTripInsight({
     countryCode,
@@ -542,7 +528,7 @@ export default function PreferenceForm() {
     travelMode,
   }), [countryCode, countryName, stateName, budget, days, groupType, groupSize, travelMode]);
   const summaryRows = [
-    { key: 'where', icon: MapPin, label: 'Where', value: countryName ? `${countryName}${stateName ? `, ${stateName}` : ''}` : null },
+    { key: 'where', icon: MapPin, label: 'Where', value: stateName ? `${stateName}${cityName ? `, ${cityName}` : ''}` : null },
     { key: 'when', icon: Calendar, label: 'When', value: datesConfirmed ? `${formatDateLabel(startDate)} · ${tripLength}d` : null },
     { key: 'group', icon: Users, label: 'Group', value: groupType ? `${groupType}${groupSize ? ` · ${groupSize}` : ''}` : null },
     { key: 'mode', icon: Plane, label: 'Mode', value: travelMode || null },
@@ -558,12 +544,12 @@ export default function PreferenceForm() {
         <p className="pf-subtitle">Pick a destination and we'll tune the rest to it.</p>
 
         <div className="pf-estimate-pill">
-          {continent && countryCode
+          {stateCode
             ? <><strong>{estimatedMatches}</strong> destinations match so far</>
-            : 'Pick a continent to see live matches'}
+            : 'Pick a state to see live matches'}
         </div>
 
-        <FlightRoute filled={filled} destCode={countryCode} />
+        <FlightRoute filled={filled} destCode={stateCode || countryCode} />
 
         <div className="pf-summary">
           {summaryRows.map((row) => (
@@ -595,47 +581,36 @@ export default function PreferenceForm() {
             )}
           </div>
 
-          <div className="pref-grid pref-grid-3">
+          <div className="pref-grid">
             <div className="pref-field">
-              <label className="pref-label">Continent</label>
-              <select className="pref-select" value={continent} onChange={(e) => handleContinentChange(e.target.value)}>
-                <option value="">Select a continent</option>
-                {CONTINENTS.map((c) => (
-                  <option key={c.label} value={c.label}>{c.label}</option>
-                ))}
-              </select>
-            </div>
-
-            <div className="pref-field">
-              <label className="pref-label">Country</label>
+              <label className="pref-label">State</label>
               <select
                 className="pref-select"
-                value={countryCode}
-                onChange={(e) => handleCountryChange(e.target.value)}
-                disabled={!continent}
+                value={stateCode}
+                onChange={(e) => handleStateChange(e.target.value)}
               >
-                <option value="">{continent ? 'Select a country' : 'Pick a continent first'}</option>
-                {countryOptions.map((c) => (
-                  <option key={c.isoCode} value={c.isoCode}>{c.flag} {c.name}</option>
+                <option value="">Select a state</option>
+                {stateOptions.map((s) => (
+                  <option key={s.isoCode} value={s.isoCode}>{s.name}</option>
                 ))}
               </select>
             </div>
 
             <div className="pref-field">
               <label className="pref-label">
-                State / Region <span className="pref-hint">(optional)</span>
+                City <span className="pref-hint">(optional)</span>
               </label>
               <select
                 className="pref-select"
-                value={stateCode}
-                onChange={(e) => setStateCode(e.target.value)}
-                disabled={!countryCode || stateOptions.length === 0}
+                value={cityName}
+                onChange={(e) => setCityName(e.target.value)}
+                disabled={!stateCode || cityOptions.length === 0}
               >
                 <option value="">
-                  {!countryCode ? 'Pick a country first' : stateOptions.length === 0 ? 'No states listed' : 'Any / whole country'}
+                  {!stateCode ? 'Pick a state first' : cityOptions.length === 0 ? 'No cities listed' : 'Any city in this state'}
                 </option>
-                {stateOptions.map((s) => (
-                  <option key={s.isoCode} value={s.isoCode}>{s.name}</option>
+                {cityOptions.map((c) => (
+                  <option key={c.name} value={c.name}>{c.name}</option>
                 ))}
               </select>
             </div>
@@ -662,20 +637,26 @@ export default function PreferenceForm() {
           <div className="pref-grid">
             <div className="pref-field">
               <label className="pref-label" htmlFor="trip-start">Start date</label>
-              <input
-                id="trip-start" type="date" className="pref-select pref-date"
-                min={todayISO()} value={startDate}
-                onChange={(e) => handleStartDate(e.target.value)}
-              />
+              <div className="date-input-wrap">
+                <input
+                  id="trip-start" type="date" className="pref-select pref-date"
+                  min={todayISO()} value={startDate}
+                  onChange={(e) => handleStartDate(e.target.value)}
+                />
+                <Calendar size={16} strokeWidth={2} className="date-input-icon" aria-hidden="true" />
+              </div>
             </div>
             <div className="pref-field">
               <label className="pref-label" htmlFor="trip-end">End date</label>
-              <input
-                id="trip-end" type="date" className="pref-select pref-date"
-                min={startDate || todayISO()} value={endDate}
-                onChange={(e) => handleEndDate(e.target.value)}
-                disabled={!startDate}
-              />
+              <div className="date-input-wrap">
+                <input
+                  id="trip-end" type="date" className="pref-select pref-date"
+                  min={startDate || todayISO()} value={endDate}
+                  onChange={(e) => handleEndDate(e.target.value)}
+                  disabled={!startDate}
+                />
+                <Calendar size={16} strokeWidth={2} className="date-input-icon" aria-hidden="true" />
+              </div>
             </div>
           </div>
           {dateError && <p className="pref-error">{dateError}</p>}
@@ -747,20 +728,14 @@ export default function PreferenceForm() {
                   {days} {days === 1 ? 'day' : 'days'}
                 </span>
               </label>
-              <div className="slider-wrap">
-                <span className="slider-bubble" style={{ left: `${daysPct}%` }}>{days}d</span>
-                <input
-                  type="range" min="1" max="30" value={days}
-                  onChange={(e) => setDays(Number(e.target.value))}
-                  className="pref-slider"
-                  disabled={datesConfirmed}
-                  style={{ '--fill': `${daysPct}%` }}
-                />
+              <div className="trip-length-readout">
+                <CalendarDays size={16} strokeWidth={2} />
+                <span>{days} {days === 1 ? 'day' : 'days'}</span>
               </div>
               <p className="pref-microcopy">
                 {datesConfirmed
                   ? 'Auto-calculated from your travel dates above.'
-                  : 'Set your travel dates above, or drag this manually.'}
+                  : 'Set your travel dates above to calculate trip length.'}
               </p>
             </div>
           </div>

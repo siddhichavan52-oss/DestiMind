@@ -63,8 +63,8 @@ export default function Home() {
           Discover the <span className="headline-accent">extraordinary.</span>
         </h1>
         <p className="subhead">
-          Set your continent, weather, budget and vibe below — DestiMind will
-          match you with real destinations in seconds.
+          Set your state, weather, budget and vibe below — DestiMind will
+          match you with real destinations across India in seconds.
         </p>
 
         <PreferenceForm />

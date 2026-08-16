@@ -3632,9 +3632,9 @@ export default function Results() {
 
       <div className="preferences-summary">
 
-        <span>🌍 {preferences.continent}</span>
+        <span>📍 {preferences.state || preferences.country}</span>
 
-        <span>📍 {preferences.country}</span>
+        {preferences.city && <span>🏙 {preferences.city}</span>}
 
         <span>☀ {preferences.weather}</span>
 
