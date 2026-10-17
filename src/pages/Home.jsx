@@ -1,9 +1,48 @@
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Compass } from 'lucide-react';
 import { getSession, logoutUser } from '../utils/auth';
 import './Home.css';
 import PreferenceForm from '../components/PreferenceForm';
+import ThemeToggle from '../components/ThemeToggle';
+
+const PERSONA_PRESETS = [
+  {
+    id: 'techie',
+    emoji: '💻',
+    label: 'Burned-Out Techie',
+    tagline: 'Peaceful hills, quiet stays, digital detox',
+    preset: { weather: 'Cold & Snowy', vibes: ['Relaxation', 'Nature'], groupType: 'Solo', groupSize: '1', travelMode: 'Flexible', tripPurpose: 'Leisure', stayPreference: 'Homestay / Airbnb' },
+  },
+  {
+    id: 'college',
+    emoji: '🎒',
+    label: 'College Squad',
+    tagline: 'Budget thrills, epic road trips, nightlife',
+    preset: { weather: 'Any', vibes: ['Adventure', 'Nightlife'], groupType: 'Friends', groupSize: '5', travelMode: 'Train', tripPurpose: 'Adventure', stayPreference: 'Hostel / Budget' },
+  },
+  {
+    id: 'romantic',
+    emoji: '🌅',
+    label: 'Romantic Escape',
+    tagline: 'Sunsets, cozy resorts, candlelight dinners',
+    preset: { weather: 'Tropical', vibes: ['Relaxation', 'Food'], groupType: 'Couple', groupSize: '2', travelMode: 'Flight', tripPurpose: 'Honeymoon', stayPreference: 'Resort' },
+  },
+  {
+    id: 'family',
+    emoji: '👨‍👩‍👧‍👦',
+    label: 'Family Vacation',
+    tagline: 'Comfortable, kid-friendly, cultural gems',
+    preset: { weather: 'Mild', vibes: ['Culture', 'Nature'], groupType: 'Family', groupSize: '4', travelMode: 'Flexible', tripPurpose: 'Leisure', stayPreference: 'Hotel' },
+  },
+  {
+    id: 'solo',
+    emoji: '🧭',
+    label: 'Solo Explorer',
+    tagline: 'Offbeat trails, local food, new cultures',
+    preset: { weather: 'Any', vibes: ['Adventure', 'Culture', 'Food'], groupType: 'Solo', groupSize: '1', travelMode: 'Train', tripPurpose: 'Adventure', stayPreference: 'Hostel / Budget' },
+  },
+];
 
 
 
@@ -24,6 +63,7 @@ export default function Home() {
   const navigate = useNavigate();
   const session = getSession();
   const daypart = useMemo(() => getDaypart(new Date().getHours()), []);
+  const [activePreset, setActivePreset] = useState(null);
 
   function handleLogout() {
     logoutUser();
@@ -39,6 +79,7 @@ export default function Home() {
         </div>
         <nav className="nav-links">
           <span>Hi, {session?.name?.split(' ')[0] || 'traveller'}</span>
+          <ThemeToggle />
           <div className="profile-menu">
             <Link to="/profile" className="profile-avatar profile-avatar-sm" title="Your profile">
               {session?.name?.[0]?.toUpperCase() || '?'}
@@ -67,7 +108,25 @@ export default function Home() {
           match you with real destinations across India in seconds.
         </p>
 
-        <PreferenceForm />
+        <div className="persona-strip">
+          <p className="persona-strip-label">Not sure where to start? Pick your vibe:</p>
+          <div className="persona-cards">
+            {PERSONA_PRESETS.map((p) => (
+              <button
+                key={p.id}
+                type="button"
+                className={`persona-card ${activePreset === p.id ? 'persona-card-active' : ''}`}
+                onClick={() => setActivePreset(activePreset === p.id ? null : p.id)}
+              >
+                <span className="persona-emoji">{p.emoji}</span>
+                <span className="persona-name">{p.label}</span>
+                <span className="persona-tagline">{p.tagline}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <PreferenceForm preset={activePreset ? PERSONA_PRESETS.find(p => p.id === activePreset)?.preset : null} />
       </section>
     </div>
   );

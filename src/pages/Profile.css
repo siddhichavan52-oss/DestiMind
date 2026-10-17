@@ -113,6 +113,87 @@
   line-height: 1.5;
 }
 
+.favorites-section {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(22, 27, 34, 0.08);
+}
+
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.favorite-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(22, 27, 34, 0.1);
+  background: rgba(79, 209, 197, 0.06);
+  transition: all 0.2s ease;
+}
+
+.favorite-card:hover {
+  border-color: var(--teal);
+  background: rgba(79, 209, 197, 0.1);
+  transform: translateY(-2px);
+}
+
+.favorite-card-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.favorite-card-place {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.favorite-card-location {
+  font-size: 12px;
+  color: var(--mute);
+  margin-bottom: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.favorite-card-meta {
+  display: flex;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--mute);
+}
+
+.favorite-remove-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  border: 1px solid rgba(22, 27, 34, 0.1);
+  background: #fff;
+  color: var(--mute);
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.favorite-remove-btn:hover {
+  border-color: var(--coral);
+  color: var(--coral);
+  background: rgba(255, 111, 94, 0.08);
+}
+
 .profile-form {
   margin-top: 28px;
   display: flex;
