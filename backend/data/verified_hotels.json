@@ -1,0 +1,3487 @@
+{
+  "an-havelock": [
+    {
+      "name": "Havelock Farms Resort",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Tropical Eco Cottage with Garden Balcony",
+      "pricePerNightINR": 3200,
+      "rating": 4.5,
+      "reviewCount": 422,
+      "amenities": [
+        "Free Wi-Fi",
+        "Garden Restaurant",
+        "Snorkeling Desk",
+        "Bicycle Rental",
+        "Ferry Transfer Help"
+      ],
+      "locationHighlight": "Govind Nagar Beach No. 2 · Walk to serene coral reefs",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Barefoot at Havelock",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Nicobari Wooden Cottage under Rainforest Canopy",
+      "pricePerNightINR": 8800,
+      "rating": 4.7,
+      "reviewCount": 680,
+      "amenities": [
+        "Direct Radhanagar Beach Access",
+        "Lounge & Ayurvedic Spa",
+        "Organic Dining",
+        "PADI Scuba Center"
+      ],
+      "locationHighlight": "Radhanagar Beach (Beach No. 7) · Forest path to turquoise ocean",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Taj Exotica Resort & Spa, Andamans",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Grand Luxury Villa with Private Plunge Pool",
+      "pricePerNightINR": 26000,
+      "rating": 4.9,
+      "reviewCount": 890,
+      "amenities": [
+        "Olympic Sized Infinity Pool",
+        "Jiva Spa & Wellness",
+        "Private Beachfront Dining",
+        "Deep-Sea Yacht Charter"
+      ],
+      "locationHighlight": "Radhanagar Beach · 46 acres of pristine mangroves and white sands",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "an-neil": [
+    {
+      "name": "Break Water Resort Neil Island",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Deluxe Island Bamboo Cottage",
+      "pricePerNightINR": 2500,
+      "rating": 4.5,
+      "reviewCount": 310,
+      "amenities": [
+        "Free Wi-Fi",
+        "Fresh Seafood Cafe",
+        "Scooter Rental",
+        "Ferry Pickup"
+      ],
+      "locationHighlight": "Bharatpur Beach area · Walking distance to natural bridge",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Sea Shell Neil Island",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Andaman Lagoon Villa",
+      "pricePerNightINR": 6200,
+      "rating": 4.6,
+      "reviewCount": 490,
+      "amenities": [
+        "Beachfront Dining",
+        "Swimming Pool",
+        "Complimentary Breakfast",
+        "Coral Reef Tours"
+      ],
+      "locationHighlight": "Laxmanpur Beach Sunset Coast",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "TSG Aura Luxury Resort Neil",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Royal Wooden Suite",
+      "pricePerNightINR": 11500,
+      "rating": 4.8,
+      "reviewCount": 380,
+      "amenities": [
+        "Private Beach Walkway",
+        "Spa & Wellness Pavilions",
+        "Multi-Cuisine Deck",
+        "Snorkeling Guides"
+      ],
+      "locationHighlight": "Sitapur Beach · Unmatched sunrise viewpoints",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "ap-vizag": [
+    {
+      "name": "The Park Hotel Visakhapatnam",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Standard Coastal Balcony Room",
+      "pricePerNightINR": 3500,
+      "rating": 4.5,
+      "reviewCount": 580,
+      "amenities": [
+        "Ocean Views",
+        "Free Breakfast",
+        "Outdoor Pool",
+        "Free Wi-Fi"
+      ],
+      "locationHighlight": "Lawson's Bay Beachfront promenade",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Novotel Visakhapatnam Varun Beach",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Executive Sea-Facing Suite",
+      "pricePerNightINR": 6800,
+      "rating": 4.7,
+      "reviewCount": 890,
+      "amenities": [
+        "Infinity Sea Pool",
+        "All-Day Bistro",
+        "Fitness Hub",
+        "Submarine Museum Proximity"
+      ],
+      "locationHighlight": "Ramakrishna Beach Road · Direct Bay of Bengal panoramas",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Radisson Blu Resort Visakhapatnam",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Presidential Ocean Villa",
+      "pricePerNightINR": 10500,
+      "rating": 4.9,
+      "reviewCount": 620,
+      "amenities": [
+        "Private Beachside Lounge",
+        "Luxury Spa",
+        "Gourmet Andhra Dining",
+        "Airport Shuttle"
+      ],
+      "locationHighlight": "Rushikonda Beach · Surrounded by Eastern Ghats and coastline",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "ap-gandikota": [
+    {
+      "name": "Gandikota Haritha Resort (APTDC)",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Standard AC Cottage Room",
+      "pricePerNightINR": 2000,
+      "rating": 4.2,
+      "reviewCount": 410,
+      "amenities": [
+        "Gorge Walking Access",
+        "In-House Canteen",
+        "Free Parking",
+        "Campfire Yard"
+      ],
+      "locationHighlight": "Adjacent to Gandikota Fort Gate & Penna River Canyon",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Royal County Resort Proddatur",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Deluxe Mountain View Suite",
+      "pricePerNightINR": 3800,
+      "rating": 4.5,
+      "reviewCount": 320,
+      "amenities": [
+        "Swimming Pool",
+        "Multi-Cuisine Restaurant",
+        "Free Wi-Fi",
+        "Tour Transfers to Canyon"
+      ],
+      "locationHighlight": "Convenient gateway retreat on highway to Gandikota",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "The Gorge View Glamping Suites Gandikota",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Luxury Cliffside AC Glamping Dome",
+      "pricePerNightINR": 6500,
+      "rating": 4.8,
+      "reviewCount": 270,
+      "amenities": [
+        "Direct Canyon Sunset Views",
+        "Private Barbecue Deck",
+        "Star Gazing Telescopes",
+        "Curated Fort Treks"
+      ],
+      "locationHighlight": "Perched on the red granite edge of Gandikota Grand Canyon",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "arunachal-tawang": [
+    {
+      "name": "Hotel Dondrub Tawang",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Traditional Monpa Heated Wooden Room",
+      "pricePerNightINR": 2200,
+      "rating": 4.7,
+      "reviewCount": 210,
+      "amenities": [
+        "Authentic Monpa Meals",
+        "Heated Beds",
+        "Free Wi-Fi",
+        "ILP & Pass Assistance"
+      ],
+      "locationHighlight": "Old Market Tawang · 5 mins to Tawang Monastery",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Hotel Druk Tawang",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Deluxe Mountain View Room",
+      "pricePerNightINR": 4800,
+      "rating": 4.6,
+      "reviewCount": 430,
+      "amenities": [
+        "Complimentary Breakfast",
+        "Valley Balconies",
+        "In-House Restaurant",
+        "Central Heating"
+      ],
+      "locationHighlight": "Nehru Market, Tawang · Spectacular snow peak views",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Vivanta Tawang (IHCL)",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Superior Himalayan Peak View Suite",
+      "pricePerNightINR": 13500,
+      "rating": 4.9,
+      "reviewCount": 380,
+      "amenities": [
+        "Heated Indoor Swimming Pool",
+        "All-Day Dining Pavilion",
+        "Spa & Wellness",
+        "Panoramic View Deck"
+      ],
+      "locationHighlight": "10,000 ft Himalayan Ridge overlooking Tawang Valley",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "arunachal-ziro": [
+    {
+      "name": "Siiro Resort & Bamboo Homestay Ziro",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Apatani Bamboo Traditional Cottage",
+      "pricePerNightINR": 2000,
+      "rating": 4.6,
+      "reviewCount": 195,
+      "amenities": [
+        "Local Apatani Organic Food",
+        "Paddy Field Walks",
+        "Campfire",
+        "Festival Assistance"
+      ],
+      "locationHighlight": "Siiro Village · Overlooking emerald pine valleys",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Ziro Palace Heritage Hotel",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Deluxe Pine Wood Balcony Room",
+      "pricePerNightINR": 4000,
+      "rating": 4.5,
+      "reviewCount": 260,
+      "amenities": [
+        "Free Breakfast",
+        "Restaurant & Bar",
+        "Hot Water 24/7",
+        "Local Guide Desk"
+      ],
+      "locationHighlight": "Hapoli Central Ziro · Close to Tarin Fish Farm",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Kasa Resort Ziro Valley",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Luxury Valley Chalet",
+      "pricePerNightINR": 6800,
+      "rating": 4.8,
+      "reviewCount": 210,
+      "amenities": [
+        "Panoramic Terrace",
+        "Multi-Cuisine Dining",
+        "Wi-Fi & Work Desks",
+        "Private Valley Tours"
+      ],
+      "locationHighlight": "Hong Village Hills · Prime panorama of UNESCO cultural landscape",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "assam-kaziranga": [
+    {
+      "name": "Wild Grass Lodge Kaziranga",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Assamese Rural Cottage",
+      "pricePerNightINR": 2800,
+      "rating": 4.6,
+      "reviewCount": 420,
+      "amenities": [
+        "Safari Booking Desk",
+        "Assamese Village Food",
+        "Lush Lawns",
+        "Birdwatching Trail"
+      ],
+      "locationHighlight": "Kohora Range Boundary · 5 mins to Central Park Gate",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "IORA - The Heritage Resort Kaziranga",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Deluxe Tea Garden View Room",
+      "pricePerNightINR": 6200,
+      "rating": 4.7,
+      "reviewCount": 680,
+      "amenities": [
+        "Swimming Pool",
+        "Spa & Wellness",
+        "Bhatbaan Multi-Cuisine Diner",
+        "Jeep Safari Desk"
+      ],
+      "locationHighlight": "Near Kohora Kaziranga National Park Entrance",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Diphlu River Lodge (Luxury Wildlife)",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Luxury Thatched Riverbank Stilt Cottage",
+      "pricePerNightINR": 16000,
+      "rating": 4.9,
+      "reviewCount": 350,
+      "amenities": [
+        "Private Verandah over Diphlu River",
+        "All Meals Included",
+        "Naturalist Escorted Safaris",
+        "Bonfire Dinners"
+      ],
+      "locationHighlight": "Directly bordering Bagori Western Range of Kaziranga",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "assam-majuli": [
+    {
+      "name": "La Maison de Ananda",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Traditional Mishing Bamboo Stilt Cottage",
+      "pricePerNightINR": 1800,
+      "rating": 4.7,
+      "reviewCount": 340,
+      "amenities": [
+        "Authentic Mishing Tribal Meals",
+        "Bicycle Hire",
+        "Satra Tour Advice",
+        "Cultural Music Sessions"
+      ],
+      "locationHighlight": "Garamur, Majuli · World's largest river island heartland",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Dekasang Sonapur Majuli Eco Resort",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Riverside Wooden Cottage",
+      "pricePerNightINR": 3800,
+      "rating": 4.5,
+      "reviewCount": 260,
+      "amenities": [
+        "Brahmaputra River Views",
+        "Assamese Thali Restaurant",
+        "Ferry Transfer Help",
+        "Birdwatching Walks"
+      ],
+      "locationHighlight": "Sitamarhi Ghat, Majuli",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Prashanti Eco Cottages Majuli (Assam Tourism)",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Executive Bamboo Heritage Suite",
+      "pricePerNightINR": 5800,
+      "rating": 4.6,
+      "reviewCount": 190,
+      "amenities": [
+        "AC Cottages",
+        "Lush Manicured Grounds",
+        "Conference & Lounge",
+        "Mask-Making Workshop Visits"
+      ],
+      "locationHighlight": "Kamalabari, Majuli Island",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "bihar-bodhgaya": [
+    {
+      "name": "Kundan Guest House Bodh Gaya",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Peaceful AC Pilgrim Room",
+      "pricePerNightINR": 1800,
+      "rating": 4.5,
+      "reviewCount": 380,
+      "amenities": [
+        "Walk to Mahabodhi Temple",
+        "Rooftop Cafe",
+        "Free Wi-Fi",
+        "Meditation Space"
+      ],
+      "locationHighlight": "5 mins walk to UNESCO Mahabodhi Temple & Bodhi Tree",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "The Bodhi Palace Hotel",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Deluxe Palace View Room",
+      "pricePerNightINR": 4200,
+      "rating": 4.6,
+      "reviewCount": 510,
+      "amenities": [
+        "Swimming Pool",
+        "Multi-Cuisine Vegetarian Diner",
+        "Free Wi-Fi",
+        "Spacious Gardens"
+      ],
+      "locationHighlight": "Main Temple Road, Bodh Gaya",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Marasa Sarovar Premiere Bodhgaya",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Executive Buddhist Themed Suite",
+      "pricePerNightINR": 8500,
+      "rating": 4.8,
+      "reviewCount": 420,
+      "amenities": [
+        "Architectural Water Courtyard",
+        "Luxury Spa & Sauna",
+        "Fine Dining Restaurants",
+        "Airport Transfer"
+      ],
+      "locationHighlight": "Bodhgaya Bypass Road · Inspired by Nalanda and Buddhist monastic architecture",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "bihar-valmiki": [
+    {
+      "name": "Valmiki Eco Huts & Forest Dorm",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Standard Forest Rest House Room",
+      "pricePerNightINR": 1600,
+      "rating": 4.3,
+      "reviewCount": 180,
+      "amenities": [
+        "Jungle Trail Access",
+        "Local Bihari Thali Meals",
+        "Guide Desk",
+        "Free Parking"
+      ],
+      "locationHighlight": "Valmikinagar Forest Division boundary near Gandak River",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Valmiki Tiger Reserve Eco Huts (Forest Dept)",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Wooden Eco Hut with Forest Canopy View",
+      "pricePerNightINR": 3500,
+      "rating": 4.6,
+      "reviewCount": 240,
+      "amenities": [
+        "Official Tiger Safari Desk",
+        "Canopy Walk Access",
+        "Canteen Dining",
+        "Hot Water 24/7"
+      ],
+      "locationHighlight": "Inside Valmiki Tiger Reserve Eco-Tourism Complex",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Camp Valmiki Jungle Lodge",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Premium Riverfront Luxury Safari Cottage",
+      "pricePerNightINR": 6200,
+      "rating": 4.7,
+      "reviewCount": 160,
+      "amenities": [
+        "Gandak River Rafting",
+        "Guided Tiger Trackers",
+        "Bonfire Dinners",
+        "All-Inclusive Wildlife Packages"
+      ],
+      "locationHighlight": "Valmiki Tiger Reserve Core Zone buffer on Indo-Nepal border",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "chandigarh-city": [
+    {
+      "name": "Hotel Sunbeam Premium Chandigarh",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Superior City Room",
+      "pricePerNightINR": 2600,
+      "rating": 4.4,
+      "reviewCount": 610,
+      "amenities": [
+        "Free Breakfast",
+        "Sector 22 Central Location",
+        "Free High-Speed Wi-Fi",
+        "Room Service"
+      ],
+      "locationHighlight": "Sector 22-B · Walking distance to Rose Garden & Market",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Hyatt Regency Chandigarh",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Club King Room with City Skyline View",
+      "pricePerNightINR": 6800,
+      "rating": 4.7,
+      "reviewCount": 1250,
+      "amenities": [
+        "Outdoor Swimming Pool",
+        "Urban Cafe & Italian Restaurant",
+        "Luxury Spa",
+        "Elante Mall Access"
+      ],
+      "locationHighlight": "Industrial Area Phase 1 · Adjacent to Elante Mall",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "The Oberoi Sukhvilas Spa Resort",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Premier Luxury Forest Villa with Private Pool",
+      "pricePerNightINR": 22000,
+      "rating": 4.9,
+      "reviewCount": 540,
+      "amenities": [
+        "12,000 sq ft Luxury Ayurveda Spa",
+        "Forest Amphitheatre",
+        "Royal Rajput Architecture",
+        "Helipad & Private Forest Dining"
+      ],
+      "locationHighlight": "Siswan Forest Range foothills · 30 mins from Capitol Complex",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "cg-chitrakote": [
+    {
+      "name": "Bastar Tribal Eco Homestay Jagdalpur",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Traditional Bell-Metal Art Village Cottage",
+      "pricePerNightINR": 1800,
+      "rating": 4.6,
+      "reviewCount": 190,
+      "amenities": [
+        "Authentic Bastar Mahua & Tribal Cuisine",
+        "Dokra Craft Tours",
+        "Free Wi-Fi",
+        "Waterfalls Taxi Desk"
+      ],
+      "locationHighlight": "Jagdalpur outskirts · Cultural gateway to Bastar",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Dandami Luxury Resort Chitrakote (CG Tourism)",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Waterfall View Premium AC Cottage",
+      "pricePerNightINR": 3600,
+      "rating": 4.5,
+      "reviewCount": 420,
+      "amenities": [
+        "Panoramic Niagara of India Views",
+        "Restaurant & Lawn Dining",
+        "Private Balconies",
+        "Boating Desk"
+      ],
+      "locationHighlight": "Right above Chitrakote Horseshoe Falls rim",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Naman Bastar Resort Jagdalpur",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Royal Bastar Heritage Suite",
+      "pricePerNightINR": 6500,
+      "rating": 4.8,
+      "reviewCount": 310,
+      "amenities": [
+        "Swimming Pool",
+        "Tribal Architecture & Modern Luxury",
+        "Multi-Cuisine Fine Dining",
+        "Kanger Valley Cave Safaris"
+      ],
+      "locationHighlight": "Chitrakote Road, Jagdalpur · Quick reach to Teerathgarh & Chitrakote",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "dd-diu": [
+    {
+      "name": "Heranca Goesa Heritage Diu",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Portuguese Colonial Heritage Room",
+      "pricePerNightINR": 2200,
+      "rating": 4.6,
+      "reviewCount": 270,
+      "amenities": [
+        "Colonial Balcony",
+        "Fresh Seafood",
+        "Walk to Diu Fort",
+        "Free Wi-Fi"
+      ],
+      "locationHighlight": "Old Diu Town · 3 mins walk to St. Paul's Church & Fort",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Radhika Beach Resort Diu",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Deluxe Arabian Sea View Room",
+      "pricePerNightINR": 4800,
+      "rating": 4.5,
+      "reviewCount": 540,
+      "amenities": [
+        "Direct Nagoa Beach Access",
+        "Swimming Pool",
+        "Seafood Bistro & Bar",
+        "Watersports Desk"
+      ],
+      "locationHighlight": "Nagoa Beach Coastline · Palm-fringed crescent shore",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "The Fern Seaside Luxurious Tent Resort Diu",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Luxury AC Beachfront Tent Suite",
+      "pricePerNightINR": 8200,
+      "rating": 4.8,
+      "reviewCount": 380,
+      "amenities": [
+        "Private Coastal Lawn",
+        "Swimming Pool & Bar",
+        "Eco-Friendly Luxury",
+        "Sunset Sea Views"
+      ],
+      "locationHighlight": "Nagoa Beach · Serene private enclave with direct sands",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "delhi-heritage": [
+    {
+      "name": "Haveli Dharampura (Old Delhi Heritage)",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Mughal Architectural Heritage Room",
+      "pricePerNightINR": 3500,
+      "rating": 4.6,
+      "reviewCount": 780,
+      "amenities": [
+        "Rooftop View of Jama Masjid",
+        "Kathak Performances",
+        "Old Delhi Street Food Walk Desk",
+        "Fine Mughal Dining"
+      ],
+      "locationHighlight": "Chandni Chowk · UNESCO recognized restored 19th-century haveli",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "The Claridges New Delhi",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Deluxe Lutyens Heritage Room",
+      "pricePerNightINR": 8500,
+      "rating": 4.7,
+      "reviewCount": 1150,
+      "amenities": [
+        "Historic Pool with Cabanas",
+        "Dhaba & Sevilla Restaurants",
+        "Lutyens Delhi Location",
+        "Luxury Concierge"
+      ],
+      "locationHighlight": "APJ Abdul Kalam Road · Heart of diplomatic Lutyens' Delhi",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "The Taj Mahal Hotel New Delhi",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Luxury Grand Heritage Suite",
+      "pricePerNightINR": 16000,
+      "rating": 4.9,
+      "reviewCount": 1420,
+      "amenities": [
+        "Varq Indian Dining",
+        "Jiva Luxury Spa",
+        "Heated Swimming Pool",
+        "India Gate Skyline Vistas"
+      ],
+      "locationHighlight": "Mansingh Road · Iconic 5-star palace hotel in central Delhi",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "delhi-mehrauli": [
+    {
+      "name": "The Manor - Boutique Hotel Delhi",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Garden View Boutique Room",
+      "pricePerNightINR": 3500,
+      "rating": 4.6,
+      "reviewCount": 420,
+      "amenities": [
+        "Lush Lawns",
+        "Organic Cafe",
+        "Free Wi-Fi",
+        "Quiet Enclave"
+      ],
+      "locationHighlight": "Friends Colony / Mehrauli Heritage access",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Sheraton New Delhi Hotel (Saket/Mehrauli)",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Club Room overlooking Qutub Minar skyline",
+      "pricePerNightINR": 7500,
+      "rating": 4.7,
+      "reviewCount": 980,
+      "amenities": [
+        "Outdoor Pool",
+        "Dakshin Pan-South Indian Restaurant",
+        "Spa",
+        "Metro Proximity"
+      ],
+      "locationHighlight": "District Centre Saket · 7 mins to Qutub Archaeological Park",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "The Roseate New Delhi",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Roseate Pool Pavilion Suite",
+      "pricePerNightINR": 15500,
+      "rating": 4.9,
+      "reviewCount": 850,
+      "amenities": [
+        "102m Water Body Landscape",
+        "Aheli Luxury Spa",
+        "Fine Dining Pavilions",
+        "Architectural Masterpiece"
+      ],
+      "locationHighlight": "NH8 Mehrauli Ridge corridor · 8 acres of serene water bodies",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "goa-north": [
+    {
+      "name": "Jungle by Sturmfrei Vagator",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Boutique Private AC Room with Garden Terrace",
+      "pricePerNightINR": 2500,
+      "rating": 4.6,
+      "reviewCount": 890,
+      "amenities": [
+        "Coworking Cafe",
+        "Rooftop Yoga",
+        "Scooter Rentals",
+        "Vagator Beach Walk"
+      ],
+      "locationHighlight": "Vagator Hill · 7 mins walk to Chapora Fort & beach",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "W Goa (Vagator Beachfront)",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Wonderful Ocean Breeze Room",
+      "pricePerNightINR": 14500,
+      "rating": 4.7,
+      "reviewCount": 1120,
+      "amenities": [
+        "Rock Pool Sunset Lounge",
+        "Direct Beach Access",
+        "AWAY Spa",
+        "Spice Traders Pan-Asian"
+      ],
+      "locationHighlight": "Vagator Beach under dramatic red cliffs",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Taj Fort Aguada Resort & Spa",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Aguada Hermitage Sea Villa",
+      "pricePerNightINR": 18000,
+      "rating": 4.9,
+      "reviewCount": 1640,
+      "amenities": [
+        "Historic 16th-Century Ramparts",
+        "Jiva Spa",
+        "Private Bay Beaches",
+        "Water Sports Pavilion"
+      ],
+      "locationHighlight": "Sinquerim / Candolim · Overlooking Portuguese sea fort",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "goa-south-hidden": [
+    {
+      "name": "Cola Beach Sunset Wooden Hut",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Rustic Beachfront Wooden Cottage",
+      "pricePerNightINR": 2800,
+      "rating": 4.7,
+      "reviewCount": 390,
+      "amenities": [
+        "Lagoon Kayaking",
+        "Direct Sand Access",
+        "Fresh Fish Shack",
+        "No Commercial Crowds"
+      ],
+      "locationHighlight": "Cola Beach · Where freshwater lagoon meets Arabian Sea",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "The Cape Goa (Luxury Ocean Cliff Cottage)",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Cliffside Luxury Cottage with Private Jacuzzi",
+      "pricePerNightINR": 9500,
+      "rating": 4.8,
+      "reviewCount": 510,
+      "amenities": [
+        "Private Sunset Jacuzzi on Balcony",
+        "Secluded Beach Steps",
+        "Fine Coastal Dining",
+        "Dolphin Sightings"
+      ],
+      "locationHighlight": "Cabo de Rama Cliff Coastline",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "The Leela Goa (Cavelossim)",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Royal Lagoon Suite",
+      "pricePerNightINR": 19000,
+      "rating": 4.9,
+      "reviewCount": 1780,
+      "amenities": [
+        "75 Acres of Exotic Lagoons",
+        "12-Hole Golf Course",
+        "Private Mobor Beach",
+        "Riverside Dining on Sal River"
+      ],
+      "locationHighlight": "Mobor Beach, Cavelossim · Pristine South Goa sand dunes",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "guj-rann": [
+    {
+      "name": "Kutch Safari Lodge Bhuj",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Traditional Bhunga Mud Cottage",
+      "pricePerNightINR": 2800,
+      "rating": 4.5,
+      "reviewCount": 350,
+      "amenities": [
+        "Lake View",
+        "Authentic Kutchi Thali",
+        "Artisan Village Tours",
+        "Free Wi-Fi"
+      ],
+      "locationHighlight": "Bhuj - Khavda Highway · Gateway to White Desert",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Tent City Dhordo (White Rann Resort)",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Premium AC Swiss Tent with Verandah",
+      "pricePerNightINR": 6500,
+      "rating": 4.7,
+      "reviewCount": 920,
+      "amenities": [
+        "White Rann Moonlit Walks",
+        "Folk Dance & Cultural Hall",
+        "Kutchi Buffets",
+        "Rann Permit Assistance"
+      ],
+      "locationHighlight": "Dhordo Village · Steps away from endless salt desert",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "The Gateway Hotel Beach Road / Toran Resort",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Royal Darbari Bhunga Suite",
+      "pricePerNightINR": 11000,
+      "rating": 4.8,
+      "reviewCount": 460,
+      "amenities": [
+        "Luxury Handcrafted Mud Interiors",
+        "Private Dining Patio",
+        "Stargazing Telescopes",
+        "Dedicated Rann Guide"
+      ],
+      "locationHighlight": "Hodka Village · Renowned for embroidery and mirror work",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "guj-polo": [
+    {
+      "name": "Polo Tent City & Eco Camps",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Forest AC Swiss Tent",
+      "pricePerNightINR": 2400,
+      "rating": 4.5,
+      "reviewCount": 280,
+      "amenities": [
+        "Harnav River Walk",
+        "Gujarati Kathiyawadi Meals",
+        "Ancient Temple Treks",
+        "Campfire"
+      ],
+      "locationHighlight": "Abhapur Village · Center of ancient 10th-century Jain ruins",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Polo Retreat Resort & Villas",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Deluxe Stone Villa overlooking Forest",
+      "pricePerNightINR": 4200,
+      "rating": 4.6,
+      "reviewCount": 360,
+      "amenities": [
+        "Swimming Pool",
+        "Garden Restaurant",
+        "Guided Heritage Treks",
+        "Cycling Trails"
+      ],
+      "locationHighlight": "Polo Forest Sanctuary Boundary",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Club Mahindra Kensville Golf Resort",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Colonial Golf Course Suite",
+      "pricePerNightINR": 8500,
+      "rating": 4.8,
+      "reviewCount": 490,
+      "amenities": [
+        "18-Hole Championship Golf",
+        "Spa & Wellness",
+        "Fine Dining",
+        "Polo Forest Excursions"
+      ],
+      "locationHighlight": "Aravalli Foothills Sanctuary Corridor",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "haryana-morni": [
+    {
+      "name": "Morni Hills Nature Camp",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Pine Valley Alpine Tent",
+      "pricePerNightINR": 2000,
+      "rating": 4.4,
+      "reviewCount": 210,
+      "amenities": [
+        "Trek to Morni Fort",
+        "Homestyle Food",
+        "Campfire",
+        "Lake Views"
+      ],
+      "locationHighlight": "Tikkar Taal Lake · Only hill station in Haryana",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Tikkar Taal Lake Resort (Haryana Tourism)",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Deluxe Lakefront AC Room",
+      "pricePerNightINR": 3600,
+      "rating": 4.5,
+      "reviewCount": 380,
+      "amenities": [
+        "Boating Jetty Access",
+        "Lakeside Restaurant",
+        "Free Parking",
+        "Children Play Area"
+      ],
+      "locationHighlight": "Directly overlooking twin lakes of Tikkar Taal",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Golden Tulip Chandigarh - Panchkula",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Executive Valley View Suite",
+      "pricePerNightINR": 7500,
+      "rating": 4.8,
+      "reviewCount": 670,
+      "amenities": [
+        "Infinity Swimming Pool",
+        "Panoramic Shivalik Views",
+        "Spa & Sauna",
+        "Multi-Cuisine Buffet"
+      ],
+      "locationHighlight": "Morni Hills Highway · Shivalik mountain ridge",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "hp-manali": [
+    {
+      "name": "Johnson Lodge & Spa Old Manali",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Classic Cedar Wood Balcony Room",
+      "pricePerNightINR": 3000,
+      "rating": 4.6,
+      "reviewCount": 680,
+      "amenities": [
+        "Famous Johnson Cafe",
+        "Ayurvedic Spa",
+        "Garden Bar",
+        "Walk to Mall Road"
+      ],
+      "locationHighlight": "Old Manali · Walking distance to Hadimba Temple",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Solang Valley Resort Manali",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "River-Facing Deluxe Suite",
+      "pricePerNightINR": 6500,
+      "rating": 4.7,
+      "reviewCount": 850,
+      "amenities": [
+        "Beas Riverbank Walk",
+        "Snow Adventure Desk",
+        "Gazebo Dining",
+        "Campfire Evenings"
+      ],
+      "locationHighlight": "Solang Valley · Gateway to Rohtang & Atal Tunnel",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "The Himalayan (Gothic Castle Resort)",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Premier Castle Suite with Fireplace",
+      "pricePerNightINR": 13500,
+      "rating": 4.9,
+      "reviewCount": 590,
+      "amenities": [
+        "Victorian Turrets & Fireplaces",
+        "Heated Outdoor Pool",
+        "Dungeon Bar",
+        "Orchard Gardens"
+      ],
+      "locationHighlight": "Hadimba Road, Manali · Majestic views of snow peaks",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "hp-tirthan": [
+    {
+      "name": "Raju's Cottage Gushaini",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Riverside Traditional Wooden Cottage",
+      "pricePerNightINR": 2400,
+      "rating": 4.8,
+      "reviewCount": 340,
+      "amenities": [
+        "Fresh Trout Dining",
+        "River Access via Pulley",
+        "Free Wi-Fi",
+        "Orchard Lawns",
+        "GHNP Trek Assistance"
+      ],
+      "locationHighlight": "Gushaini · On Tirthan River bank near GHNP Gate",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "The Whispering Pines Cottages Jibhi",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Deluxe Mountain Balcony Cottage",
+      "pricePerNightINR": 4800,
+      "rating": 4.6,
+      "reviewCount": 210,
+      "amenities": [
+        "Complimentary Breakfast",
+        "Valley Balcony",
+        "High-Speed Wi-Fi",
+        "In-House Cafe",
+        "Waterfalls Proximity"
+      ],
+      "locationHighlight": "Jibhi Valley · Surrounded by deodar and pine forest",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Kudrat - A Boutique Homestay",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Luxury Suite with Panoramic Valley View",
+      "pricePerNightINR": 7500,
+      "rating": 4.9,
+      "reviewCount": 470,
+      "amenities": [
+        "Gourmet Himalayan Dining",
+        "Fireplace & Library Lounge",
+        "Private Verandahs",
+        "Stargazing Deck",
+        "Organic Orchard"
+      ],
+      "locationHighlight": "Bandal Village, Tirthan Valley · Hilltop vantage point",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "jk-srinagar": [
+    {
+      "name": "Wangnoo Heritage Houseboats Dal Lake",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Handcarved Walnut Wood Floating Room",
+      "pricePerNightINR": 2500,
+      "rating": 4.7,
+      "reviewCount": 610,
+      "amenities": [
+        "Shikara Transfers Included",
+        "Kashmiri Wazwan & Kahwa",
+        "Floating Market Tour",
+        "Heated Beds"
+      ],
+      "locationHighlight": "Nigeen / Dal Lake · Peaceful serene mooring away from crowds",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Nedou's Hotel Srinagar",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Heritage Deluxe Room",
+      "pricePerNightINR": 5500,
+      "rating": 4.6,
+      "reviewCount": 780,
+      "amenities": [
+        "120-Year Heritage Estate",
+        "Chinar Tree Gardens",
+        "Free Breakfast",
+        "Mughal Garden Tours"
+      ],
+      "locationHighlight": "Maulana Azad Road, Srinagar · Heart of city near Polo Ground",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "The Lalit Grand Palace Srinagar",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Palace Dal View Suite",
+      "pricePerNightINR": 16500,
+      "rating": 4.9,
+      "reviewCount": 1150,
+      "amenities": [
+        "Maharaja's 19th-Century Royal Palace",
+        "Indoor Heated Pool",
+        "Rejuve Spa",
+        "Centuries-Old Chinar Orchards"
+      ],
+      "locationHighlight": "Gupkar Road · Overlooking Dal Lake & Zabarwan Mountains",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "jk-gurez": [
+    {
+      "name": "Woodpecker Gurez Homestay",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Traditional Wooden Valley Room",
+      "pricePerNightINR": 2000,
+      "rating": 4.7,
+      "reviewCount": 160,
+      "amenities": [
+        "Warm Kashmiri Hospitality",
+        "Habba Khatoon Peak View",
+        "Trout Fish Dinners",
+        "Permit Help"
+      ],
+      "locationHighlight": "Dawar, Gurez Valley · Borderland mountain serenity",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Kishanganga River View Retreat Dawar",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Deluxe Alpine Balcony Cottage",
+      "pricePerNightINR": 4200,
+      "rating": 4.6,
+      "reviewCount": 210,
+      "amenities": [
+        "Direct Kishanganga River Frontage",
+        "In-House Dining",
+        "Bonfire Nights",
+        "High-Speed Wi-Fi"
+      ],
+      "locationHighlight": "Near Habba Khatoon Spring, Dawar",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Habba Khatoon Eco Resort Gurez",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Presidential Himalayan Glamping Suite",
+      "pricePerNightINR": 7500,
+      "rating": 4.8,
+      "reviewCount": 140,
+      "amenities": [
+        "Unobstructed Peak Views",
+        "Curated Fishing & Treks",
+        "Heated Tents",
+        "Gourmet Dining"
+      ],
+      "locationHighlight": "Under pyramid peak of Habba Khatoon mountain",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "jh-netarhat": [
+    {
+      "name": "Hotel Prabhat Vihar Netarhat (JTDC)",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Standard Hilltop AC Room",
+      "pricePerNightINR": 1800,
+      "rating": 4.3,
+      "reviewCount": 290,
+      "amenities": [
+        "Sunrise Point Walking Distance",
+        "JTDC Restaurant",
+        "Lush Lawns",
+        "Magnolia Sunset View Desk"
+      ],
+      "locationHighlight": "Sunrise Point, Netarhat · Queen of Chotanagpur plateau",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Sunrise Point Eco Forest Lodge",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Pine Woods Balcony Cottage",
+      "pricePerNightINR": 3200,
+      "rating": 4.5,
+      "reviewCount": 210,
+      "amenities": [
+        "Pine Forest Trails",
+        "Jharkhandi Tribal Dining",
+        "Campfire",
+        "Waterfall Excursions"
+      ],
+      "locationHighlight": "Netarhat Plateau Ridge near Upper Ghaghri Falls",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Palamau Tiger Reserve Tree House Resort",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Luxury Treehouse Chalet over Sal Forest",
+      "pricePerNightINR": 5500,
+      "rating": 4.7,
+      "reviewCount": 180,
+      "amenities": [
+        "Elevated Treehouse Living",
+        "Wildlife Jeep Safaris",
+        "Tribal Folk Evenings",
+        "Organic Dining"
+      ],
+      "locationHighlight": "Betla / Netarhat Wildlife Forest Corridor",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "ka-coorg": [
+    {
+      "name": "Gowri Nivas Homestay Madikeri",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Heritage Kodava Homestay Room",
+      "pricePerNightINR": 2500,
+      "rating": 4.8,
+      "reviewCount": 420,
+      "amenities": [
+        "Authentic Pandi Curry & Kodava Food",
+        "Coffee Plantation Walk",
+        "Free Wi-Fi",
+        "Fireplace"
+      ],
+      "locationHighlight": "Madikeri Town · Walk to Raja's Seat & Madikeri Fort",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Club Mahindra Madikeri Resort",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Superior Rainforest Balcony Studio",
+      "pricePerNightINR": 6500,
+      "rating": 4.6,
+      "reviewCount": 1450,
+      "amenities": [
+        "2 Swimming Pools",
+        "Ayurvedic Svaastha Spa",
+        "Coffee Picking Tours",
+        "Adventure Zone"
+      ],
+      "locationHighlight": "Galibeedu Road, Madikeri · Built in traditional Ainmane style",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "The Tamara Coorg (Luxury Rainforest)",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Luxury Cottage Stilted over Coffee & Cardamom Canopy",
+      "pricePerNightINR": 16000,
+      "rating": 4.9,
+      "reviewCount": 890,
+      "amenities": [
+        "Private Waterfall inside Estate",
+        "The Elevation Spa",
+        "Candlelit Deck Dining",
+        "Signature Blossom to Brew Coffee Experience"
+      ],
+      "locationHighlight": "Yevakapadi, Kabbinakad · 180 acres of pristine organic rainforest",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "ka-badami": [
+    {
+      "name": "Hotel Mayura Chalukya Badami (KSTDC)",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Standard Chalukya AC Room",
+      "pricePerNightINR": 1800,
+      "rating": 4.2,
+      "reviewCount": 350,
+      "amenities": [
+        "Walk to Badami Cave Temples",
+        "KSTDC South Indian Restaurant",
+        "Gardens",
+        "Travel Desk"
+      ],
+      "locationHighlight": "Ramdurg Road · 1 km from 6th-century rock-cut cave temples",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Badami Court Hotel",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Deluxe Red Sandstone Balcony Room",
+      "pricePerNightINR": 3800,
+      "rating": 4.4,
+      "reviewCount": 420,
+      "amenities": [
+        "Swimming Pool",
+        "Garden Restaurant",
+        "Free Wi-Fi",
+        "Pattadakal Excursion Help"
+      ],
+      "locationHighlight": "Station Road Badami · Scenic views of red sandstone cliffs",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Heritage Resort Hampi (Badami Circuit)",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Luxury Jacuzzi Villa",
+      "pricePerNightINR": 8500,
+      "rating": 4.8,
+      "reviewCount": 560,
+      "amenities": [
+        "Ayurvedic Spa & Wellness",
+        "Swimming Pool",
+        "Curated Badami-Aihole-Pattadakal Expeditions",
+        "Organic Farm"
+      ],
+      "locationHighlight": "UNESCO Chalukya & Vijayanagara Heritage Circuit",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "kerala-munnar": [
+    {
+      "name": "Munnar Tea Country Homestay",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Cardamom Valley View Room",
+      "pricePerNightINR": 2400,
+      "rating": 4.7,
+      "reviewCount": 510,
+      "amenities": [
+        "Authentic Kerala Appam & Stew",
+        "Tea Plantation Stroll",
+        "Free Wi-Fi",
+        "Hot Water 24/7"
+      ],
+      "locationHighlight": "Chithirapuram · Overlooking rolling tea terraces",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Blanket Hotel & Spa Munnar",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Blanket Valley Club Balcony Room",
+      "pricePerNightINR": 6800,
+      "rating": 4.8,
+      "reviewCount": 920,
+      "amenities": [
+        "Attukad Waterfall Views",
+        "Infinity Swimming Pool",
+        "Ayurvedic Spa",
+        "Complimentary High Tea"
+      ],
+      "locationHighlight": "Attukad Waterfalls Road, Pallivasal",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Windermere Estate (Heritage Tea Plantation)",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Planter's Heritage Villa Suite",
+      "pricePerNightINR": 13500,
+      "rating": 4.9,
+      "reviewCount": 740,
+      "amenities": [
+        "Coffee & Cardamom Plantation",
+        "The Barn Multi-Cuisine Diner",
+        "Private Viewpoint Pavilion",
+        "Curated Birding Treks"
+      ],
+      "locationHighlight": "Pothamedu Viewpoint Ridge · 60-acre private working estate",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "kerala-marari": [
+    {
+      "name": "Marari Dreamz Homestay",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Traditional Keralite Tiled Cottage with Garden Plunge Pool",
+      "pricePerNightINR": 2600,
+      "rating": 4.9,
+      "reviewCount": 380,
+      "amenities": [
+        "Home-Cooked Fresh Catch Seafood",
+        "Complimentary Bicycles",
+        "Walk to Secluded Beach",
+        "Hammock Garden"
+      ],
+      "locationHighlight": "Mararikulam Beach Village · 3 mins barefoot walk to quiet shore",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Marari Beach Resort - CGH Earth",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Garden Villa with Open-to-Sky Tropical Shower",
+      "pricePerNightINR": 11000,
+      "rating": 4.8,
+      "reviewCount": 1120,
+      "amenities": [
+        "Eco-Conscious Thatch Villas",
+        "Large Sea-Breeze Pool",
+        "Organic Farm-to-Fork Dining",
+        "Ayurvedic Treatment Center"
+      ],
+      "locationHighlight": "Marari Beachfront · 30 acres of coconut groves and lily ponds",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Karmic Veda Ayurveda Beach Retreat",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Presidential Oceanfront Ayurveda Suite",
+      "pricePerNightINR": 15000,
+      "rating": 4.9,
+      "reviewCount": 310,
+      "amenities": [
+        "Authentic Panchakarma Doctors",
+        "Private Yoga Pavilion",
+        "Infinity Pool",
+        "Sunset Arabian Sea Vistas"
+      ],
+      "locationHighlight": "North Marari Coastline · Serene fishing village beaches",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "ladakh-leh": [
+    {
+      "name": "Gomang Boutique Homestay",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Traditional Ladakhi Heated Wooden Room",
+      "pricePerNightINR": 2800,
+      "rating": 4.8,
+      "reviewCount": 420,
+      "amenities": [
+        "Organic Ladakhi Meals",
+        "Rooftop Stargazing Deck",
+        "Oxygen Concentrator Backup",
+        "Pass Permit Help"
+      ],
+      "locationHighlight": "Upper Changspa, Leh · Peaceful stream side away from bazaar",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "The Grand Dragon Ladakh",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Deluxe Stok Kangri View Room",
+      "pricePerNightINR": 7500,
+      "rating": 4.7,
+      "reviewCount": 1280,
+      "amenities": [
+        "Central Heating",
+        "Zasgyath Multi-Cuisine Diner",
+        "Solar Heated Water",
+        "Oxygen Infused Suites"
+      ],
+      "locationHighlight": "Old Road Sheynam, Leh · Panoramic views of Stok mountain range",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Stok Palace Heritage Hotel",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Royal Palace Chamba Suite",
+      "pricePerNightINR": 14500,
+      "rating": 4.9,
+      "reviewCount": 380,
+      "amenities": [
+        "200-Year-Old Royal Palace Estate",
+        "Private Royal Museum Access",
+        "Royal Ladakhi Banquets",
+        "Buddhist Temple Courtyards"
+      ],
+      "locationHighlight": "Stok Village · Official residence of the King of Ladakh",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "ladakh-turtuk": [
+    {
+      "name": "Maha Guesthouse Turtuk",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Balti Village Wooden Room",
+      "pricePerNightINR": 1800,
+      "rating": 4.7,
+      "reviewCount": 240,
+      "amenities": [
+        "Fresh Apricot Orchard Dining",
+        "Balti Family Hospitality",
+        "Natural Cold Storage Tour",
+        "K2 Peak Advice"
+      ],
+      "locationHighlight": "Youl Village, Turtuk · 12 km from Line of Control",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Turtuk Holiday Resort",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Luxury Swiss Tent in Apricot Grove",
+      "pricePerNightINR": 3800,
+      "rating": 4.6,
+      "reviewCount": 310,
+      "amenities": [
+        "En-Suite Hot Water Baths",
+        "Organic Farm Food",
+        "Shyok River Vistas",
+        "Campfire"
+      ],
+      "locationHighlight": "Farol Village, Turtuk · Surrounded by Karakoram peaks",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "The Apricot Tree Heritage Retreat",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Royal Karakoram Balcony Suite",
+      "pricePerNightINR": 6500,
+      "rating": 4.8,
+      "reviewCount": 180,
+      "amenities": [
+        "Direct Views of Shyok River & Peaks",
+        "Authentic Balti Feasts",
+        "Wooden Sundecks",
+        "Private Village Excursions"
+      ],
+      "locationHighlight": "Turtuk Plateau · Unspoiled northernmost village of India",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "lakshadweep-agatti": [
+    {
+      "name": "Kasim's Homestay Agatti",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Traditional Island Coral AC Room",
+      "pricePerNightINR": 3200,
+      "rating": 4.8,
+      "reviewCount": 240,
+      "amenities": [
+        "Authentic Lakshadweep Tuna Curry",
+        "Lagoon Snorkeling Help",
+        "Bicycle Hire",
+        "Airport Pickup Included"
+      ],
+      "locationHighlight": "Near Agatti Airport & Lagoon Jetty",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Agatti Island Beach Resort",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Beachfront Wooden AC Cottage",
+      "pricePerNightINR": 7500,
+      "rating": 4.6,
+      "reviewCount": 460,
+      "amenities": [
+        "Direct Lagoon Access",
+        "Water Sports & Scuba Diving",
+        "Sea-View Restaurant",
+        "Permit Clearance Support"
+      ],
+      "locationHighlight": "Western Lagoon Coastline, Agatti",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Bangaram Island Resort (SPORTS Lakshadweep)",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Grand Beachfront Atoll Villa",
+      "pricePerNightINR": 14000,
+      "rating": 4.9,
+      "reviewCount": 390,
+      "amenities": [
+        "Teardrop Atoll Living",
+        "Speedboat Lagoon Transfers",
+        "Scuba Diving & Kayak Club",
+        "Buffet Dining Pavilion"
+      ],
+      "locationHighlight": "Bangaram Atoll · Uninhabited pristine coral paradise",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "mp-orchha": [
+    {
+      "name": "Betiya Heritage Homestay Orchha",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Standard Bundelkhand Heritage Room",
+      "pricePerNightINR": 2000,
+      "rating": 4.7,
+      "reviewCount": 260,
+      "amenities": [
+        "Walk to Betwa River Chhatris",
+        "Bundelkhandi Thali",
+        "Free Wi-Fi",
+        "Bicycle Rental"
+      ],
+      "locationHighlight": "Orchha Fort Complex area · Walk to Raja Mahal & Cenotaphs",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Amar Mahal Hotel Orchha",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Deluxe Rajputana Monument View Room",
+      "pricePerNightINR": 4800,
+      "rating": 4.6,
+      "reviewCount": 680,
+      "amenities": [
+        "Swimming Pool",
+        "Heritage Courtyard Dining",
+        "Betwa Cenotaph Views",
+        "Spa & Wellness"
+      ],
+      "locationHighlight": "Bypass Road Orchha · Flanked by historic cenotaphs",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "The Lalit Temple View Khajuraho (Orchha Circuit)",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Temple View Royal Suite",
+      "pricePerNightINR": 11000,
+      "rating": 4.8,
+      "reviewCount": 920,
+      "amenities": [
+        "Unobstructed Western Temple Views",
+        "Rejuve The Spa",
+        "Outdoor Pool",
+        "Curated Royal Guides"
+      ],
+      "locationHighlight": "Opposite Western Group of Temples Khajuraho",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "maha-lonavala": [
+    {
+      "name": "The Lagoona Resort Lonavala",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Eco Deluxe Room with Lagoon Balcony",
+      "pricePerNightINR": 3200,
+      "rating": 4.4,
+      "reviewCount": 780,
+      "amenities": [
+        "Manmade Lagoon Views",
+        "Outdoor Pool",
+        "Multi-Cuisine Buffet",
+        "Free Parking"
+      ],
+      "locationHighlight": "Gold Valley Sector D, Tungarli",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Fariyas Resort Lonavala",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Premium Mountain View Room",
+      "pricePerNightINR": 6800,
+      "rating": 4.6,
+      "reviewCount": 1420,
+      "amenities": [
+        "Indoor Heated Pool & Wild Water Park",
+        "Spa & Health Club",
+        "Fine Dining",
+        "Lush Valley Vistas"
+      ],
+      "locationHighlight": "Frichley Hill, Tungarli",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Della Resorts & Adventure Park",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Luxury Della Villa with Jacuzzi",
+      "pricePerNightINR": 14500,
+      "rating": 4.8,
+      "reviewCount": 1850,
+      "amenities": [
+        "24-Hour Heated Swimming Pool",
+        "5 Signature Restaurants",
+        "70+ Extreme Adventure Rides",
+        "24-Hour Spa"
+      ],
+      "locationHighlight": "Kune Village, Khandala / Lonavala",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "maha-kaas": [
+    {
+      "name": "Nivant Hill Resort Satara",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Standard Valley AC Room",
+      "pricePerNightINR": 2400,
+      "rating": 4.3,
+      "reviewCount": 380,
+      "amenities": [
+        "Valley Balcony",
+        "Authentic Maharashtrian Thali",
+        "Free Wi-Fi",
+        "Kaas Plateau Pass Advice"
+      ],
+      "locationHighlight": "Kaas Road, Satara · 15 mins to UNESCO Kaas Flower Plateau",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Kaas Woods Resort & Spa",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Deluxe Alpine Cottage",
+      "pricePerNightINR": 4500,
+      "rating": 4.6,
+      "reviewCount": 420,
+      "amenities": [
+        "Swimming Pool",
+        "Forest Trail Access",
+        "In-House Restaurant",
+        "Thoseghar Falls Tours"
+      ],
+      "locationHighlight": "En-route to Kaas Lake & Plateau",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Courtyard by Marriott Mahabaleshwar",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Executive Valley View Balcony Suite",
+      "pricePerNightINR": 12500,
+      "rating": 4.8,
+      "reviewCount": 940,
+      "amenities": [
+        "Infinity Valley Pool",
+        "Berry & Co. Deli",
+        "Full Spa",
+        "Sahyadri Mountain Panoramas"
+      ],
+      "locationHighlight": "Mahabaleshwar - Satara Highway · Luxury gateway to Kaas",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "manipur-loktak": [
+    {
+      "name": "Loktak Floating Homestay (Phumdi Hut)",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Traditional Floating Bamboo Phumdi Cottage",
+      "pricePerNightINR": 1800,
+      "rating": 4.8,
+      "reviewCount": 240,
+      "amenities": [
+        "Floating on Loktak Lake",
+        "Boat Safari to Keibul Lamjao",
+        "Manipuri Fish Curry",
+        "Solar Power"
+      ],
+      "locationHighlight": "Thanga Island, Loktak Lake · Only floating national park in the world",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Sendra Park & Resort by Classic",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Panoramic Lakefront Cottage",
+      "pricePerNightINR": 4500,
+      "rating": 4.6,
+      "reviewCount": 380,
+      "amenities": [
+        "360-Degree Loktak Panoramas",
+        "Multi-Cuisine Cafe",
+        "Boating Jetty",
+        "Sangai Deer Safari Desk"
+      ],
+      "locationHighlight": "Sendra Island Hilltop, Moirang",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "The Classic Hotel Imphal",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Premier Executive Suite",
+      "pricePerNightINR": 7500,
+      "rating": 4.7,
+      "reviewCount": 610,
+      "amenities": [
+        "Kangla Fort Proximity",
+        "Rendezvous Restaurant",
+        "Airport Shuttles",
+        "Curated Loktak Day Excursions"
+      ],
+      "locationHighlight": "North AOC, Imphal · 45 mins drive to Loktak Lake",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "megh-shillong": [
+    {
+      "name": "Hotel Pegasus Crown Shillong",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Standard Khasi Pine Room",
+      "pricePerNightINR": 2800,
+      "rating": 4.5,
+      "reviewCount": 610,
+      "amenities": [
+        "Heart of Police Bazar",
+        "In-House Khasi Diner",
+        "Free Wi-Fi",
+        "Tour Transfers to Cherrapunji"
+      ],
+      "locationHighlight": "Police Bazar, Shillong · Vibrant cafe and market hub",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Polo Orchid Resort Cherrapunjee",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Nohsngithiang Falls View Log Hut",
+      "pricePerNightINR": 6500,
+      "rating": 4.7,
+      "reviewCount": 840,
+      "amenities": [
+        "Seven Sisters Waterfall View",
+        "Infinity Pool",
+        "Rain Cafe & Bar",
+        "Mawsmai Cave Proximity"
+      ],
+      "locationHighlight": "Mawsmai, Sohra / Cherrapunjee · Cliff edge panoramas",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Ri Kynjai - Serenity by the Lake",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Supreme Khasi Thatch Lake View Cottage",
+      "pricePerNightINR": 14000,
+      "rating": 4.9,
+      "reviewCount": 780,
+      "amenities": [
+        "Umiam Lakefront Panoramas",
+        "Traditional Khasi Herbal Spa",
+        "Sao Rympei Heritage Restaurant",
+        "Pine Forest Walks"
+      ],
+      "locationHighlight": "Umiam Lake, Barapani · 45 acres overlooking crystal lake",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "megh-nongriat": [
+    {
+      "name": "Serene Homestay Nongriat",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Rustic Village Room near Root Bridges",
+      "pricePerNightINR": 1500,
+      "rating": 4.8,
+      "reviewCount": 380,
+      "amenities": [
+        "Double Decker Living Root Bridge Steps Away",
+        "Organic Khasi Meals",
+        "Natural Pool Swimming",
+        "Trek Guides"
+      ],
+      "locationHighlight": "Deep in Nongriat Valley bottom below 3,500 steps trek",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Jiva Resort Cherrapunjee",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Luxury Cloud Mist Suite",
+      "pricePerNightINR": 6000,
+      "rating": 4.6,
+      "reviewCount": 490,
+      "amenities": [
+        "Landscaped Stone Water Courtyard",
+        "Multi-Cuisine Diner",
+        "Nongriat Base Shuttle",
+        "Free Wi-Fi"
+      ],
+      "locationHighlight": "Sohra, Cherrapunjee · High altitude mist ridge",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Symphony Palms Heritage Resort Mawlynnong",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Eco Bamboo Luxury Tree Villa",
+      "pricePerNightINR": 9500,
+      "rating": 4.8,
+      "reviewCount": 290,
+      "amenities": [
+        "Asia's Cleanest Village Location",
+        "Indo-Bangla Border Overlook",
+        "Private Lawns",
+        "Organic Farming"
+      ],
+      "locationHighlight": "Mawlynnong Village · Bamboo skywalks & floral lanes",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "mizoram-reiek": [
+    {
+      "name": "Reiek Tourist Lodge (Mizoram Tourism)",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Traditional Mizo Mountain Cottage",
+      "pricePerNightINR": 1800,
+      "rating": 4.5,
+      "reviewCount": 180,
+      "amenities": [
+        "Walk to Reiek Peak Trailhead",
+        "Mizo Traditional Kitchen",
+        "Valley Views",
+        "Heritage Model Village Access"
+      ],
+      "locationHighlight": "Reiek Village · 30 km from Aizawl",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Hotel Floria Aizawl",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Deluxe City Skyline Room",
+      "pricePerNightINR": 4200,
+      "rating": 4.6,
+      "reviewCount": 380,
+      "amenities": [
+        "Free Breakfast",
+        "Top-Floor Panorama Restaurant",
+        "Travel Desk for Reiek Peak",
+        "Free Wi-Fi"
+      ],
+      "locationHighlight": "Dawrpui, Aizawl · Central shopping & ridge promenade",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "The Grand Hotel Aizawl",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Presidential Peak View Suite",
+      "pricePerNightINR": 6800,
+      "rating": 4.8,
+      "reviewCount": 260,
+      "amenities": [
+        "Panoramic Valley Views",
+        "Multi-Cuisine Fine Dining",
+        "Fitness Center",
+        "Airport Shuttles"
+      ],
+      "locationHighlight": "Chaltlang Ridge, Aizawl · Highest vantage point over hills",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "nagaland-dzukou": [
+    {
+      "name": "Khonoma Community Homestay (Green Village)",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Angami Naga Traditional Homestead",
+      "pricePerNightINR": 1800,
+      "rating": 4.9,
+      "reviewCount": 260,
+      "amenities": [
+        "India's First Green Village",
+        "Organic Naga Meals with Bamboo Shoot",
+        "Terrace Paddy Walks",
+        "Dzukou Trek Guide"
+      ],
+      "locationHighlight": "Khonoma Village · Ancient stone bastions and bio-reserve",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Dzukou Valley Rest House & Tents",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "VIP Alpine Ridge Dorm & Cabin",
+      "pricePerNightINR": 3200,
+      "rating": 4.5,
+      "reviewCount": 340,
+      "amenities": [
+        "Direct Panoramic Valley of Lilies View",
+        "Campfire & Hot Tea",
+        "Sleeping Bags & Mattresses",
+        "Sunrise Point"
+      ],
+      "locationHighlight": "Perched directly on 8,000 ft Dzukou Valley Crest",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "De Oriental Grand Kohima",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Executive Mountain Suite",
+      "pricePerNightINR": 6500,
+      "rating": 4.7,
+      "reviewCount": 380,
+      "amenities": [
+        "Hornbill Festival Concierge",
+        "Multi-Cuisine Dining",
+        "Private Valley Transport",
+        "Modern Luxury"
+      ],
+      "locationHighlight": "NH39, Kohima · 40 mins to Dzukou trailheads in Jakhama/Viswema",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "odisha-puri": [
+    {
+      "name": "Hotel Gandhara Puri",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Standard Balcony AC Room",
+      "pricePerNightINR": 2200,
+      "rating": 4.5,
+      "reviewCount": 540,
+      "amenities": [
+        "Outdoor Swimming Pool",
+        "Walk to Golden Beach",
+        "Odia Thali Restaurant",
+        "Free Wi-Fi"
+      ],
+      "locationHighlight": "Chakratirtha Road, Puri · Quiet leafy lane near beach",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Mayfair Heritage Puri",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Deluxe Sea-Facing Cottage",
+      "pricePerNightINR": 6500,
+      "rating": 4.7,
+      "reviewCount": 1180,
+      "amenities": [
+        "Private Beachside Lawn",
+        "Swimming Pool",
+        "Aquarium Restaurant",
+        "Jagannath Temple Priority Help"
+      ],
+      "locationHighlight": "Chakratirtha Beachfront Promenade",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Mayfair Waves Puri (Beachfront)",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Executive Sea-Front Suite with Jacuzzi",
+      "pricePerNightINR": 11000,
+      "rating": 4.9,
+      "reviewCount": 940,
+      "amenities": [
+        "Direct Waves Access",
+        "Infinity Bay Pool",
+        "Ayurvedic Wellness Spa",
+        "Gourmet Seafood Grills"
+      ],
+      "locationHighlight": "Chakratirtha Road, Puri · Unobstructed Bay of Bengal views",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "odisha-daringbadi": [
+    {
+      "name": "Daringbadi Nature Camp (Eco-Tour Odisha)",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Pine Woods AC Eco Cottage",
+      "pricePerNightINR": 2400,
+      "rating": 4.6,
+      "reviewCount": 310,
+      "amenities": [
+        "Coffee & Pepper Garden Walks",
+        "Authentic Odia Food",
+        "Campfire",
+        "Sunset Point Proximity"
+      ],
+      "locationHighlight": "Hilltop Forest Enclave · Kashmir of Odisha",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Deers Eco Home Resort",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Deluxe Mountain View Cottage",
+      "pricePerNightINR": 3800,
+      "rating": 4.5,
+      "reviewCount": 240,
+      "amenities": [
+        "Lawn Dining",
+        "Midubanda Waterfall Help",
+        "Free Wi-Fi",
+        "Orchard Gardens"
+      ],
+      "locationHighlight": "Daringbadi Valley · Cool 3,000 ft plateau climate",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Hill View Valley Resort Daringbadi",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Presidential Pine Suite",
+      "pricePerNightINR": 5800,
+      "rating": 4.7,
+      "reviewCount": 190,
+      "amenities": [
+        "Panoramic Valley Deck",
+        "Multi-Cuisine Dining",
+        "Private Bonfire Courtyard",
+        "Emu Farm Visits"
+      ],
+      "locationHighlight": "Sunset Point Road, Daringbadi",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "py-pondicherry": [
+    {
+      "name": "Dune de L'Orient Heritage Hotel",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "French Colonial Heritage Room",
+      "pricePerNightINR": 3200,
+      "rating": 4.6,
+      "reviewCount": 580,
+      "amenities": [
+        "Courtyard Creole Dining",
+        "Walk to Promenade Beach",
+        "Free Wi-Fi",
+        "High Timber Ceilings"
+      ],
+      "locationHighlight": "Rue Romain Rolland, White Town · 200m to Sri Aurobindo Ashram",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Promenade Pondicherry (Seaside Promenade)",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Deluxe Bay View Room",
+      "pricePerNightINR": 6800,
+      "rating": 4.7,
+      "reviewCount": 1150,
+      "amenities": [
+        "Direct Promenade Beachfront",
+        "Rooftop Lighthouse Grill",
+        "Plunge Pool",
+        "Auroville Tour Desks"
+      ],
+      "locationHighlight": "Goubert Avenue, White Town · Prime oceanfront promenade",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Palais de Mahe - CGH Earth",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Grand French Mansard Verandah Suite",
+      "pricePerNightINR": 14500,
+      "rating": 4.9,
+      "reviewCount": 890,
+      "amenities": [
+        "Courtyard Lap Pool",
+        "Les Alizes Rooftop Restaurant",
+        "Ayurvedic Treatment Room",
+        "Boutique Colonial Architecture"
+      ],
+      "locationHighlight": "Rue Bussy, French Quarter White Town",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "punjab-amritsar": [
+    {
+      "name": "Hotel City Park Amritsar",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Standard Executive Room",
+      "pricePerNightINR": 2400,
+      "rating": 4.5,
+      "reviewCount": 710,
+      "amenities": [
+        "3 mins walk to Golden Temple & Jallianwala Bagh",
+        "Punjabi Kulcha Breakfast",
+        "Free Wi-Fi",
+        "Langar Walk Guides"
+      ],
+      "locationHighlight": "Near Golden Temple Main Entrance & Heritage Street",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Hyatt Regency Amritsar",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Regency Pool View Suite",
+      "pricePerNightINR": 5800,
+      "rating": 4.7,
+      "reviewCount": 1340,
+      "amenities": [
+        "Free Golden Temple Shuttle",
+        "Vitality Spa",
+        "Outdoor Swimming Pool",
+        "Punjab Province Diner"
+      ],
+      "locationHighlight": "MBM Farms, GT Road · 10 mins from Golden Temple",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Taj Swarna Amritsar",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Luxury Grand Suite",
+      "pricePerNightINR": 11500,
+      "rating": 4.9,
+      "reviewCount": 1120,
+      "amenities": [
+        "Jiva Spa & Wellness",
+        "Heated Outdoor Pool",
+        "Grand Ballroom & Fine Dining",
+        "Curated Wagah Border VIP Help"
+      ],
+      "locationHighlight": "Majitha Verka Bypass Road, Amritsar",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "rajasthan-jaipur": [
+    {
+      "name": "Umaid Bhawan - A Heritage Style Boutique Hotel",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Royal Rajput Fresco Decorated Room",
+      "pricePerNightINR": 2800,
+      "rating": 4.6,
+      "reviewCount": 850,
+      "amenities": [
+        "Rooftop Pool",
+        "Carved Jharokha Balconies",
+        "Rajasthani Puppets & Live Sitar",
+        "Free Wi-Fi"
+      ],
+      "locationHighlight": "Bani Park, Jaipur · Walking distance to Old Walled City",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "ITC Rajputana, A Luxury Collection Hotel",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Rajputana Royal Chamber",
+      "pricePerNightINR": 7500,
+      "rating": 4.7,
+      "reviewCount": 1650,
+      "amenities": [
+        "Kaya Kalp Royal Spa",
+        "Peshawri Restaurant",
+        "Outdoor Bazaar Courtyard",
+        "Swimming Pool"
+      ],
+      "locationHighlight": "Palace Road, Jaipur · Royal fort style brick red architecture",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Rambagh Palace (The Taj Group)",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Historical Palace Suite of the Maharaja",
+      "pricePerNightINR": 28000,
+      "rating": 4.9,
+      "reviewCount": 1980,
+      "amenities": [
+        "Original Residence of Maharaja of Jaipur",
+        "Peacock Landscaped Gardens",
+        "Suvarna Mahal Fine Dining",
+        "Jiva Grande Royal Spa"
+      ],
+      "locationHighlight": "Bhawani Singh Road, Jaipur · Ranked among World's Best Hotels",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "rajasthan-bundi": [
+    {
+      "name": "Bundi Haveli (Charming Old Town)",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Heritage Jharokha Room with Taragarh Fort View",
+      "pricePerNightINR": 2200,
+      "rating": 4.7,
+      "reviewCount": 420,
+      "amenities": [
+        "Rooftop Cafe with Stepwell Views",
+        "Frescoes & Jharokhas",
+        "Free Wi-Fi",
+        "Walk to Garh Palace"
+      ],
+      "locationHighlight": "Sadhan Ghat, Old Bundi · Right beneath Taragarh Fort",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Hadoti Palace Bundi",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Deluxe Colonial Heritage Room",
+      "pricePerNightINR": 4500,
+      "rating": 4.6,
+      "reviewCount": 380,
+      "amenities": [
+        "Swimming Pool",
+        "Lush Manicured Lawns",
+        "Taragarh Fort Panoramas",
+        "Stepwell Tours"
+      ],
+      "locationHighlight": "Opposite Collectorate, Bundi",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Dev Shree Deogarh / Bundi Vilas",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Royal Rajput Heritage Suite",
+      "pricePerNightINR": 8500,
+      "rating": 4.8,
+      "reviewCount": 260,
+      "amenities": [
+        "Built into 300-Year-Old Palace Ramparts",
+        "Rooftop Terrace Dining",
+        "Curated Miniature Painting Tours",
+        "Personalized Butler"
+      ],
+      "locationHighlight": "Under Bundi Palace walls with lake vistas",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "sikkim-gangtok": [
+    {
+      "name": "The Golden Crest Gangtok",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Standard Kanchenjunga View Room",
+      "pricePerNightINR": 2200,
+      "rating": 4.5,
+      "reviewCount": 460,
+      "amenities": [
+        "Free Breakfast",
+        "Walk to MG Marg",
+        "Tsomgo Lake & Nathula Permit Desk",
+        "Free Wi-Fi"
+      ],
+      "locationHighlight": "Near MG Marg pedestrian promenade, Gangtok",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Lemon Tree Hotel Gangtok",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Superior Valley Facing Suite",
+      "pricePerNightINR": 5200,
+      "rating": 4.6,
+      "reviewCount": 810,
+      "amenities": [
+        "Citrus Cafe",
+        "Slanted Valley Terraces",
+        "Fitness Center",
+        "Central Heating"
+      ],
+      "locationHighlight": "Paljor Stadium Road, Gangtok",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Mayfair Spa Resort & Casino Gangtok",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Grand Monastic Villa with Mountain Balcony",
+      "pricePerNightINR": 13500,
+      "rating": 4.9,
+      "reviewCount": 1380,
+      "amenities": [
+        "Sikkimese Monastic Architecture",
+        "On-Site Casino Mahjong",
+        "Award-Winning Luxury Spa",
+        "Heated Swimming Pool"
+      ],
+      "locationHighlight": "Ranipool, Gangtok · 48 acres of pristine Himalayan mist and forest",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "sikkim-pelling": [
+    {
+      "name": "Daragaon Village Retreat Pelling",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Traditional Sikkimese Wooden Homestay Room",
+      "pricePerNightINR": 2200,
+      "rating": 4.8,
+      "reviewCount": 270,
+      "amenities": [
+        "Organic Farm Dinners",
+        "Direct Kanchenjunga Sunrise View",
+        "Village Monastery Walks",
+        "Free Wi-Fi"
+      ],
+      "locationHighlight": "Darap Village, Pelling · Peaceful Limboo tribal hamlet",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "The Elgin Mount Pandim Pelling",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Heritage Deluxe Mount Pandim Room",
+      "pricePerNightINR": 7200,
+      "rating": 4.7,
+      "reviewCount": 610,
+      "amenities": [
+        "8 Acres of Virgin Forest",
+        "Walk to Pemayangtse Monastery",
+        "Oak Paneled Dining",
+        "Unobstructed Snow Peak Panoramas"
+      ],
+      "locationHighlight": "Pemayangtse, Pelling · Highest elevation ridge in West Sikkim",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Chumbi Mountain Retreat & Spa",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Royal Hermitage Suite",
+      "pricePerNightINR": 12000,
+      "rating": 4.9,
+      "reviewCount": 480,
+      "amenities": [
+        "Traditional Dotsho Hot Stone Herbal Bath",
+        "Sikkimese Palace Architecture",
+        "Organic Herb Gardens",
+        "Private Kanchenjunga Terraces"
+      ],
+      "locationHighlight": "Naku Chumbong, Pelling · Facing the Kanchenjunga massif",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "tn-ooty": [
+    {
+      "name": "King's Cliff Heritage Hotel",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Colonial Fireplace Room",
+      "pricePerNightINR": 3200,
+      "rating": 4.6,
+      "reviewCount": 590,
+      "amenities": [
+        "Historic British Mansion",
+        "Earl's Secret Glasshouse Restaurant",
+        "Tea Estate Walks",
+        "Fireplace Warmth"
+      ],
+      "locationHighlight": "Havelock Road, Ooty · Overlooking town and Nilgiri pine hills",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Fortune Resort Sullivan Court (Member ITC)",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Deluxe Nilgiri View Room",
+      "pricePerNightINR": 6500,
+      "rating": 4.7,
+      "reviewCount": 1150,
+      "amenities": [
+        "Named after John Sullivan (Founder of Ooty)",
+        "Lush Greenery Lawns",
+        "Pavilion Multi-Cuisine Diner",
+        "Spa & Wellness"
+      ],
+      "locationHighlight": "Selbourne Road, Ooty · 1 km from Rose Garden",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Savoy - IHCL SeleQtions Ooty",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Historical Colonial Suite with Fireplace",
+      "pricePerNightINR": 15000,
+      "rating": 4.9,
+      "reviewCount": 890,
+      "amenities": [
+        "180-Year-Old English Country Style Hotel",
+        "Dining Room with English High Tea",
+        "Jiva Spa",
+        "Nilgiri Mountain Railway Booking Help"
+      ],
+      "locationHighlight": "Sylks Road, Ooty · 6 acres of landscaped English floral gardens",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "tn-dhanushkodi": [
+    {
+      "name": "Hotel MCM Towers Rameshwaram",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Standard Coastal AC Room",
+      "pricePerNightINR": 2000,
+      "rating": 4.4,
+      "reviewCount": 480,
+      "amenities": [
+        "Walk to Ramanathaswamy Temple",
+        "Pure Veg Chettinad Dining",
+        "Dhanushkodi 4x4 Jeep Desk",
+        "Free Wi-Fi"
+      ],
+      "locationHighlight": "Temple Car Street, Rameshwaram · Gateway to Dhanushkodi ghost town",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Daiwik Hotels Rameswaram",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Superior Pilgrimage Comfort Room",
+      "pricePerNightINR": 4800,
+      "rating": 4.6,
+      "reviewCount": 920,
+      "amenities": [
+        "Ahaan Multi-Cuisine Diner",
+        "Pilgrim Concierge",
+        "Free Wi-Fi",
+        "Pamban Bridge Transfers"
+      ],
+      "locationHighlight": "NH49 Madurai-Rameswaram Highway · 5 mins from railhead",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Hyatt Place Rameswaram",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "King Ocean Breeze Suite",
+      "pricePerNightINR": 8500,
+      "rating": 4.8,
+      "reviewCount": 780,
+      "amenities": [
+        "Outdoor Swimming Pool",
+        "24/7 Gallery Kitchen",
+        "Fitness Center",
+        "Curated Ram Setu & Dhanushkodi Beach Excursions"
+      ],
+      "locationHighlight": "Madurai-Dhanushkodi Bypass, Rameshwaram",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "telangana-hyderabad": [
+    {
+      "name": "Red Fox Hotel HITEC City",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Standard Modern AC Room",
+      "pricePerNightINR": 2800,
+      "rating": 4.4,
+      "reviewCount": 890,
+      "amenities": [
+        "Clever Fox Cafe",
+        "Fitness Hub",
+        "Free High-Speed Wi-Fi",
+        "Metro Connectivity"
+      ],
+      "locationHighlight": "HITEC City / Madhapur · 15 mins to Golconda Fort",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "ITC Kohenur, A Luxury Collection Hotel",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Durgam Cheruvu Lake View Room",
+      "pricePerNightINR": 8500,
+      "rating": 4.8,
+      "reviewCount": 1620,
+      "amenities": [
+        "Durgam Cheruvu Lakefront",
+        "Dum Pukht Begum's Royal Hyderabadi Cuisine",
+        "Kaya Kalp Spa",
+        "Rooftop Pool"
+      ],
+      "locationHighlight": "HITEC City Hyderabad · Overlooking freshwater lake",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Taj Falaknuma Palace",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Nizam's Historical Palace Suite",
+      "pricePerNightINR": 32000,
+      "rating": 4.9,
+      "reviewCount": 1780,
+      "amenities": [
+        "Horse-Drawn Carriage Arrival",
+        "Jade Room & 101-Seater Dining Hall",
+        "Royal Jiva Spa",
+        "Live Qawwali Evenings"
+      ],
+      "locationHighlight": "Engine Bowli, Falaknuma · 2,000 ft hill overlooking old Hyderabad",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "telangana-laknavaram": [
+    {
+      "name": "Laknavaram Island Resort (TSTDC Wooden Cottages)",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Island Wooden Lake Cottage",
+      "pricePerNightINR": 2500,
+      "rating": 4.5,
+      "reviewCount": 420,
+      "amenities": [
+        "Suspension Bridge Island Access",
+        "Speedboat Safaris",
+        "Lakefront Restaurant",
+        "Night Stargazing"
+      ],
+      "locationHighlight": "Govindaraopet, Laknavaram Lake · Island nestled among 13 lake atolls",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Haritha Kakatiya Hotel Warangal",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Deluxe Kakatiya Suite",
+      "pricePerNightINR": 3800,
+      "rating": 4.4,
+      "reviewCount": 510,
+      "amenities": [
+        "Thousand Pillar Temple Proximity",
+        "Telangana Regional Thali",
+        "Free Wi-Fi",
+        "UNESCO Ramappa Temple Shuttles"
+      ],
+      "locationHighlight": "Subedari, Hanamkonda / Warangal",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Ramappa Lake Eco Cottages (UNESCO Circuit)",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Luxury Lake Chalet",
+      "pricePerNightINR": 5500,
+      "rating": 4.7,
+      "reviewCount": 280,
+      "amenities": [
+        "Adjacent to 800-Year-Old UNESCO Ramappa Temple",
+        "Lake Boating",
+        "Campfire",
+        "Forest Walks"
+      ],
+      "locationHighlight": "Palampet, Mulugu · Overlooking 13th-century Kakatiya reservoir",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "tripura-unakoti": [
+    {
+      "name": "Unakoti Tourist Lodge Kailashahar",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Standard Hill Sanctuary AC Room",
+      "pricePerNightINR": 1600,
+      "rating": 4.3,
+      "reviewCount": 210,
+      "amenities": [
+        "Walk to Rock-Carved Shiva Bas-Reliefs",
+        "Tripuri Local Cuisine",
+        "Tea Garden Walks",
+        "Free Parking"
+      ],
+      "locationHighlight": "Kailashahar · 8 km from Unakoti rock sculptures",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Ginger Hotel Agartala",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Smart Luxe Room",
+      "pricePerNightINR": 3800,
+      "rating": 4.5,
+      "reviewCount": 640,
+      "amenities": [
+        "Square Meal Restaurant",
+        "Fitness Room",
+        "Free Wi-Fi",
+        "Ujjayanta Palace Proximity"
+      ],
+      "locationHighlight": "Khejur Bagan, Agartala · 5 mins to Tripura State Museum",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Hotel Polo Lake Resort Neermahal",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Water Palace View Royal Suite",
+      "pricePerNightINR": 6200,
+      "rating": 4.7,
+      "reviewCount": 350,
+      "amenities": [
+        "Rudrasagar Lake Waterfront",
+        "Boating to Neermahal Water Palace",
+        "Swimming Pool",
+        "Tripura Folk Dinners"
+      ],
+      "locationHighlight": "Melaghar, Tripura · Facing lake palace illuminated at night",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "up-varanasi": [
+    {
+      "name": "Scindhia Guest House (On Ganga Ghats)",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "River-Facing Heritage Room",
+      "pricePerNightINR": 2200,
+      "rating": 4.6,
+      "reviewCount": 680,
+      "amenities": [
+        "Direct Sunrise Ganga View",
+        "Rooftop Restaurant",
+        "Steps to Manikarnika & Kashi Vishwanath",
+        "Morning Boat Help"
+      ],
+      "locationHighlight": "Scindhia Ghat, Varanasi · Right above ancient river steps",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "BrijRama Palace, Varanasi",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Varuna Heritage Palace Room",
+      "pricePerNightINR": 14000,
+      "rating": 4.8,
+      "reviewCount": 980,
+      "amenities": [
+        "210-Year-Old Darbhanga Ghat Palace",
+        "Private Bajra Boat Arrival",
+        "Chokha Vegetarian Fine Dining",
+        "Evening Classical Flute on Rooftop"
+      ],
+      "locationHighlight": "Darbhanga Ghat · Steps from Dashashwamedh Ganga Aarti",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Taj Ganges Varanasi",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Luxury Garden Suite",
+      "pricePerNightINR": 15500,
+      "rating": 4.9,
+      "reviewCount": 1450,
+      "amenities": [
+        "40 Acres of Lush Green Gardens",
+        "Varuna & Chowk Restaurants",
+        "Jiva Luxury Spa",
+        "VIP Ganga Aarti Arrangements"
+      ],
+      "locationHighlight": "Nadesar Palace Compound, Varanasi Cantonment",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "up-dudhwa": [
+    {
+      "name": "Dudhwa Forest Rest House Tharu Huts",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Tharu Tribal Eco Hut",
+      "pricePerNightINR": 2000,
+      "rating": 4.4,
+      "reviewCount": 210,
+      "amenities": [
+        "Deep in Terai Sal Forest",
+        "Tharu Organic Dining",
+        "Rhino Safari Desk",
+        "Campfire"
+      ],
+      "locationHighlight": "Dudhwa National Park Headquarters, Palia Kalan",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Jaagir Lodge Dudhwa (Relais & Châteaux Associate)",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Colonial Planters Suite with Verandah",
+      "pricePerNightINR": 8500,
+      "rating": 4.8,
+      "reviewCount": 340,
+      "amenities": [
+        "1940s Restored Colonial Farmhouse",
+        "Escorted Naturalist Safaris",
+        "Private Verandahs",
+        "Organic Farm-to-Table"
+      ],
+      "locationHighlight": "Near Kishanpur Wildlife Sanctuary buffer",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "The Tiger Den Resort Dudhwa",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Royal Machan Jungle Suite",
+      "pricePerNightINR": 12500,
+      "rating": 4.7,
+      "reviewCount": 280,
+      "amenities": [
+        "Elevated Machan Views",
+        "Elephant Back Rhino Tracking",
+        "Pool & Wilderness Lounge",
+        "Terai Banquet"
+      ],
+      "locationHighlight": "Dudhwa Tiger Reserve Edge, Lakhimpur Kheri",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "uk-rishikesh": [
+    {
+      "name": "Zostel Rishikesh (Tapovan)",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Private AC Deluxe Room with Mountain View",
+      "pricePerNightINR": 2200,
+      "rating": 4.7,
+      "reviewCount": 1120,
+      "amenities": [
+        "Rooftop Cafe & Yoga Studio",
+        "River Rafting Booking",
+        "High-Speed Wi-Fi",
+        "Community Lounge"
+      ],
+      "locationHighlight": "Tapovan, Rishikesh · 5 mins walk to Laxman Jhula & cafes",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Aloha On The Ganges",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Ganga Facing Luxury Apartment Room",
+      "pricePerNightINR": 6500,
+      "rating": 4.8,
+      "reviewCount": 1890,
+      "amenities": [
+        "Infinity Pool overlooking Ganges & Himalayan foothills",
+        "Ayurvedic Spa & Daily Yoga",
+        "Latitude Diner",
+        "Private Ghat Steps"
+      ],
+      "locationHighlight": "Tapovan, Rishikesh · Directly on emerald banks of holy Ganga",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Ananda in the Himalayas",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Palace Heritage Valley View Suite",
+      "pricePerNightINR": 24000,
+      "rating": 4.9,
+      "reviewCount": 980,
+      "amenities": [
+        "Maharaja's Palace Estate",
+        "World-Renowned 24,000 sq ft Wellness Spa",
+        "Vedanta & Meditation Pavilions",
+        "Organic Gourmet Wellness Cuisine"
+      ],
+      "locationHighlight": "Narendra Nagar Palace Ridge · Overlooking Rishikesh & Ganga Valley",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "uk-chopta": [
+    {
+      "name": "Magpie Jungle Camp Chopta",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Alpine Meadow Swiss Tent with Mountain View",
+      "pricePerNightINR": 2400,
+      "rating": 4.6,
+      "reviewCount": 380,
+      "amenities": [
+        "Tungnath & Chandrashila Trek Guide",
+        "Homestyle Garhwali Food",
+        "Campfire",
+        "Chaukhamba Peak Views"
+      ],
+      "locationHighlight": "Dugalbitta, Chopta · Mini Switzerland of Uttarakhand",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Chopta Meadows Eco Resort",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Deluxe Deodar Wood Heated Cottage",
+      "pricePerNightINR": 4500,
+      "rating": 4.7,
+      "reviewCount": 420,
+      "amenities": [
+        "Snow Peak Balconies",
+        "In-House Dining",
+        "Stargazing Telescopes",
+        "Deoriatal Trek Shuttles"
+      ],
+      "locationHighlight": "Chopta Valley Meadow Rim",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "The Monal Himalayan Resort Sari",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Luxury Himalayan Panorama Chalet",
+      "pricePerNightINR": 7200,
+      "rating": 4.8,
+      "reviewCount": 290,
+      "amenities": [
+        "Full Glass Wall Panoramas of Chaukhamba Peaks",
+        "Garhwali Fine Dining",
+        "Private Lawn Sundecks",
+        "Curated Rhododendron Forest Walks"
+      ],
+      "locationHighlight": "Sari Village Base Ridge · 20 mins to Chopta Meadows",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "wb-darjeeling": [
+    {
+      "name": "Dekeling Hotel & Homestay",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Traditional Wooden Attic Kanchenjunga View Room",
+      "pricePerNightINR": 2400,
+      "rating": 4.6,
+      "reviewCount": 540,
+      "amenities": [
+        "Direct View of Kanchenjunga",
+        "Tibetan Homestyle Food",
+        "Walk to Mall Road & Toy Train",
+        "Free Wi-Fi"
+      ],
+      "locationHighlight": "Gandhi Road, Darjeeling · 5 mins walk to Chaurrasta / Mall",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Windamere Hotel (Heritage Colonial)",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Colonial Suite with Coal Fireplace",
+      "pricePerNightINR": 6800,
+      "rating": 4.7,
+      "reviewCount": 890,
+      "amenities": [
+        "Original 19th-Century Boarding House",
+        "English Afternoon High Tea",
+        "Observatory Hill Walks",
+        "Traditional Fireplaces"
+      ],
+      "locationHighlight": "Historic Observatory Hill, Darjeeling",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Glenburn Tea Estate & Boutique Retreat",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Luxury Planter's Suite overlooking Rungeet River",
+      "pricePerNightINR": 18500,
+      "rating": 4.9,
+      "reviewCount": 610,
+      "amenities": [
+        "1,600 Acres of Private Tea Forest",
+        "All Gourmet Meals & Estate Wines Included",
+        "Tea Factory Tastings",
+        "Private River Campsite & Treks"
+      ],
+      "locationHighlight": "Glenburn Tea Estate · Facing Kanchenjunga across misty valley",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "wb-dooars": [
+    {
+      "name": "Tinchuley Gurung Guest House",
+      "tier": "Budget / Homestay",
+      "categoryTag": "💎 Best Budget Value",
+      "roomType": "Eco Mountain Wooden Room",
+      "pricePerNightINR": 1800,
+      "rating": 4.7,
+      "reviewCount": 310,
+      "amenities": [
+        "Organic Orange Orchard Walks",
+        "Gorkha Homestyle Dining",
+        "Teesta River Overlook",
+        "Free Wi-Fi"
+      ],
+      "locationHighlight": "Tinchuley Village · Quiet offbeat ridge in Dooars foothills",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Murti River Forest Resort",
+      "tier": "Comfort / Mid-Range",
+      "categoryTag": "⭐ Recommended Best Match",
+      "roomType": "Deluxe Riverbank AC Cottage",
+      "pricePerNightINR": 3800,
+      "rating": 4.5,
+      "reviewCount": 420,
+      "amenities": [
+        "Gorumara National Park Gate Proximity",
+        "Elephant Safari Desk",
+        "Bengali Cuisine Diner",
+        "River Pebble Walks"
+      ],
+      "locationHighlight": "Murti Riverbank, Dooars",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "name": "Sinclairs Retreat Dooars",
+      "tier": "Luxury / Resort",
+      "categoryTag": "👑 Luxury Upgrade",
+      "roomType": "Luxury Garden Villa Suite",
+      "pricePerNightINR": 7200,
+      "rating": 4.8,
+      "reviewCount": 560,
+      "amenities": [
+        "20 Acres of Tropical Landscaping",
+        "Swimming Pool & Spa",
+        "The Banyan Multi-Cuisine Diner",
+        "Jaldapara Rhino Safaris"
+      ],
+      "locationHighlight": "Chalsa Hilltop, Dooars · Surrounded by tea gardens and sal forests",
+      "availabilityStatus": "Rooms Available for Selected Dates",
+      "availabilityBadge": "Instant Confirmation",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+    }
+  ]
+}

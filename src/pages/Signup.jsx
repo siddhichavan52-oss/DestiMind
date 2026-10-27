@@ -31,7 +31,7 @@ export default function Signup() {
     return next;
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
     const next = validate();
     if (Object.keys(next).length > 0) {
@@ -39,7 +39,7 @@ export default function Signup() {
       return;
     }
 
-    const result = signupUser(form);
+    const result = await signupUser(form);
     if (!result.ok) {
       setErrors({ email: result.message });
       return;
