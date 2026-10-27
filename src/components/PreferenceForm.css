@@ -1190,3 +1190,84 @@
 .pf-from-empty:hover {
   color: var(--coral);
 }
+
+.pf-from-select {
+  background: rgba(15, 27, 45, 0.85);
+  border: 1px solid rgba(255, 179, 71, 0.45);
+  color: var(--dawn, #FFB347);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.pf-from-select:hover,
+.pf-from-select:focus {
+  border-color: var(--coral, #FF6F5E);
+  box-shadow: 0 0 10px rgba(255, 179, 71, 0.25);
+}
+
+.pf-from-select option {
+  background: #0F1B2D;
+  color: #F7F5F0;
+  font-weight: 500;
+}
+
+.pf-from-subtext {
+  font-size: 11.5px;
+  color: rgba(247, 245, 240, 0.45);
+  font-style: italic;
+}
+
+
+/* Dynamic Flight Budget Lock Banner */
+.flight-budget-lock-banner {
+  margin-top: 14px;
+  padding: 12px 16px;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.12), rgba(14, 165, 233, 0.05));
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  animation: fadeInLock 0.3s ease-in-out;
+}
+
+@keyframes fadeInLock {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.flight-lock-pill-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #38bdf8;
+  letter-spacing: 0.01em;
+  margin-bottom: 6px;
+}
+
+.flight-lock-pill-title span {
+  color: #7dd3fc;
+}
+
+.flight-lock-explanation {
+  font-size: 11.8px;
+  line-height: 1.45;
+  color: rgba(247, 245, 240, 0.85);
+  margin: 0;
+}
+
+.flight-lock-explanation strong {
+  color: #bae6fd;
+}

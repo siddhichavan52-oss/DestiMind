@@ -1,4 +1,4 @@
-import { useMemo, useState, useEffect } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Country, State, City } from 'country-state-city';
 import {
@@ -44,7 +44,11 @@ const MAX_DESTINATIONS = 6;
 export default function Profile() {
   const navigate = useNavigate();
   const session = getSession();
-  const existing = session ? getProfile(session.email) : null;
+  const [existing, setExisting] = useState(null);
+  const [loadError, setLoadError] = useState('');
+  useEffect(() => {
+    if (session) getProfile(session.email).then(setExisting).catch((err) => setLoadError(err.message));
+  }, [session?.email]);
 
   const allCountries = useMemo(() => Country.getAllCountries(), []);
 
@@ -63,6 +67,17 @@ export default function Profile() {
   const [errors, setErrors] = useState({});
   const [saved, setSaved] = useState(false);
   const [favoriteDestinations, setFavoriteDestinations] = useState([]);
+
+  useEffect(() => {
+    if (!existing) return;
+    setCountryCode(existing.countryCode || '');
+    setStateCode(existing.stateCode || '');
+    setCity(existing.city || '');
+    setDestinations(existing.destinations?.length
+      ? [...existing.destinations, ...Array(MAX_DESTINATIONS).fill('')].slice(0, MAX_DESTINATIONS)
+      : Array(MIN_DESTINATIONS).fill(''));
+    setVibes(existing.vibes || []);
+  }, [existing]);
 
   const states = useMemo(
     () => (countryCode ? State.getStatesOfCountry(countryCode) : []),
@@ -130,7 +145,7 @@ export default function Profile() {
     return next;
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
     const next = validate();
     if (Object.keys(next).length > 0) {
@@ -141,20 +156,42 @@ export default function Profile() {
 
     const countryName = Country.getCountryByCode(countryCode)?.name || '';
     const stateName = states.find((s) => s.isoCode === stateCode)?.name || '';
+    const cleanDests = destinations.map((d) => d.trim()).filter(Boolean);
 
-    saveProfile(session.email, {
+    const profile = {
       countryCode,
       country: countryName,
       stateCode,
       state: stateName,
       city,
-      destinations: destinations.map((d) => d.trim()).filter(Boolean),
+      destinations: cleanDests,
       vibes,
-    });
+    };
+    try {
+      await saveProfile(session.email, profile);
+    } catch (err) {
+      setErrors({ save: err.message });
+      setSaved(false);
+      return;
+    }
+
+    const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000').replace(/\/$/, '');
+    fetch(`${API_BASE_URL}/api/user/train`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        email: session.email,
+        name: session.name,
+        originCity: city,
+        originState: stateName,
+        favoriteDestinations: cleanDests,
+        preferredVibes: vibes,
+      }),
+    }).catch((err) => console.log('RAG profile training note:', err));
 
     setErrors({});
     setSaved(true);
-    setTimeout(() => navigate('/home'), 900);
+    setTimeout(() => navigate('/home'), 1200);
   }
 
   return (
@@ -184,11 +221,11 @@ export default function Profile() {
 
           <span className="profile-eyebrow">
             <Sparkles size={14} strokeWidth={2} />
-            Tell us what you love
+            Train DestiMind RAG
           </span>
           <h1 className="profile-title">Build your travel profile</h1>
           <p className="profile-subtitle">
-            This helps DestiMind match you with places you'll actually want to visit.
+            DestiMind RAG trains on your home location, favorites, and vibes to personalize every itinerary.
           </p>
 
           {favoriteDestinations.length > 0 && (
@@ -227,9 +264,12 @@ export default function Profile() {
           <ExplorerCard />
 
           {saved ? (
-            <div className="profile-success">Profile saved — taking you home.</div>
+            <div className="profile-success">
+              🧠 Profile saved & DestiMind RAG memory trained — taking you home!
+            </div>
           ) : (
             <form className="profile-form" onSubmit={handleSubmit} noValidate>
+              {(loadError || errors.save) && <span className="field-hint">{loadError || errors.save}</span>}
               <div className="profile-section">
                 <p className="profile-section-title">
                   <MapPin size={15} strokeWidth={2} />

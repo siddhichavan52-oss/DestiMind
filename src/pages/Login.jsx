@@ -29,7 +29,7 @@ export default function Login() {
     return next;
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
     const next = validate();
     if (Object.keys(next).length > 0) {
@@ -38,7 +38,7 @@ export default function Login() {
       return;
     }
 
-    const result = loginUser(form);
+    const result = await loginUser(form);
     if (!result.ok) {
       setErrors({});
       setFormError(result.message);

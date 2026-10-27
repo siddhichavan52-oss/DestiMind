@@ -1,0 +1,336 @@
+{
+  "sachin@example.com": {
+    "email": "sachin@example.com",
+    "name": "Sachin",
+    "originCity": "Delhi",
+    "originState": "Delhi",
+    "favoriteDestinations": [
+      "Manali",
+      "Goa"
+    ],
+    "preferredVibes": [
+      "Adventure",
+      "Nature",
+      "Relaxation"
+    ],
+    "placesVisited": [
+      "Lonavala"
+    ],
+    "pastTrips": [
+      {
+        "state": "Himachal Pradesh",
+        "city": null,
+        "travelMode": "Flight",
+        "budget": 45000.0,
+        "days": 5,
+        "startDate": "2026-11-15",
+        "endDate": "2026-11-20",
+        "timestamp": "2026-10-18T12:13:22.899976"
+      },
+      {
+        "state": "Kerala",
+        "city": null,
+        "travelMode": "Flight",
+        "budget": 38000.0,
+        "days": 5,
+        "startDate": "2026-11-10",
+        "endDate": "2026-11-15",
+        "timestamp": "2026-10-18T12:43:24.916836"
+      }
+    ],
+    "trainingEpochs": 5,
+    "createdAt": "2026-10-18T12:13:01.329224",
+    "lastTrainedAt": "2026-10-18T12:43:24.916846"
+  },
+  "siddhichavan52@gmail.com": {
+    "email": "siddhichavan52@gmail.com",
+    "name": "Siddhi",
+    "originCity": "Mumbai",
+    "originState": "Maharashtra",
+    "favoriteDestinations": [],
+    "preferredVibes": [
+      "Culture",
+      "Relaxation"
+    ],
+    "placesVisited": [],
+    "pastTrips": [
+      {
+        "state": "Jammu and Kashmir",
+        "city": "Bandipore",
+        "budget": 35000,
+        "days": 9,
+        "travelMode": "Train",
+        "startDate": "2026-10-20",
+        "endDate": "2026-10-28",
+        "timestamp": "2026-10-18T12:21:11.936064"
+      },
+      {
+        "state": "Jammu and Kashmir",
+        "city": "Bandipore",
+        "travelMode": "Train",
+        "budget": 35000.0,
+        "days": 9,
+        "startDate": "2026-10-20",
+        "endDate": "2026-10-28",
+        "timestamp": "2026-10-18T12:21:35.737465"
+      },
+      {
+        "state": "Nagaland",
+        "city": "",
+        "budget": 35000,
+        "days": 3,
+        "travelMode": "Flight",
+        "startDate": "2026-10-26",
+        "endDate": "2026-10-28",
+        "timestamp": "2026-10-18T12:22:13.238720"
+      },
+      {
+        "state": "Nagaland",
+        "city": null,
+        "travelMode": "Flight",
+        "budget": 35000.0,
+        "days": 3,
+        "startDate": "2026-10-26",
+        "endDate": "2026-10-28",
+        "timestamp": "2026-10-18T12:22:27.132923"
+      },
+      {
+        "state": "Goa",
+        "city": "",
+        "budget": 35000,
+        "days": 3,
+        "travelMode": "Train",
+        "startDate": "2026-10-20",
+        "endDate": "2026-10-22",
+        "timestamp": "2026-10-18T12:24:05.855705"
+      },
+      {
+        "state": "Goa",
+        "city": null,
+        "travelMode": "Train",
+        "budget": 35000.0,
+        "days": 3,
+        "startDate": "2026-10-20",
+        "endDate": "2026-10-22",
+        "timestamp": "2026-10-18T12:24:24.933167"
+      },
+      {
+        "state": "Goa",
+        "city": "",
+        "budget": 35000,
+        "days": 5,
+        "travelMode": "Flight",
+        "startDate": "2026-10-19",
+        "endDate": "2026-10-23",
+        "timestamp": "2026-10-18T12:48:58.811724"
+      },
+      {
+        "state": "Goa",
+        "city": null,
+        "travelMode": "Flight",
+        "budget": 35000.0,
+        "days": 5,
+        "startDate": "2026-10-19",
+        "endDate": "2026-10-23",
+        "timestamp": "2026-10-18T12:49:18.044213"
+      },
+      {
+        "state": "Goa",
+        "city": "",
+        "budget": 35000,
+        "days": 4,
+        "travelMode": "Flight",
+        "startDate": "2026-10-20",
+        "endDate": "2026-10-23",
+        "timestamp": "2026-10-18T13:08:21.531102"
+      },
+      {
+        "state": "Goa",
+        "city": null,
+        "travelMode": "Flight",
+        "budget": 35000.0,
+        "days": 4,
+        "startDate": "2026-10-20",
+        "endDate": "2026-10-23",
+        "timestamp": "2026-10-18T13:08:42.065780"
+      },
+      {
+        "state": "Andaman and Nicobar Islands",
+        "city": "",
+        "budget": 35000,
+        "days": 3,
+        "travelMode": "Flight",
+        "startDate": "2026-11-02",
+        "endDate": "2026-11-04",
+        "timestamp": "2026-10-18T19:04:33.778635"
+      },
+      {
+        "state": "Andaman and Nicobar Islands",
+        "city": null,
+        "travelMode": "Flight",
+        "budget": 35000.0,
+        "days": 3,
+        "startDate": "2026-11-02",
+        "endDate": "2026-11-04",
+        "timestamp": "2026-10-18T19:04:33.793123"
+      },
+      {
+        "state": "Gujarat",
+        "city": "",
+        "budget": 35000,
+        "days": 4,
+        "travelMode": "Flight",
+        "startDate": "2026-11-06",
+        "endDate": "2026-11-09",
+        "timestamp": "2026-10-18T19:06:47.148232"
+      },
+      {
+        "state": "Gujarat",
+        "city": null,
+        "travelMode": "Flight",
+        "budget": 35000.0,
+        "days": 4,
+        "startDate": "2026-11-06",
+        "endDate": "2026-11-09",
+        "timestamp": "2026-10-18T19:07:56.408921"
+      },
+      {
+        "state": "Maharashtra",
+        "city": "",
+        "budget": 35000,
+        "days": 3,
+        "travelMode": "Train",
+        "startDate": "2026-10-27",
+        "endDate": "2026-10-29",
+        "timestamp": "2026-10-18T19:10:25.236789"
+      },
+      {
+        "state": "Maharashtra",
+        "city": null,
+        "travelMode": "Train",
+        "budget": 35000.0,
+        "days": 3,
+        "startDate": "2026-10-27",
+        "endDate": "2026-10-29",
+        "timestamp": "2026-10-18T19:10:32.458044"
+      },
+      {
+        "state": "Goa",
+        "city": "",
+        "budget": 35000,
+        "days": 3,
+        "travelMode": "Flight",
+        "startDate": "2026-11-01",
+        "endDate": "2026-11-03",
+        "timestamp": "2026-10-18T19:13:54.501044"
+      },
+      {
+        "state": "Goa",
+        "city": null,
+        "travelMode": "Flight",
+        "budget": 35000.0,
+        "days": 3,
+        "startDate": "2026-11-01",
+        "endDate": "2026-11-03",
+        "timestamp": "2026-10-18T19:13:54.510975"
+      },
+      {
+        "state": "",
+        "city": "",
+        "budget": 35000,
+        "days": 5,
+        "travelMode": "Flight",
+        "startDate": "2026-11-08",
+        "endDate": "2026-11-13",
+        "timestamp": "2026-10-25T11:47:01.846326"
+      },
+      {
+        "state": "All States",
+        "city": "Any City",
+        "travelMode": "Flight",
+        "budget": 35000.0,
+        "days": 5,
+        "startDate": "2026-11-08",
+        "endDate": "2026-11-13",
+        "timestamp": "2026-10-25T11:49:02.262344"
+      },
+      {
+        "state": "",
+        "city": "",
+        "budget": 35000,
+        "days": 5,
+        "travelMode": "Flight",
+        "startDate": "2026-11-08",
+        "endDate": "2026-11-13",
+        "timestamp": "2026-10-25T12:00:10.654535"
+      },
+      {
+        "state": "",
+        "city": "",
+        "budget": 35000,
+        "days": 5,
+        "travelMode": "Flight",
+        "startDate": "2026-11-08",
+        "endDate": "2026-11-13",
+        "timestamp": "2026-10-25T12:02:15.244176"
+      },
+      {
+        "state": "All States",
+        "city": "Any City",
+        "travelMode": "Flight",
+        "budget": 35000.0,
+        "days": 5,
+        "startDate": "2026-11-08",
+        "endDate": "2026-11-13",
+        "timestamp": "2026-10-25T12:03:47.623951"
+      },
+      {
+        "state": "All States",
+        "city": "Any City",
+        "travelMode": "Flight",
+        "budget": 35000.0,
+        "days": 5,
+        "startDate": "2026-11-08",
+        "endDate": "2026-11-13",
+        "timestamp": "2026-10-25T12:04:37.252410"
+      }
+    ],
+    "trainingEpochs": 36,
+    "createdAt": "2026-10-18T12:21:11.935878",
+    "lastTrainedAt": "2026-10-25T12:04:37.252415"
+  },
+  "abc@gmail.com": {
+    "email": "abc@gmail.com",
+    "name": "sunanda",
+    "originCity": "Mumbai",
+    "originState": "Maharashtra",
+    "favoriteDestinations": [],
+    "preferredVibes": [],
+    "placesVisited": [],
+    "pastTrips": [
+      {
+        "state": "Andaman and Nicobar Islands",
+        "city": "",
+        "budget": 35000,
+        "days": 4,
+        "travelMode": "Flight",
+        "startDate": "2026-10-19",
+        "endDate": "2026-10-22",
+        "timestamp": "2026-10-18T18:58:32.893630"
+      },
+      {
+        "state": "Andaman and Nicobar Islands",
+        "city": null,
+        "travelMode": "Flight",
+        "budget": 35000.0,
+        "days": 4,
+        "startDate": "2026-10-19",
+        "endDate": "2026-10-22",
+        "timestamp": "2026-10-18T18:58:32.918800"
+      }
+    ],
+    "trainingEpochs": 3,
+    "createdAt": "2026-10-18T18:58:32.893564",
+    "lastTrainedAt": "2026-10-18T18:58:32.918815"
+  }
+}

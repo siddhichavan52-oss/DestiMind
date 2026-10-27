@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Havelock Farms Resort",
+    "tier": "Budget / Homestay",
+    "categoryTag": "\ud83d\udc8e Best Budget Value",
+    "pricePerNightINR": 3200,
+    "rating": 8.8,
+    "reviewCount": 422,
+    "roomType": "Standard Room with Balcony",
+    "amenities": [
+      "Free Wi-Fi",
+      "Garden",
+      "Restaurant",
+      "Spa & Wellness Center",
+      "Snorkeling/Diving"
+    ],
+    "locationHighlight": "1.3 kms from Govind Nagar Beach",
+    "availabilityStatus": "Rooms Available for 2026-11-12 to 2026-11-17",
+    "availabilityBadge": "Instant Confirmation",
+    "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "TSG Blue Resort & Spa",
+    "tier": "Comfort / Mid-Range",
+    "categoryTag": "\u2728 Quality Mid-Range Stay",
+    "pricePerNightINR": 4200,
+    "rating": 8.5,
+    "reviewCount": 1788,
+    "roomType": "Deluxe Room with Balcony",
+    "amenities": [
+      "Free Wi-Fi",
+      "Breakfast Included",
+      "Swimming Pool",
+      "Spa",
+      "Beach Access"
+    ],
+    "locationHighlight": "Near Radhanagar Beach (Beach No 7)",
+    "availabilityStatus": "Rooms Available for 2026-11-12 to 2026-11-17",
+    "availabilityBadge": "Instant Confirmation",
+    "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "name": "Taj Exotica Resort & Spa, Andamans",
+    "tier": "Luxury / Resort",
+    "categoryTag": "\ud83d\udc51 Ultimate Luxury Retreat",
+    "pricePerNightINR": 15000,
+    "rating": 9.5,
+    "reviewCount": 106,
+    "roomType": "Luxury Villa",
+    "amenities": [
+      "Private Beach Access",
+      "Infinity Pool",
+      "Spa & Wellness Center",
+      "Fine Dining",
+      "Free Wi-Fi"
+    ],
+    "locationHighlight": "Located on Radhanagar Beach (Beach No 7)",
+    "availabilityStatus": "Rooms Available for 2026-11-12 to 2026-11-17",
+    "availabilityBadge": "Instant Confirmation",
+    "image": "https://images.unsplash.com/photo-1587061949409-02df41d5e562?auto=format&fit=crop&w=800&q=80"
+  }
+]

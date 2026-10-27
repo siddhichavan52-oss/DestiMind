@@ -10,12 +10,14 @@ import {
 } from 'lucide-react';
 import { getSession } from '../utils/auth';
 import { getProfile, PROFILE_UPDATED_EVENT } from '../utils/profile';
+import { getLearnedVibes, saveTravelPreferences } from '../utils/travelHistory';
 import './PreferenceForm.css';
 
 // DestiMind is India-only for now, so the destination country is fixed
 // and the picker below only asks for state (required) and city (optional).
 const COUNTRY_CODE = 'IN';
 const COUNTRY_NAME = 'India';
+const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000').replace(/\/$/, '');
 
 const COUNTRY_TIER = {
   IN: 'value', TH: 'value', VN: 'value', ID: 'value', LK: 'value', MA: 'value',
@@ -49,6 +51,26 @@ const TRAVEL_MODE_COST = {
   Flexible: 5000,
 };
 
+export const POPULAR_ORIGIN_CITIES = [
+  'New Delhi',
+  'Mumbai',
+  'Bengaluru',
+  'Kolkata',
+  'Chennai',
+  'Hyderabad',
+  'Ahmedabad',
+  'Pune',
+  'Jaipur',
+  'Chandigarh',
+  'Lucknow',
+  'Kochi',
+  'Goa',
+  'Guwahati',
+  'Varanasi',
+  'Bhubaneswar',
+  'Patna',
+];
+
 function formatRs(value) {
   return `Rs. ${Math.round(value).toLocaleString('en-IN')}`;
 }
@@ -72,6 +94,18 @@ function todayISO() {
   return new Date().toISOString().slice(0, 10);
 }
 
+function defaultStartDateISO() {
+  const d = new Date();
+  d.setDate(d.getDate() + 14);
+  return d.toISOString().slice(0, 10);
+}
+
+function defaultEndDateISO() {
+  const d = new Date();
+  d.setDate(d.getDate() + 19);
+  return d.toISOString().slice(0, 10);
+}
+
 // budget is treated as the TOTAL trip budget spread across the whole group,
 // so we compare it against the group-scaled daily hint, not a per-person one.
 function getBudgetBand(budget, days, groupSize, hint) {
@@ -88,40 +122,62 @@ function buildTripInsight({ countryCode, countryName, stateName, budget, days, g
 
   const tier = COUNTRY_TIER[countryCode] || 'mid';
   const hint = TIER_COST_HINTS[tier];
-  const destination = stateName || countryName;
+  const destination = stateName || (countryName ? `${countryName} (All States)` : 'India');
   const size = Math.max(Number(groupSize) || 1, 1);
+  const tripDays = Math.max(days || 5, 1);
+  const nights = Math.max(tripDays - 1, 1);
+  const rooms = Math.ceil(size / 2);
 
-  const travelCostPerPerson = TRAVEL_MODE_COST[travelMode] ?? TRAVEL_MODE_COST.Flexible;
-  const travelTotal = travelCostPerPerson * size;
+  let totalLow, totalHigh, travelTotal, stayLow, stayHigh;
 
-  const stayLow = hint.daily[0] * days * size;
-  const stayHigh = hint.daily[1] * days * size;
+  if (travelMode === 'Flight') {
+    const flightPerPerson = 7000;
+    travelTotal = flightPerPerson * size;
+    stayLow = 2200 * nights * rooms;
+    stayHigh = 5500 * nights * rooms;
+    const mealsLow = 800 * tripDays * size;
+    const mealsHigh = 1600 * tripDays * size;
 
-  const totalLow = stayLow + travelTotal;
-  const totalHigh = stayHigh + travelTotal;
+    totalLow = travelTotal + stayLow + mealsLow;
+    totalHigh = travelTotal + stayHigh + mealsHigh;
+  } else if (travelMode === 'Train') {
+    travelTotal = 1800 * size;
+    stayLow = 1800 * nights * rooms;
+    stayHigh = 4000 * nights * rooms;
+    const mealsLow = 600 * tripDays * size;
+    const mealsHigh = 1200 * tripDays * size;
+    totalLow = travelTotal + stayLow + mealsLow;
+    totalHigh = travelTotal + stayHigh + mealsHigh;
+  } else {
+    const travelCostPerPerson = TRAVEL_MODE_COST[travelMode] ?? TRAVEL_MODE_COST.Flexible;
+    travelTotal = travelCostPerPerson * size;
+    stayLow = hint.daily[0] * tripDays * size;
+    stayHigh = hint.daily[1] * tripDays * size;
+    totalLow = stayLow + travelTotal;
+    totalHigh = stayHigh + travelTotal;
+  }
 
-  const band = getBudgetBand(budget, days, size, hint);
-
+  const band = getBudgetBand(budget, tripDays, size, hint);
   const groupWord = size === 1 ? 'traveller' : 'travellers';
 
   const bandCopy = {
-    tight: `Selected budget is below the suggested minimum for ${size} ${groupWord} travelling by ${travelMode.toLowerCase()}, so keep the plan compact.`,
-    balanced: `This range covers stays, food and local transport for ${size} ${groupWord}, plus around ${formatRs(travelTotal)} for ${travelMode.toLowerCase()} to get there.`,
-    comfortable: `This budget gives extra room for better stays and paid experiences for ${size} ${groupWord}, on top of ~${formatRs(travelTotal)} for ${travelMode.toLowerCase()}.`,
+    tight: `Selected budget is close to the minimum baseline for ${size} ${groupWord} travelling by ${travelMode.toLowerCase()}. Stays will be budget homestays.`,
+    balanced: `This budget covers confirmed roundtrip ${travelMode.toLowerCase()} (~${formatRs(travelTotal)}), verified hotel stays, and daily allowances for ${size} ${groupWord}.`,
+    comfortable: `This budget gives extra room for boutique/resort stay upgrades and private excursions for ${size} ${groupWord}, on top of ${formatRs(travelTotal)} for ${travelMode.toLowerCase()}.`,
   };
 
   const bandLabel = {
-    tight: 'Below suggested minimum',
-    balanced: 'Good fit for this trip',
-    comfortable: 'Comfortable plan possible',
+    tight: 'Lean / Budget Match',
+    balanced: 'Optimal Flight & Stay Fit',
+    comfortable: 'Comfortable & Upgraded',
   };
 
   return {
     destination,
-    tierLabel: hint.label,
+    tierLabel: travelMode === 'Flight' ? 'Flight & Stay Package' : hint.label,
     estimatedTotal: `${formatRs(totalLow)} - ${formatRs(totalHigh)}`,
     minimumBudget: formatRs(totalLow),
-    dailyRange: `${formatRs(hint.daily[0])} - ${formatRs(hint.daily[1])}/person/day`,
+    dailyRange: `${formatRs(Math.round(stayLow / (tripDays * size)))} - ${formatRs(Math.round(stayHigh / (tripDays * size)))}/person/day`,
     transportEstimate: formatRs(travelTotal),
     groupSize: size,
     band,
@@ -286,19 +342,19 @@ export default function PreferenceForm({ preset }) {
   const [stateCode, setStateCode] = useState('');
   const [cityName, setCityName] = useState('');
 
-  const [weather, setWeather] = useState('');
+  const [weather, setWeather] = useState('Any');
   const [vibes, setVibes] = useState([]);
   const indiaTier = COUNTRY_TIER[COUNTRY_CODE] || 'mid';
   const [baseRange, setBaseRange] = useState(TIER_RANGES[indiaTier]);
   const [budget, setBudget] = useState(TIER_RANGES[indiaTier].default);
-  const [days, setDays] = useState(0);
-  const [startDate, setStartDate] = useState('');
-  const [endDate, setEndDate] = useState('');
+  const [startDate, setStartDate] = useState(defaultStartDateISO());
+  const [endDate, setEndDate] = useState(defaultEndDateISO());
+  const [days, setDays] = useState(5);
   const [dateError, setDateError] = useState('');
 
-  const [travelMode, setTravelMode] = useState('');
-  const [groupType, setGroupType] = useState('');
-  const [groupSize, setGroupSize] = useState('');
+  const [travelMode, setTravelMode] = useState('Flight');
+  const [groupType, setGroupType] = useState('Solo');
+  const [groupSize, setGroupSize] = useState('1');
   const [placesVisited, setPlacesVisited] = useState([]);
   const [placeInput, setPlaceInput] = useState('');
   const [tripPurpose, setTripPurpose] = useState('');
@@ -311,13 +367,19 @@ export default function PreferenceForm({ preset }) {
   const [confirmed, setConfirmed] = useState(false);
   const navigate = useNavigate();
   const [homeProfile, setHomeProfile] = useState(null);
+  const [departureCity, setDepartureCity] = useState('New Delhi');
 
   useEffect(() => {
     const session = getSession();
     if (!session) return;
 
     function loadHomeProfile() {
-      setHomeProfile(getProfile(session.email));
+      getProfile(session.email).then((prof) => {
+        setHomeProfile(prof);
+        if (prof?.city) {
+          setDepartureCity(prof.city);
+        }
+      }).catch((err) => console.error('Profile load failed:', err));
     }
 
     loadHomeProfile();
@@ -421,7 +483,7 @@ export default function PreferenceForm({ preset }) {
   }
 
   const filled = {
-    state: !!stateCode,
+    state: true, // state and city are optional, explore across India
     weather: !!weather,
     travelMode: !!travelMode,
     groupType: !!groupType,
@@ -437,27 +499,65 @@ export default function PreferenceForm({ preset }) {
     return Math.max(3, Math.round(base));
   }, [progress, vibes.length, stateCode, cityName]);
 
-  // Budget only becomes meaningful once we know the destination tier,
-  // the group size, and the mode of travel — all three shape the estimate.
+  // Budget only becomes meaningful once we know who is coming and how they're travelling
   const readyForBudget = !!(countryCode && groupType && travelMode);
 
   const groupSizeNum = Math.max(Number(groupSize) || 1, 1);
+  const tripDaysCount = days || (startDate && endDate ? daysBetween(startDate, endDate) : null) || 5;
+  const nightsCount = Math.max(1, tripDaysCount - 1);
+  const roomsNeededCount = Math.ceil(groupSizeNum / 2);
 
-  // Once a travel mode is picked, its average ticket price (round trip, per
-  // person) is reserved off the top of the budget range — the slider can no
-  // longer drop below what getting there actually costs.
-  const transportFloor = travelMode
-    ? (TRAVEL_MODE_COST[travelMode] ?? TRAVEL_MODE_COST.Flexible) * groupSizeNum
-    : 0;
+  // GROUNDED REALISTIC MINIMUM BUDGET CALCULATION:
+  // "if the user selects flight then lock the price to a particular minimum budget and don't do it blindly first take into consideration the actual price of flight and hotels"
+  const FLIGHT_ROUNDTRIP_PER_PERSON = 12500; // Calibrated to real-world domestic flight round-trips (starting from ₹10k-18k depending on route distance)
+  const HOTEL_STAY_PER_ROOM_NIGHT = 2200;   // Realistic verified budget/homestay room rate
+  const DAILY_MEALS_PER_PERSON = 800;       // Realistic food & local travel daily allowance
+
+  const flightBudgetFloor = useMemo(() => {
+    if (travelMode !== 'Flight') return 0;
+    const flightCost = FLIGHT_ROUNDTRIP_PER_PERSON * groupSizeNum;
+    const hotelCost = HOTEL_STAY_PER_ROOM_NIGHT * nightsCount * roomsNeededCount;
+    const mealsCost = DAILY_MEALS_PER_PERSON * tripDaysCount * groupSizeNum;
+    const totalMinimum = flightCost + hotelCost + mealsCost;
+    return Math.ceil(totalMinimum / 1000) * 1000;
+  }, [travelMode, groupSizeNum, tripDaysCount, nightsCount, roomsNeededCount]);
+
+  const trainBudgetFloor = useMemo(() => {
+    if (travelMode !== 'Train') return 0;
+    const trainCost = 1800 * groupSizeNum;
+    const hotelCost = 1800 * nightsCount * roomsNeededCount;
+    const mealsCost = 600 * tripDaysCount * groupSizeNum;
+    return Math.ceil((trainCost + hotelCost + mealsCost) / 1000) * 1000;
+  }, [travelMode, groupSizeNum, tripDaysCount, nightsCount, roomsNeededCount]);
+
+  const roadBudgetFloor = useMemo(() => {
+    if (travelMode !== 'Road Trip') return 0;
+    const roadCost = 1500 * groupSizeNum;
+    const hotelCost = 1800 * nightsCount * roomsNeededCount;
+    const mealsCost = 600 * tripDaysCount * groupSizeNum;
+    return Math.ceil((roadCost + hotelCost + mealsCost) / 1000) * 1000;
+  }, [travelMode, groupSizeNum, tripDaysCount, nightsCount, roomsNeededCount]);
+
+  const effectiveBudgetFloor = useMemo(() => {
+    if (travelMode === 'Flight') return flightBudgetFloor;
+    if (travelMode === 'Train') return trainBudgetFloor;
+    if (travelMode === 'Road Trip') return roadBudgetFloor;
+    return 8000;
+  }, [travelMode, flightBudgetFloor, trainBudgetFloor, roadBudgetFloor]);
 
   const budgetRange = useMemo(() => {
-    const min = baseRange.min + transportFloor;
-    const max = Math.max(baseRange.max, min + baseRange.step);
-    return { ...baseRange, min, max, default: Math.max(baseRange.default, min) };
-  }, [baseRange, transportFloor]);
+    const min = effectiveBudgetFloor || 8000;
+    const max = Math.max(300000, min * 4);
+    const step = 2000;
+    return {
+      min,
+      max,
+      step,
+      default: Math.max(min, Math.round(min * 1.25 / 1000) * 1000),
+    };
+  }, [effectiveBudgetFloor]);
 
-  // Keep the current slider value inside whatever range the transport lock
-  // just produced, so it never gets stranded below the new floor.
+  // Keep the current slider value inside whatever range the grounded lock produced
   useEffect(() => {
     setBudget((prev) => {
       if (prev < budgetRange.min) return budgetRange.min;
@@ -469,80 +569,124 @@ export default function PreferenceForm({ preset }) {
   const tripLength = startDate && endDate ? daysBetween(startDate, endDate) : null;
   const datesConfirmed = !!(startDate && endDate && tripLength);
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
-    if (!stateCode) {
-      setError('Please pick a state.');
-      setConfirmed(false);
-      return;
-    }
-    if (!groupType) {
-      setError('Please tell us who is coming.');
-      setConfirmed(false);
-      return;
-    }
-    if (!travelMode) {
-      setError('Please pick a mode of travel.');
-      setConfirmed(false);
-      return;
-    }
-    if (!weather) {
-      setError('Please pick a weather preference.');
-      setConfirmed(false);
-      return;
-    }
-    if (!startDate || !endDate) {
-      setError('Please choose your travel start and end dates.');
-      setConfirmed(false);
-      return;
-    }
     setError('');
     setSearching(true);
     setConfirmed(false);
 
+    // Sensible defaults so clicking 'Find My Destinations' never blocks the user
+    const effGroupType = groupType || 'Solo';
+    const effGroupSize = groupSize ? Math.max(1, Number(groupSize)) : 1;
+    const effTravelMode = travelMode || 'Flight';
+    const effWeather = weather || 'Any';
+
+    let effStart = startDate;
+    let effEnd = endDate;
+    if (!effStart || !effEnd) {
+      effStart = defaultStartDateISO();
+      effEnd = defaultEndDateISO();
+    }
+    const effDays = Math.max(1, days || (effStart && effEnd ? daysBetween(effStart, effEnd) : 5));
+
     const countryName = COUNTRY_NAME;
     const stateName = stateCode ? State.getStateByCodeAndCountry(stateCode, countryCode)?.name || '' : '';
 
+    const sessionUser = getSession();
     const preferences = {
       country: countryName,
       countryCode,
       state: stateName || null,
       city: cityName || null,
-      weather,
+      weather: effWeather,
       vibes,
-      budget,
-      days,
-      startDate,
-      endDate,
-      travelMode,
-      transportBudgetLocked: transportFloor,
-      groupType,
-      groupSize: groupSize ? Number(groupSize) : null,
+      budget: budget || 25000,
+      days: effDays,
+      startDate: effStart,
+      endDate: effEnd,
+      travelMode: effTravelMode,
+      transportBudgetLocked: effectiveBudgetFloor,
+      groupType: effGroupType,
+      groupSize: effGroupSize,
       placesVisitedBefore: placesVisited,
+      learnedVibes: getLearnedVibes(sessionUser?.email),
       tripPurpose: tripPurpose || null,
       stayPreference: stayPreference || null,
-      crowdPreference: crowdPreference || null,
-      tripPacing: tripPacing || null,
+      originCity: departureCity || homeProfile?.city || 'New Delhi',
+      originState: homeProfile?.state || null,
+      userEmail: sessionUser?.email || null,
+      userName: sessionUser?.name || null,
+      favoriteDestinations: homeProfile?.destinations || [],
     };
-    // TODO: once backend is ready, send `preferences` to the API and
-    // use the response instead of (or alongside) the local preferences
-    // object below. `placesVisitedBefore` isn't used for matching yet —
-    // it's captured now so the recommendation model has rich signal to
-    // train on later.
-    console.log('Preferences submitted:', preferences);
+    try {
+      // Async RAG user training
+      if (sessionUser?.email) {
+        fetch(`${API_BASE_URL}/api/user/train`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            email: sessionUser.email,
+            name: sessionUser.name,
+            originCity: homeProfile?.city || null,
+            originState: homeProfile?.state || null,
+            favoriteDestinations: homeProfile?.destinations || [],
+            preferredVibes: vibes,
+            placesVisited: placesVisited,
+            tripHistoryItem: {
+              state: stateName,
+              city: cityName,
+              budget: preferences.budget,
+              days: effDays,
+              travelMode: effTravelMode,
+              startDate: effStart,
+              endDate: effEnd,
+            }
+          }),
+        }).catch((err) => console.log('RAG background training note:', err));
+      }
 
-    setTimeout(() => {
+      const response = await fetch(`${API_BASE_URL}/api/recommendations`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(preferences),
+      });
+
+      const data = await response.json().catch(() => ({}));
+      if (!response.ok) {
+        let detail = 'Could not generate recommendations. Please try again.';
+        if (typeof data.detail === 'string') {
+          detail = data.detail;
+        } else if (Array.isArray(data.detail)) {
+          detail = data.detail.map((d) => d.msg || JSON.stringify(d)).join(', ');
+        }
+        throw new Error(detail);
+      }
+      if (!Array.isArray(data.recommendations) || data.recommendations.length === 0) {
+        throw new Error('No destinations were returned for these preferences. Please adjust your budget or trip criteria.');
+      }
+
+      saveTravelPreferences(sessionUser?.email, preferences);
+
       setSearching(false);
       setConfirmed(true);
-
-      // Show the success message briefly, then move on to the Results page.
       setTimeout(() => {
         setConfirmed(false);
         navigate('/results', {
-          state: preferences,
+          state: {
+            ...preferences,
+            recommendations: data.recommendations,
+            recommendationNotice: data.notice,
+            llmUsed: data.llmUsed,
+            userLearning: data.userLearning,
+            hiddenGemsCount: data.hiddenGemsCount,
+          },
         });
-      }, 1000);
-    }, 1100);
+      }, 350);
+    } catch (apiError) {
+      setSearching(false);
+      setConfirmed(false);
+      setError(apiError.message || 'Unable to connect to DestiMind. Make sure the FastAPI backend is running.');
+    }
   }
 
   const budgetPct = ((budget - budgetRange.min) / (budgetRange.max - budgetRange.min)) * 100;
@@ -560,7 +704,8 @@ export default function PreferenceForm({ preset }) {
   }), [countryCode, countryName, stateName, budget, days, groupType, groupSize, travelMode]);
 
   const summaryRows = [
-    { key: 'where', icon: MapPin, label: 'Where', value: stateName ? `${stateName}${cityName ? `, ${cityName}` : ''}` : null },
+    { key: 'from', icon: MapPin, label: 'From', value: departureCity || 'New Delhi' },
+    { key: 'where', icon: Globe2, label: 'Where', value: stateName ? `${stateName}${cityName ? `, ${cityName}` : ''}` : 'Anywhere in India' },
     { key: 'when', icon: Calendar, label: 'When', value: datesConfirmed ? `${formatDateLabel(startDate)} · ${tripLength}d` : null },
     { key: 'group', icon: Users, label: 'Group', value: groupType ? `${groupType}${groupSize ? ` · ${groupSize}` : ''}` : null },
     { key: 'mode', icon: Plane, label: 'Mode', value: travelMode || null },
@@ -577,11 +722,11 @@ export default function PreferenceForm({ preset }) {
 
         <div className="pf-estimate-pill">
           {stateCode
-            ? <><strong>{estimatedMatches}</strong> destinations match so far</>
-            : 'Pick a state to see live matches'}
+            ? <><strong>{estimatedMatches}</strong> destinations match in {stateName}</>
+            : <><strong>{estimatedMatches}</strong> destinations across India match your profile</>}
         </div>
 
-        <FlightRoute filled={filled} destCode={stateCode || countryCode} />
+        <FlightRoute filled={filled} destCode={stateCode || 'INDIA'} />
 
         <div className="pf-summary">
           {summaryRows.map((row) => (
@@ -602,26 +747,43 @@ export default function PreferenceForm({ preset }) {
           <div className="pf-from-row">
             <span className="pf-from-label">
               <MapPin size={13} strokeWidth={2.25} />
-              Traveling from
+              Departing From
             </span>
-            {travelingFromLabel ? (
-              <span className="pf-from-pill">{travelingFromLabel}</span>
+            <select
+              className="pf-from-select"
+              value={departureCity}
+              onChange={(e) => setDepartureCity(e.target.value)}
+              aria-label="Select departure city"
+            >
+              {POPULAR_ORIGIN_CITIES.map((c) => (
+                <option key={c} value={c}>
+                  {c} {homeProfile?.city === c ? '★ (Home)' : ''}
+                </option>
+              ))}
+              {homeProfile?.city && !POPULAR_ORIGIN_CITIES.includes(homeProfile.city) && (
+                <option value={homeProfile.city}>{homeProfile.city} ★ (Home)</option>
+              )}
+            </select>
+            {homeProfile?.city ? (
+              <span className="pf-from-subtext">Profile: {homeProfile.city}</span>
             ) : (
               <Link to="/profile" className="pf-from-empty">
-                Set your home location →
+                Set home profile →
               </Link>
             )}
           </div>
 
           <div className="pref-grid">
             <div className="pref-field">
-              <label className="pref-label">State</label>
+              <label className="pref-label">
+                State <span className="pref-hint">(optional)</span>
+              </label>
               <select
                 className="pref-select"
                 value={stateCode}
                 onChange={(e) => handleStateChange(e.target.value)}
               >
-                <option value="">Select a state</option>
+                <option value="">All States & Territories (Recommend across India)</option>
                 {stateOptions.map((s) => (
                   <option key={s.isoCode} value={s.isoCode}>{s.name}</option>
                 ))}
@@ -639,7 +801,7 @@ export default function PreferenceForm({ preset }) {
                 disabled={!stateCode || cityOptions.length === 0}
               >
                 <option value="">
-                  {!stateCode ? 'Pick a state first' : cityOptions.length === 0 ? 'No cities listed' : 'Any city in this state'}
+                  {!stateCode ? 'Any city across India (Flexible)' : cityOptions.length === 0 ? 'No cities listed' : 'Any city in this state'}
                 </option>
                 {cityOptions.map((c) => (
                   <option key={c.name} value={c.name}>{c.name}</option>
@@ -713,7 +875,10 @@ export default function PreferenceForm({ preset }) {
           {travelMode && (
             <p className="pref-microcopy pref-transport-lock">
               <Lock size={12} strokeWidth={2.25} />
-              ~{formatRs(TRAVEL_MODE_COST[travelMode] ?? TRAVEL_MODE_COST.Flexible)}/person avg. {travelMode.toLowerCase()} fare · {formatRs(transportFloor)} reserved for {groupSizeNum} {groupSizeNum === 1 ? 'traveller' : 'travellers'} in your budget floor below.
+              {travelMode === 'Flight'
+                ? `~${formatRs(12500)}/person avg. roundtrip flight · Grounded budget floor locked below for ${groupSizeNum} ${groupSizeNum === 1 ? 'traveller' : 'travellers'}.`
+                : `~${formatRs(TRAVEL_MODE_COST[travelMode] ?? 2500)}/person avg. ${travelMode.toLowerCase()} fare · ${formatRs(effectiveBudgetFloor)} reserved for ${groupSizeNum} ${groupSizeNum === 1 ? 'traveller' : 'travellers'}.`
+              }
             </p>
           )}
         </Section>
@@ -745,10 +910,30 @@ export default function PreferenceForm({ preset }) {
                   style={{ '--fill': `${readyForBudget ? budgetPct : 0}%` }}
                 />
               </div>
+
+              {/* Dynamic Flight Budget Lock Callout Banner */}
+              {travelMode === 'Flight' && (
+                <div className="flight-budget-lock-banner">
+                  <div className="flight-lock-pill-title">
+                    <Lock size={13} strokeWidth={2.4} color="#38bdf8" />
+                    <span>Flight Minimum Budget Locked: ₹{budgetRange.min.toLocaleString()}</span>
+                  </div>
+                  <p className="flight-lock-explanation">
+                    ⚡ <strong>Realistic Cost Lock:</strong> Takes into account actual roundtrip flights (~₹{(12500 * groupSizeNum).toLocaleString()} for {groupSizeNum} {groupSizeNum === 1 ? 'traveller' : 'travellers'}), verified stays ({nightsCount} nights × {roomsNeededCount} room{roomsNeededCount > 1 ? 's' : ''} = ~₹{(2200 * nightsCount * roomsNeededCount).toLocaleString()}), and daily allowances (~₹{(800 * tripDaysCount * groupSizeNum).toLocaleString()}).
+                    Prevents unviable flight trip estimates where flights alone exceed the overall budget.
+                  </p>
+                </div>
+              )}
+
               {readyForBudget ? (
-                <p className="pref-microcopy">Range tuned to {countryName}'s typical trip cost for {groupSize || 1} {Number(groupSize) === 1 ? 'traveller' : 'travellers'} by {travelMode.toLowerCase()}.</p>
+                <p className="pref-microcopy">
+                  {travelMode === 'Flight'
+                    ? `Price locked to realistic flight + hotel costs for ${groupSizeNum} ${groupSizeNum === 1 ? 'traveller' : 'travellers'} (${tripDaysCount} days).`
+                    : `Range tuned to typical trip cost for ${groupSize || 1} ${Number(groupSize) === 1 ? 'traveller' : 'travellers'} by ${travelMode.toLowerCase()}.`
+                  }
+                </p>
               ) : (
-                <p className="pref-microcopy">Pick a country, who's coming, and how you're travelling to unlock this.</p>
+                <p className="pref-microcopy">Pick who's coming and how you're travelling to unlock this.</p>
               )}
             </div>
 

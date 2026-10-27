@@ -1,32 +1,22 @@
-const USERS_KEY = 'destimind_users';
 const SESSION_KEY = 'destimind_session';
+const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000').replace(/\/$/, '');
 
-function getUsers() {
-  return JSON.parse(localStorage.getItem(USERS_KEY) || '[]');
-}
-
-export function signupUser({ name, email, password }) {
-  const users = getUsers();
-  const exists = users.some((u) => u.email.toLowerCase() === email.toLowerCase());
-  if (exists) {
-    return { ok: false, message: 'An account with this email already exists. Log in instead.' };
+async function authRequest(path, payload) {
+  try {
+    const response = await fetch(`${API_BASE_URL}${path}`, {
+      method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload),
+    });
+    const data = await response.json();
+    if (!response.ok) return { ok: false, message: data.detail || 'Request failed.' };
+    localStorage.setItem(SESSION_KEY, JSON.stringify(data.user));
+    return { ok: true, user: data.user };
+  } catch {
+    return { ok: false, message: 'Could not reach the server. Check that the DestiMind API is running.' };
   }
-  users.push({ name, email, password });
-  localStorage.setItem(USERS_KEY, JSON.stringify(users));
-  return { ok: true };
 }
 
-export function loginUser({ email, password }) {
-  const users = getUsers();
-  const match = users.find(
-    (u) => u.email.toLowerCase() === email.toLowerCase() && u.password === password
-  );
-  if (!match) {
-    return { ok: false, message: 'No account found with that email and password. Sign up first.' };
-  }
-  localStorage.setItem(SESSION_KEY, JSON.stringify({ name: match.name, email: match.email }));
-  return { ok: true, user: match };
-}
+export function signupUser(payload) { return authRequest('/api/auth/signup', payload); }
+export function loginUser(payload) { return authRequest('/api/auth/login', payload); }
 
 export function isLoggedIn() {
   return !!localStorage.getItem(SESSION_KEY);

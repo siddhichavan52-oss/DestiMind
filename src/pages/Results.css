@@ -1034,3 +1034,168 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+.recommendation-notice {
+  max-width: 820px;
+  margin: 12px auto 0;
+  color: rgba(220, 236, 245, 0.72);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+/* Results top navigation */
+.results-top-nav {
+  max-width: 1280px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+}
+
+.results-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 8px 16px;
+  background: rgba(15, 27, 45, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  transition: all 0.25s ease;
+}
+
+.results-back-link:hover {
+  color: #fff;
+  background: rgba(15, 27, 45, 0.8);
+  border-color: var(--teal, #4fd1c5);
+  transform: translateX(-3px);
+}
+
+/* RAG User Learning Pill */
+.rag-user-learning-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  padding: 6px 16px;
+  background: rgba(168, 85, 247, 0.12);
+  border: 1px solid rgba(168, 85, 247, 0.35);
+  border-radius: 999px;
+  color: #e9d5ff;
+  font-size: 13px;
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.15);
+}
+
+/* Gem Segmented Controls */
+.gem-segmented-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.gem-segment-btn {
+  background: rgba(15, 27, 45, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.75);
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gem-segment-btn:hover {
+  background: rgba(15, 27, 45, 0.8);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-1px);
+}
+
+.gem-segment-btn.active {
+  background: linear-gradient(135deg, rgba(79, 209, 197, 0.25), rgba(15, 27, 45, 0.9));
+  border-color: var(--teal, #4fd1c5);
+  color: #fff;
+  box-shadow: 0 4px 18px rgba(79, 209, 197, 0.2);
+}
+
+.gem-segment-btn.gem-btn-special.active {
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.35), rgba(99, 102, 241, 0.25));
+  border-color: #c084fc;
+  color: #f3e8ff;
+  box-shadow: 0 4px 20px rgba(168, 85, 247, 0.25);
+}
+
+/* No results state */
+.no-results-box {
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(15, 27, 45, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  max-width: 500px;
+  margin: 40px auto 0;
+}
+
+.no-results {
+  font-size: 20px;
+  color: #fff;
+  margin: 0 0 8px;
+}
+
+.no-results-sub {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.clear-filters-btn {
+  background: linear-gradient(135deg, var(--teal), #2f8f86);
+  border: none;
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 13.5px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.clear-filters-btn:hover {
+  transform: scale(1.04);
+}
+
+
+/* Flight Comparison Banner */
+.flight-comparison-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  max-width: 860px;
+  margin: -16px auto 32px;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.12), rgba(15, 27, 45, 0.65));
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: left;
+  animation: slide-up-fade 0.6s ease-out;
+}
+
+.flight-comparison-banner strong {
+  color: #38bdf8;
+}
+
+.flight-comparison-banner svg {
+  flex-shrink: 0;
+}

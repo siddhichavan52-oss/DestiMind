@@ -1,0 +1,43 @@
+```json
+[
+  {
+    "name": "Raju's Cottage",
+    "tier": "Budget / Homestay",
+    "categoryTag": "💎 Best Budget Value",
+    "pricePerNightINR": 3400,
+    "rating": 4.8,
+    "reviewCount": 320,
+    "roomType": "Standard Homestay Room",
+    "amenities": ["Home-cooked meals", "River access (via pulley)", "Bonfire", "Garden/Orchard views", "Warm hospitality"],
+    "locationHighlight": "Gushaini, Tirthan Valley, near Great Himalayan National Park",
+    "availabilityStatus": "Rooms Available for Selected Dates",
+    "availabilityBadge": "Call to Confirm"
+  },
+  {
+    "name": "The Whispering Pines Cottages Jibhi",
+    "tier": "Comfort / Mid-Range",
+    "categoryTag": "🏞️ Scenic Mountain Retreat",
+    "pricePerNightINR": 5000,
+    "rating": 4.5,
+    "reviewCount": 160,
+    "roomType": "Deluxe Cottage Room",
+    "amenities": ["Free Wi-Fi", "Breakfast included", "Mountain views", "Garden", "Pet-friendly (some units)", "Dedicated workspace"],
+    "locationHighlight": "Jibhi, Tirthan Valley, surrounded by pine forests and orchards",
+    "availabilityStatus": "Rooms Available for Selected Dates",
+    "availabilityBadge": "Instant Confirmation"
+  },
+  {
+    "name": "Kudrat - A Boutique Homestay- Tirthan Valley",
+    "tier": "Luxury / Resort",
+    "categoryTag": "✨ Premium Riverside Escape",
+    "pricePerNightINR": 7500,
+    "rating": 4.9,
+    "reviewCount": 470,
+    "roomType": "Luxury Suite with Mountain/River View",
+    "amenities": ["Free Wi-Fi", "Breakfast included", "Mountain/River view", "Pet-friendly", "Fireplace", "Terrace", "Garden", "Library", "Dining area"],
+    "locationHighlight": "Bandal Village, Tirthan Valley, hilltop with panoramic views of Tirthan River and Tirth peaks",
+    "availabilityStatus": "Rooms Available for Selected Dates",
+    "availabilityBadge": "Instant Confirmation"
+  }
+]
+```
