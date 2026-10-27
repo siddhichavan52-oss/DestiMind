@@ -324,3 +324,128 @@
     transform: translateY(0);
   }
 }
+
+/* =========================
+   Traveler Persona Strip
+   ========================= */
+
+.persona-strip {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 28px;
+  animation: slide-up-fade 1s cubic-bezier(0.16, 1, 0.3, 1) 0.15s both;
+  position: relative;
+  z-index: 10;
+}
+
+.persona-strip-label {
+  text-align: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 14px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.persona-cards {
+  display: flex;
+  gap: 12px;
+  padding: 4px 20px 8px;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.persona-card {
+  flex: 0 0 auto;
+  min-width: 140px;
+  max-width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 16px 14px 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(15, 27, 45, 0.45);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  backdrop-filter: blur(16px) saturate(160%);
+  cursor: pointer;
+  scroll-snap-align: center;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  position: relative;
+  z-index: 10;
+}
+
+.persona-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.25);
+  background: rgba(15, 27, 45, 0.5);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.persona-card-active {
+  border-color: var(--teal);
+  background: rgba(79, 209, 197, 0.12);
+  box-shadow: 0 0 0 3px rgba(79, 209, 197, 0.2), 0 14px 30px rgba(0, 0, 0, 0.3);
+  transform: translateY(-4px);
+}
+
+.persona-emoji {
+  font-size: 28px;
+  line-height: 1;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.persona-name {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  line-height: 1.2;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.persona-tagline {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  line-height: 1.3;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .persona-cards {
+    gap: 10px;
+    justify-content: flex-start;
+  }
+  .persona-card {
+    min-width: 120px;
+    padding: 12px 10px;
+  }
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: var(--dawn);
+  color: var(--dawn);
+  transform: rotate(15deg);
+}

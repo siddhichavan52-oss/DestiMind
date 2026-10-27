@@ -450,7 +450,10 @@
 
 .trend-overlay {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: linear-gradient(180deg, rgba(15,27,45,0) 40%, rgba(15,27,45,0.85) 100%);
   transition: opacity 0.3s ease;
 }

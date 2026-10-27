@@ -356,6 +356,52 @@ export default function DestinationDetails() {
   const navigate = useNavigate();
   const location = useLocation();
   const destination = location.state;
+  const session = getSession();
+
+  const [localTips, setLocalTips] = useState([]);
+  const [showTipForm, setShowTipForm] = useState(false);
+  const [tipCategory, setTipCategory] = useState('');
+  const [tipContent, setTipContent] = useState('');
+
+  // Load local tips for this destination
+  useEffect(() => {
+    if (destination?.id) {
+      setLocalTips(getTipsForDestination(destination.id));
+    }
+  }, [destination?.id]);
+
+  // Record view for gamification
+  useEffect(() => {
+    if (destination?.id) {
+      recordView();
+    }
+  }, [destination?.id]);
+
+  const handleAddTip = (e) => {
+    e.preventDefault();
+    if (!tipCategory || !tipContent) return;
+
+    addTip({
+      destinationId: destination.id,
+      destinationName: destination.place,
+      category: tipCategory,
+      content: tipContent,
+      author: session?.name || 'Anonymous Explorer',
+    });
+
+    recordTipSubmission();
+    checkAchievements();
+
+    setTipCategory('');
+    setTipContent('');
+    setShowTipForm(false);
+    setLocalTips(getTipsForDestination(destination.id));
+  };
+
+  const handleVote = (tipId, helpful) => {
+    voteTip(tipId, helpful);
+    setLocalTips(getTipsForDestination(destination.id));
+  };
 
   const [activeDayIndex, setActiveDayIndex] = useState(0);
   const [viewMode, setViewMode] = useState("tabs"); // "tabs" | "all"
@@ -463,10 +509,7 @@ export default function DestinationDetails() {
   ];
 
   return (
-    <div
-      className="details-page"
-      style={{ "--details-hero-img": `url(${destination.image})` }}
-    >
+    <div className="details-page">
       <div className="details-container">
         <div className="details-hero">
           <div className="details-hero-overlay" />
@@ -525,6 +568,7 @@ export default function DestinationDetails() {
           <div className="stats-grid">
             {stats.map((s) => (
               <div className="stat-chip" key={s.label}>
+                {s.icon && <s.icon size={16} strokeWidth={2} className="stat-icon" />}
                 <span className="stat-label">{s.label}</span>
                 <span className="stat-value">{s.value}</span>
               </div>

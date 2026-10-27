@@ -237,6 +237,17 @@ const STAY_OPTIONS = [
   { label: 'Flexible', icon: Sparkles },
 ];
 
+const CROWD_OPTIONS = [
+  { label: 'Quiet & Offbeat', icon: Trees },
+  { label: 'Popular & Iconic', icon: Landmark },
+  { label: 'Balanced', icon: Sparkles },
+];
+
+const PACING_OPTIONS = [
+  { label: 'Slow & Relaxed', icon: Waves },
+  { label: 'Action-Packed', icon: Mountain },
+];
+
 const WAYPOINTS = [
   { key: 'state', label: 'State', icon: MapPin, x: 22, y: 64, color: '#7BCDBA' },
   { key: 'weather', label: 'Weather', icon: Sun, x: 129, y: 24, color: '#FFB347' },
@@ -326,7 +337,7 @@ function Section({ icon: Icon, label, hint, children }) {
   );
 }
 
-export default function PreferenceForm() {
+export default function PreferenceForm({ preset }) {
   const countryCode = COUNTRY_CODE;
   const [stateCode, setStateCode] = useState('');
   const [cityName, setCityName] = useState('');
@@ -348,6 +359,8 @@ export default function PreferenceForm() {
   const [placeInput, setPlaceInput] = useState('');
   const [tripPurpose, setTripPurpose] = useState('');
   const [stayPreference, setStayPreference] = useState('');
+  const [crowdPreference, setCrowdPreference] = useState('');
+  const [tripPacing, setTripPacing] = useState('');
 
   const [error, setError] = useState('');
   const [searching, setSearching] = useState(false);
@@ -377,6 +390,22 @@ export default function PreferenceForm() {
       window.removeEventListener('storage', loadHomeProfile);
     };
   }, []);
+
+  // Apply persona preset when it changes
+  useEffect(() => {
+    if (!preset) return;
+    if (preset.weather) setWeather(preset.weather);
+    if (preset.vibes) setVibes(preset.vibes);
+    if (preset.groupType) {
+      setGroupType(preset.groupType);
+      if (preset.groupSize) setGroupSize(preset.groupSize);
+    }
+    if (preset.travelMode) setTravelMode(preset.travelMode);
+    if (preset.tripPurpose) setTripPurpose(preset.tripPurpose);
+    if (preset.stayPreference) setStayPreference(preset.stayPreference);
+    if (preset.crowdPreference) setCrowdPreference(preset.crowdPreference);
+    if (preset.tripPacing) setTripPacing(preset.tripPacing);
+  }, [preset]);
 
   const travelingFromLabel = homeProfile
     ? [homeProfile.city, homeProfile.state, homeProfile.country].filter(Boolean).join(', ')
@@ -673,6 +702,7 @@ export default function PreferenceForm() {
     groupSize,
     travelMode,
   }), [countryCode, countryName, stateName, budget, days, groupType, groupSize, travelMode]);
+
   const summaryRows = [
     { key: 'from', icon: MapPin, label: 'From', value: departureCity || 'New Delhi' },
     { key: 'where', icon: Globe2, label: 'Where', value: stateName ? `${stateName}${cityName ? `, ${cityName}` : ''}` : 'Anywhere in India' },
@@ -983,6 +1013,29 @@ export default function PreferenceForm() {
             <div className="chip-row">
               {VIBE_OPTIONS.map(({ label, icon: Icon }) => (
                 <button type="button" key={label} className={`chip ${vibes.includes(label) ? 'chip-active' : ''}`} onClick={() => toggleVibe(label)}>
+                  <Icon size={14} strokeWidth={2} />{label}
+                </button>
+              ))}
+            </div>
+          </div>
+        </Section>
+
+        <Section icon={Users} label="Crowd & pacing" hint="(helps us find your fit)">
+          <div className="pref-field">
+            <label className="pref-label pref-label-sub">How crowded do you like it?</label>
+            <div className="chip-row">
+              {CROWD_OPTIONS.map(({ label, icon: Icon }) => (
+                <button type="button" key={label} className={`chip ${crowdPreference === label ? 'chip-active' : ''}`} onClick={() => setCrowdPreference(crowdPreference === label ? '' : label)}>
+                  <Icon size={14} strokeWidth={2} />{label}
+                </button>
+              ))}
+            </div>
+          </div>
+          <div className="pref-field">
+            <label className="pref-label pref-label-sub">What's your travel pace?</label>
+            <div className="chip-row">
+              {PACING_OPTIONS.map(({ label, icon: Icon }) => (
+                <button type="button" key={label} className={`chip ${tripPacing === label ? 'chip-active' : ''}`} onClick={() => setTripPacing(tripPacing === label ? '' : label)}>
                   <Icon size={14} strokeWidth={2} />{label}
                 </button>
               ))}
