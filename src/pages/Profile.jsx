@@ -17,9 +17,13 @@ import {
   Landmark,
   PartyPopper,
   PawPrint,
+  Heart,
+  Trash2,
 } from 'lucide-react';
 import { getSession } from '../utils/auth';
 import { saveProfile, getProfile } from '../utils/profile';
+import { getUserFavorites, removeFavorite } from '../utils/favorites';
+import ExplorerCard from '../components/ExplorerCard';
 import './Auth.css';
 import './Profile.css';
 
@@ -62,6 +66,7 @@ export default function Profile() {
   const [vibes, setVibes] = useState(existing?.vibes || []);
   const [errors, setErrors] = useState({});
   const [saved, setSaved] = useState(false);
+  const [favoriteDestinations, setFavoriteDestinations] = useState([]);
 
   useEffect(() => {
     if (!existing) return;
@@ -82,6 +87,21 @@ export default function Profile() {
     () => (countryCode && stateCode ? City.getCitiesOfState(countryCode, stateCode) : []),
     [countryCode, stateCode]
   );
+
+  // Load favorite destinations
+  useEffect(() => {
+    if (session?.email) {
+      const favs = getUserFavorites(session.email);
+      setFavoriteDestinations(favs);
+    }
+  }, [session?.email]);
+
+  const handleRemoveFavorite = (destinationId) => {
+    if (session?.email) {
+      removeFavorite(destinationId, session.email);
+      setFavoriteDestinations(prev => prev.filter(f => f.destinationId !== destinationId));
+    }
+  };
 
   if (!session) {
     return null;
@@ -207,6 +227,41 @@ export default function Profile() {
           <p className="profile-subtitle">
             DestiMind RAG trains on your home location, favorites, and vibes to personalize every itinerary.
           </p>
+
+          {favoriteDestinations.length > 0 && (
+            <div className="favorites-section">
+              <p className="profile-section-title">
+                <Heart size={15} strokeWidth={2} />
+                Saved destinations ({favoriteDestinations.length})
+              </p>
+              <div className="favorites-grid">
+                {favoriteDestinations.map((fav) => (
+                  <div key={fav.destinationId} className="favorite-card">
+                    <div className="favorite-card-content">
+                      <div className="favorite-card-place">{fav.destination.place}</div>
+                      <div className="favorite-card-location">
+                        {fav.destination.city}, {fav.destination.state}
+                      </div>
+                      <div className="favorite-card-meta">
+                        <span>⭐ {fav.destination.rating}</span>
+                        <span>🏷️ {fav.destination.category}</span>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      className="favorite-remove-btn"
+                      onClick={() => handleRemoveFavorite(fav.destinationId)}
+                      title="Remove from favorites"
+                    >
+                      <Trash2 size={14} strokeWidth={2} />
+                    </button>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <ExplorerCard />
 
           {saved ? (
             <div className="profile-success">

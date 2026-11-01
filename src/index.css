@@ -18,6 +18,12 @@ html, body, #root {
   --font-body: 'Inter', sans-serif;
 }
 
+[data-theme="dark"] {
+  --paper: #0F1B2D;
+  --ink: #F7F5F0;
+  --mute: #8B949E;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -32,6 +38,7 @@ body {
   color: var(--ink);
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1, h2, h3 {
