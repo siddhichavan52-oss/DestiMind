@@ -404,7 +404,6 @@ function Results() {
   const [gemFilter, setGemFilter] = useState("All"); // All | Hidden | Popular
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("All");
-  const [sortBy, setSortBy] = useState("match");
   const [expandedItinerary, setExpandedItinerary] = useState(null);
   const [copied, setCopied] = useState(false);
   const [favorites, setFavorites] = useState(new Set());
@@ -669,3 +668,5 @@ function Results() {
     </div>
   );
 }
+
+export default Results;
