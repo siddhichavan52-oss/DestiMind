@@ -590,3 +590,66 @@
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
+
+/* Non-Flight Short Haul Alternative Intel */
+.card-intel-box.alt-transport-intel {
+  background: rgba(251, 191, 36, 0.08);
+  border-left: 3px solid #fbbf24;
+  border-color: rgba(251, 191, 36, 0.35);
+}
+
+.no-flight-warning-box {
+  margin: 6px 0;
+  padding: 8px 10px;
+  background: rgba(15, 27, 45, 0.6);
+  border-radius: 6px;
+  border: 1px dashed rgba(251, 191, 36, 0.35);
+}
+
+.no-flight-reason-text {
+  font-size: 11.5px;
+  line-height: 1.4;
+  color: #fde68a;
+  margin: 0 0 6px 0;
+  font-weight: 500;
+}
+
+.alt-transport-badge-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.alt-badge-title {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+.alt-badge-fare {
+  font-size: 12px;
+  font-weight: 700;
+  color: #34d399;
+}
+
+.flight-pills-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.flight-live-rate-pill {
+  font-size: 10px;
+  font-weight: 700;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.16);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  padding: 2px 6px;
+  border-radius: 4px;
+  letter-spacing: 0.02em;
+  display: inline-flex;
+  align-items: center;
+}

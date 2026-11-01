@@ -55,76 +55,6 @@
     "placesVisited": [],
     "pastTrips": [
       {
-        "state": "Jammu and Kashmir",
-        "city": "Bandipore",
-        "budget": 35000,
-        "days": 9,
-        "travelMode": "Train",
-        "startDate": "2026-10-20",
-        "endDate": "2026-10-28",
-        "timestamp": "2026-10-18T12:21:11.936064"
-      },
-      {
-        "state": "Jammu and Kashmir",
-        "city": "Bandipore",
-        "travelMode": "Train",
-        "budget": 35000.0,
-        "days": 9,
-        "startDate": "2026-10-20",
-        "endDate": "2026-10-28",
-        "timestamp": "2026-10-18T12:21:35.737465"
-      },
-      {
-        "state": "Nagaland",
-        "city": "",
-        "budget": 35000,
-        "days": 3,
-        "travelMode": "Flight",
-        "startDate": "2026-10-26",
-        "endDate": "2026-10-28",
-        "timestamp": "2026-10-18T12:22:13.238720"
-      },
-      {
-        "state": "Nagaland",
-        "city": null,
-        "travelMode": "Flight",
-        "budget": 35000.0,
-        "days": 3,
-        "startDate": "2026-10-26",
-        "endDate": "2026-10-28",
-        "timestamp": "2026-10-18T12:22:27.132923"
-      },
-      {
-        "state": "Goa",
-        "city": "",
-        "budget": 35000,
-        "days": 3,
-        "travelMode": "Train",
-        "startDate": "2026-10-20",
-        "endDate": "2026-10-22",
-        "timestamp": "2026-10-18T12:24:05.855705"
-      },
-      {
-        "state": "Goa",
-        "city": null,
-        "travelMode": "Train",
-        "budget": 35000.0,
-        "days": 3,
-        "startDate": "2026-10-20",
-        "endDate": "2026-10-22",
-        "timestamp": "2026-10-18T12:24:24.933167"
-      },
-      {
-        "state": "Goa",
-        "city": "",
-        "budget": 35000,
-        "days": 5,
-        "travelMode": "Flight",
-        "startDate": "2026-10-19",
-        "endDate": "2026-10-23",
-        "timestamp": "2026-10-18T12:48:58.811724"
-      },
-      {
         "state": "Goa",
         "city": null,
         "travelMode": "Flight",
@@ -293,11 +223,91 @@
         "startDate": "2026-11-08",
         "endDate": "2026-11-13",
         "timestamp": "2026-10-25T12:04:37.252410"
+      },
+      {
+        "state": "",
+        "city": "",
+        "budget": 35000,
+        "days": 5,
+        "travelMode": "Flight",
+        "startDate": "2026-11-10",
+        "endDate": "2026-11-15",
+        "timestamp": "2026-10-27T16:48:08.710173"
+      },
+      {
+        "state": "All States",
+        "city": "Any City",
+        "travelMode": "Flight",
+        "budget": 35000.0,
+        "days": 5,
+        "startDate": "2026-11-10",
+        "endDate": "2026-11-15",
+        "timestamp": "2026-10-27T16:48:08.800151"
+      },
+      {
+        "state": "",
+        "city": "",
+        "budget": 35000,
+        "days": 5,
+        "travelMode": "Flight",
+        "startDate": "2026-11-10",
+        "endDate": "2026-11-15",
+        "timestamp": "2026-10-27T16:58:38.983942"
+      },
+      {
+        "state": "All States",
+        "city": "Any City",
+        "travelMode": "Flight",
+        "budget": 35000.0,
+        "days": 5,
+        "startDate": "2026-11-10",
+        "endDate": "2026-11-15",
+        "timestamp": "2026-10-27T16:58:39.096882"
+      },
+      {
+        "state": "",
+        "city": "",
+        "budget": 35000,
+        "days": 5,
+        "travelMode": "Flight",
+        "startDate": "2026-11-10",
+        "endDate": "2026-11-15",
+        "timestamp": "2026-10-27T17:30:15.079570"
+      },
+      {
+        "state": "All States",
+        "city": "Any City",
+        "travelMode": "Flight",
+        "budget": 35000.0,
+        "days": 5,
+        "startDate": "2026-11-10",
+        "endDate": "2026-11-15",
+        "timestamp": "2026-10-27T17:30:27.904134"
+      },
+      {
+        "state": "",
+        "city": "",
+        "budget": 35000,
+        "days": 5,
+        "travelMode": "Flight",
+        "startDate": "2026-11-10",
+        "endDate": "2026-11-15",
+        "timestamp": "2026-10-27T17:36:05.480047"
+      },
+      {
+        "state": "All States",
+        "city": "Any City",
+        "travelMode": "Flight",
+        "budget": 35000.0,
+        "days": 5,
+        "startDate": "2026-11-10",
+        "endDate": "2026-11-15",
+        "timestamp": "2026-10-27T17:36:22.063140"
       }
     ],
-    "trainingEpochs": 36,
+    "trainingEpochs": 48,
     "createdAt": "2026-10-18T12:21:11.935878",
-    "lastTrainedAt": "2026-10-25T12:04:37.252415"
+    "lastTrainedAt": "2026-10-27T17:36:22.063151"
   },
   "abc@gmail.com": {
     "email": "abc@gmail.com",

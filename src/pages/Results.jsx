@@ -9,6 +9,8 @@ export default function Results() {
 
   const preferences = location.state || {};
   const destinations = preferences.recommendations || [];
+  const flightComp = preferences.flightComparison;
+  const [showFlightMatrix, setShowFlightMatrix] = useState(true);
 
   const [sortBy, setSortBy] = useState("match");
   const [crowdFilter, setCrowdFilter] = useState("All");
@@ -97,13 +99,86 @@ export default function Results() {
         )}
       </div>
 
-      {/* Flight Route Cost Verification Banner */}
+      {/* Flight Route Cost Verification & Comparison Matrix */}
       {preferences.travelMode === "Flight" && (
-        <div className="flight-comparison-banner">
-          <Plane size={15} strokeWidth={2.4} color="#38bdf8" />
-          <span>
-            <strong>Flight Price Comparison Active:</strong> Roundtrip airfares verified from {preferences.originCity || "your origin"} to destination airports. Viable candidates filtered to fit within your ₹{(preferences.budget || 0).toLocaleString()} budget.
-          </span>
+        <div className="flight-comparison-card">
+          <div className="flight-comparison-header">
+            <div className="flight-comp-title-row">
+              <Plane size={18} strokeWidth={2.4} color="#38bdf8" />
+              <div>
+                <h4 className="flight-comp-title">
+                  Route Flight Price Comparison · Departing from {preferences.originCity || "Origin Hub"}
+                </h4>
+                <p className="flight-comp-sub">
+                  Airfares compared for travel dates {preferences.startDate || "Selected Dates"}{preferences.endDate ? ` to ${preferences.endDate}` : ""} ({preferences.days} days) • All total trip budgets strictly match live Google Flight baselines
+                </p>
+              </div>
+            </div>
+            {flightComp?.routesCompared > 0 && (
+              <button 
+                type="button" 
+                className="flight-toggle-btn"
+                onClick={() => setShowFlightMatrix(!showFlightMatrix)}
+              >
+                {showFlightMatrix ? "Hide Route Fare Matrix ▲" : `View Route Fare Matrix (${flightComp.routesCompared} routes) ▼`}
+              </button>
+            )}
+          </div>
+
+          {showFlightMatrix && flightComp?.comparedRoutes?.length > 0 && (
+            <div className="flight-comp-routes-list">
+              <div className="flight-comp-table-header">
+                <span>Destination</span>
+                <span>Airport</span>
+                <span>Airline</span>
+                <span>Roundtrip / Person</span>
+                <span>Total Package</span>
+                <span>Live Action</span>
+              </div>
+              {flightComp.comparedRoutes.slice(0, 8).map((r, idx) => (
+                <div key={idx} className={`flight-comp-table-row ${r.withinBudget ? 'row-in-budget' : 'row-over-budget'}`}>
+                  <span className="comp-dest-name">
+                    <strong>{r.destinationName}</strong>
+                    <small>{r.state}</small>
+                  </span>
+                  <span className="comp-dest-hub">
+                    <span className="hub-code-badge">{r.airportCode}</span>
+                  </span>
+                  <span className="comp-dest-carrier">
+                    {r.flightPossible === false ? "🚗 Road Alternate" : r.cheapestCarrier}
+                  </span>
+                  <span className="comp-dest-fare">
+                    ₹{r.roundTripPerPersonINR?.toLocaleString()}
+                    {r.isLiveGoogleRate && (
+                      <span className="table-live-pill" title={r.liveGoogleRateNote || "Verified Live Google Flights Fare"}>🟢 Live</span>
+                    )}
+                  </span>
+                  <span className="comp-dest-total">
+                    ₹{r.totalTripCostINR?.toLocaleString()}
+                    {r.flightPossible === false ? (
+                      <span className="comp-badge-alt">🚗 No Flights Needed</span>
+                    ) : r.withinBudget ? (
+                      <span className="comp-badge-fit">✓ Fits Budget</span>
+                    ) : (
+                      <span className="comp-badge-over">⚠️ High Fare</span>
+                    )}
+                  </span>
+                  <span className="comp-dest-action">
+                    {r.googleFlightsUrl && (
+                      <a
+                        href={r.googleFlightsUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="comp-flight-link"
+                      >
+                        {r.flightPossible === false ? "Driving Route ↗" : "Check Google Flights ↗"}
+                      </a>
+                    )}
+                  </span>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       )}
 

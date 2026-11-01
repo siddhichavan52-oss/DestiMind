@@ -68,35 +68,68 @@ export default function DestinationCard({ destination }) {
           </div>
         )}
 
-        {/* Transport Availability Signal (Flight / Train) */}
+        {/* Transport Availability Signal (Flight / Train / Alternate Road) */}
         {transit.mode && (
-          <div className="card-intel-box transit-intel">
+          <div className={`card-intel-box ${transit.flightPossible === false ? "alt-transport-intel" : "transit-intel"}`}>
             <div className="intel-header">
-              {transit.mode === "Flight" ? (
+              {transit.flightPossible === false ? (
+                <Car size={13} strokeWidth={2.2} color="#fbbf24" />
+              ) : transit.mode === "Flight" ? (
                 <Plane size={13} strokeWidth={2.2} />
               ) : transit.mode === "Train" ? (
                 <TrainFront size={13} strokeWidth={2.2} />
               ) : (
                 <Car size={13} strokeWidth={2.2} />
               )}
-              <span>{transit.mode} Availability: {transit.availabilityStatus}</span>
+              <span>
+                {transit.flightPossible === false
+                  ? `Flight Not Applicable · Recommended: ${transit.recommendedAlternative?.altMode || "Road Trip"}`
+                  : `${transit.mode} Availability: ${transit.availabilityStatus}`}
+              </span>
             </div>
-            <p className="intel-text">
-              <strong>{transit.nearestHub}</strong>
-            </p>
-            {transit.mode === "Flight" && (transit.roundTripPerPersonINR || transit.cheapestFareINR) && (
-              <div className="transit-flight-compare-row">
-                <span className="flight-compare-tag">
-                  ✈️ Flights from ₹{(transit.cheapestFareINR || transit.roundTripPerPersonINR).toLocaleString()}/person
-                  {transit.cheapestCarrier ? ` (${transit.cheapestCarrier})` : ""}
-                </span>
-                {budget.withinBudget !== false ? (
-                  <span className="flight-budget-verified-pill">✓ Viable Budget Fit</span>
-                ) : (
-                  <span className="flight-budget-tight-pill">⚠️ Route Exceeds Min Budget</span>
-                )}
+
+            {transit.flightPossible === false ? (
+              <div className="no-flight-warning-box">
+                <p className="no-flight-reason-text">
+                  ⚠️ {transit.flightNotViableReason}
+                </p>
+                <div className="alt-transport-badge-row">
+                  <span className="alt-badge-title">
+                    🚗 {transit.recommendedAlternative?.altTitle || "Expressway Drive"} ({transit.recommendedAlternative?.duration || "2 hrs"})
+                  </span>
+                  <span className="alt-badge-fare">
+                    ~₹{transit.roundTripPerPersonINR?.toLocaleString()}/person
+                  </span>
+                </div>
               </div>
+            ) : (
+              <>
+                <p className="intel-text">
+                  <strong>{transit.nearestHub}</strong>
+                </p>
+                {transit.mode === "Flight" && (transit.roundTripPerPersonINR || transit.cheapestFareINR) && (
+                  <div className="transit-flight-compare-row">
+                    <span className="flight-compare-tag">
+                      ✈️ Flights from ₹{(transit.cheapestFareINR || transit.roundTripPerPersonINR).toLocaleString()}/person
+                      {transit.cheapestCarrier ? ` (${transit.cheapestCarrier})` : ""}
+                    </span>
+                    <div className="flight-pills-wrap">
+                      {transit.isLiveGoogleRate && (
+                        <span className="flight-live-rate-pill" title={transit.liveGoogleRateNote || "Verified Live Google Flights Fare"}>
+                          🟢 Google Live
+                        </span>
+                      )}
+                      {budget.withinBudget !== false ? (
+                        <span className="flight-budget-verified-pill">✓ Viable Budget Fit</span>
+                      ) : (
+                        <span className="flight-budget-tight-pill">⚠️ Route Exceeds Min Budget</span>
+                      )}
+                    </div>
+                  </div>
+                )}
+              </>
             )}
+
             <div className="transit-demand-row">
               <span className="transit-badge-pill">{transit.availabilityBadge}</span>
               {transit.bookingUrl && (
@@ -106,7 +139,11 @@ export default function DestinationCard({ destination }) {
                   rel="noreferrer"
                   className="transit-booking-link"
                 >
-                  {transit.mode === 'Flight' ? 'Check Live on Google Flights' : 'Live booking'} <ExternalLink size={11} strokeWidth={2.2} />
+                  {transit.flightPossible === false
+                    ? "View Driving Route on Maps"
+                    : transit.mode === "Flight"
+                    ? "Check Live on Google Flights"
+                    : "Live booking"} <ExternalLink size={11} strokeWidth={2.2} />
                 </a>
               )}
             </div>
@@ -130,7 +167,7 @@ export default function DestinationCard({ destination }) {
               </span>
               <span className="budget-dot">•</span>
               <span className="budget-item">
-                {transit.mode === 'Flight' ? 'Flights' : 'Transit'}: ₹{Math.round(budget.transitTotalINR).toLocaleString()}
+                {transit.flightPossible === false ? 'Road/Train: ' : transit.mode === 'Flight' ? 'Flights: ' : 'Transit: '}₹{Math.round(budget.transitTotalINR).toLocaleString()}
               </span>
               <span className="budget-dot">•</span>
               <span className="budget-item">
@@ -151,7 +188,7 @@ export default function DestinationCard({ destination }) {
           <span className="itinerary-ready-label">
             <strong>{destination.itinerary?.length || parseInt(destination.duration) || 5}-Day Plan Ready</strong>
             <span className="itinerary-ready-sub">
-              {transit.mode === "Flight" ? " · ✈️ Flights & Daily Sights" : transit.mode === "Train" ? " · 🚆 Trains & Sights" : " · 🚗 Daily Schedule"}
+              {transit.flightPossible === false ? " · 🚗 Scenic Road Trip & Sights" : transit.mode === "Flight" ? " · ✈️ Flights & Daily Sights" : transit.mode === "Train" ? " · 🚆 Trains & Sights" : " · 🚗 Daily Schedule"}
             </span>
           </span>
         </div>

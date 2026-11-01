@@ -3483,5 +3483,1794 @@
       "availabilityBadge": "Instant Confirmation",
       "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
     }
+  ],
+  "rj-udaipur": [
+    {
+      "name": "Jagat Niwas Palace Hotel",
+      "tier": "Standard",
+      "type": "Heritage Haveli",
+      "pricePerNightINR": 4200,
+      "rating": 4.7,
+      "reviewsCount": 1840,
+      "address": "23-25 Lal Ghat, Behind Jagdish Temple, Udaipur",
+      "amenities": [
+        "Lake View Rooftop",
+        "Free WiFi",
+        "Ayurvedic Spa",
+        "Multicuisine Restaurant",
+        "Boat Ride Assistance"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Udaipur?q=Jagat+Niwas+Palace+Udaipur",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": true,
+      "reasonForRecommendation": "Historic 17th-century haveli perched right on Lake Pichola with spectacular palace views."
+    },
+    {
+      "name": "Zostel Udaipur",
+      "tier": "Budget",
+      "type": "Boutique Hostel & Private Rooms",
+      "pricePerNightINR": 1850,
+      "rating": 4.6,
+      "reviewsCount": 2420,
+      "address": "Navghat, Chandpole, Near Lake Pichola, Udaipur",
+      "amenities": [
+        "Rooftop Cafe",
+        "Air Conditioning",
+        "Free High-Speed WiFi",
+        "Walking Tours",
+        "Travel Desk"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Udaipur?q=Zostel+Udaipur",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Budget traveler favorite with sunset lake views and central location."
+    },
+    {
+      "name": "The Leela Palace Udaipur",
+      "tier": "Luxury",
+      "type": "Palatial 5-Star Luxury Resort",
+      "pricePerNightINR": 24500,
+      "rating": 4.9,
+      "reviewsCount": 3120,
+      "address": "Lake Pichola, Post Box No. 125, Udaipur",
+      "amenities": [
+        "Private Boat Transfers",
+        "Infinity Lake Pool",
+        "ESPA Luxury Spa",
+        "Fine Dining",
+        "Butler Service"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Udaipur?q=The+Leela+Palace+Udaipur",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Voted world's best hotel with majestic royal suites and private palace boat arrivals."
+    }
+  ],
+  "rj-jaisalmer": [
+    {
+      "name": "Hotel Pleasant Haveli",
+      "tier": "Budget",
+      "type": "Heritage Haveli",
+      "pricePerNightINR": 1800,
+      "rating": 4.7,
+      "reviewsCount": 1150,
+      "address": "Chainpura Street, Gandhi Chowk, Jaisalmer",
+      "amenities": [
+        "Rooftop Fort View Restaurant",
+        "Free Desert Camp Safari Booking",
+        "Free WiFi",
+        "AC Rooms"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Jaisalmer?q=Hotel+Pleasant+Haveli+Jaisalmer",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": true,
+      "reasonForRecommendation": "Unmatched hospitality with direct fort-facing rooftop dining and camel safari assistance."
+    },
+    {
+      "name": "Desert Springs Resort & Camp",
+      "tier": "Standard",
+      "type": "Luxury Swiss Tent Desert Camp",
+      "pricePerNightINR": 3800,
+      "rating": 4.6,
+      "reviewsCount": 940,
+      "address": "Sam Sand Dunes Road, Kanoi, Jaisalmer",
+      "amenities": [
+        "Private Desert Tents",
+        "Buffet Dinner",
+        "Rajasthani Folk Dance & Campfire",
+        "Camel & Jeep Dune Safari"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Jaisalmer?q=Desert+Springs+Resort+Jaisalmer",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Authentic desert camp on the dunes with nightly kalbeliya folk music and stargazing."
+    },
+    {
+      "name": "Suryagarh Jaisalmer",
+      "tier": "Luxury",
+      "type": "5-Star Fortress Luxury Hotel",
+      "pricePerNightINR": 18500,
+      "rating": 4.9,
+      "reviewsCount": 2680,
+      "address": "Kahala Phata, Sam Road, Jaisalmer",
+      "amenities": [
+        "Indoor Heated Pool",
+        "Rait Spa",
+        "Chudail Trail Night Walk",
+        "Fine Dining",
+        "Archery & Falconry"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Jaisalmer?q=Suryagarh+Jaisalmer",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "A bespoke sandstone fortress offering world-class luxury in the Thar desert."
+    }
+  ],
+  "rj-jodhpur": [
+    {
+      "name": "The Blue House Heritage Hotel",
+      "tier": "Budget",
+      "type": "Heritage Haveli",
+      "pricePerNightINR": 1700,
+      "rating": 4.6,
+      "reviewsCount": 890,
+      "address": "Moti Chowk, Jodhpur Old City",
+      "amenities": [
+        "Rooftop Restaurant",
+        "Fort Views",
+        "Free WiFi",
+        "Heritage Rooms"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Jodhpur?q=The+Blue+House+Jodhpur",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": true,
+      "reasonForRecommendation": "Family-run 500-year-old haveli inside the heart of the blue city."
+    },
+    {
+      "name": "RAAS Jodhpur",
+      "tier": "Luxury",
+      "type": "Boutique Luxury Haveli",
+      "pricePerNightINR": 16500,
+      "rating": 4.9,
+      "reviewsCount": 1720,
+      "address": "Tunwar ji ka Jhalra, Makrana Mohalla, Jodhpur",
+      "amenities": [
+        "Mehrangarh Fort Views",
+        "Stepwell Pool",
+        "Spa",
+        "Terrace Dining",
+        "Bar"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Jodhpur?q=RAAS+Jodhpur",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Luxury boutique hotel built around an 18th-century stepwell right beneath Mehrangarh Fort."
+    },
+    {
+      "name": "Ranbanka Palace",
+      "tier": "Standard",
+      "type": "Heritage Palace Hotel",
+      "pricePerNightINR": 3400,
+      "rating": 4.5,
+      "reviewsCount": 1420,
+      "address": "Circuit House Road, Jodhpur",
+      "amenities": [
+        "Swimming Pool",
+        "Spa",
+        "Multi-cuisine Dining",
+        "Lush Courtyards"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Jodhpur?q=Ranbanka+Palace+Jodhpur",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Royal heritage property with serene gardens and classic Marwari architecture."
+    }
+  ],
+  "ka-hampi": [
+    {
+      "name": "Heritage Resort Hampi",
+      "tier": "Standard",
+      "type": "Eco-Heritage Resort",
+      "pricePerNightINR": 3600,
+      "rating": 4.6,
+      "reviewsCount": 1180,
+      "address": "48/C & 48/D, Hosapete Taluk, Hampi",
+      "amenities": [
+        "Swimming Pool",
+        "Organic Farm Dining",
+        "Ayurvedic Spa",
+        "Bicycle Rental",
+        "Guided Ruin Tours"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Hampi?q=Heritage+Resort+Hampi",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": true,
+      "reasonForRecommendation": "Tranquil stone-cottage resort amidst lush orchards only 6 km from UNESCO monuments."
+    },
+    {
+      "name": "Gowri Guest House & Huts",
+      "tier": "Budget",
+      "type": "Riverside Homestay & Huts",
+      "pricePerNightINR": 1400,
+      "rating": 4.5,
+      "reviewsCount": 850,
+      "address": "Sanapur Village, Hippie Island, Hampi",
+      "amenities": [
+        "Riverside Cafe",
+        "Hammocks",
+        "Motorbike Rental",
+        "Free WiFi",
+        "Coracle Booking"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Hampi?q=Gowri+Guest+House+Hampi",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Chilled-out boulder retreat near Sanapur Lake, popular with backpackers and climbers."
+    },
+    {
+      "name": "Evolve Back Kamalapura Palace",
+      "tier": "Luxury",
+      "type": "Palatial 5-Star Luxury Resort",
+      "pricePerNightINR": 22000,
+      "rating": 4.9,
+      "reviewsCount": 1950,
+      "address": "Kamalapura, Bellary District, Hampi",
+      "amenities": [
+        "Private Plunge Pool Villas",
+        "Vaidyasala Ayurvedic Center",
+        "Infinity Pool",
+        "Fine Dining",
+        "Historian Guided Walks"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Hampi?q=Evolve+Back+Hampi",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Designed to recreate the grand 14th-century Vijayanagara imperial royal architecture."
+    }
+  ],
+  "ka-mysuru": [
+    {
+      "name": "Radisson Blu Plaza Hotel Mysore",
+      "tier": "Standard",
+      "type": "4-Star Modern Hotel",
+      "pricePerNightINR": 3800,
+      "rating": 4.7,
+      "reviewsCount": 3800,
+      "address": "MG Road, Indiranagar, Mysuru",
+      "amenities": [
+        "Chamundi Hills Views",
+        "Swimming Pool",
+        "Spa & Wellness",
+        "Fine Dining",
+        "Fitness Center"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Mysore?q=Radisson+Blu+Plaza+Mysore",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": true,
+      "reasonForRecommendation": "Prime location next to Mysore Zoo and Palace with sweeping views of Chamundi Hills."
+    },
+    {
+      "name": "Roamer Luxury Hostel & Rooms",
+      "tier": "Budget",
+      "type": "Boutique Heritage Stay",
+      "pricePerNightINR": 1500,
+      "rating": 4.6,
+      "reviewsCount": 680,
+      "address": "Gokulam 3rd Stage, Mysuru",
+      "amenities": [
+        "Yoga Shala",
+        "Cafe",
+        "High-Speed WiFi",
+        "Community Terrace",
+        "Bicycle Rental"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Mysore?q=Roamer+Hostel+Mysore",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Located in Gokulam yoga quarter, ideal for solo travelers and wellness retreats."
+    },
+    {
+      "name": "Grand Mercure Mysuru",
+      "tier": "Luxury",
+      "type": "5-Star Luxury Hotel",
+      "pricePerNightINR": 6800,
+      "rating": 4.8,
+      "reviewsCount": 2400,
+      "address": "Sayyaji Rao Road, Nelson Mandela Circle, Mysuru",
+      "amenities": [
+        "Rooftop Swimming Pool",
+        "La Rive Spa",
+        "Fine Dining",
+        "Cocktail Bar",
+        "Executive Club"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Mysore?q=Grand+Mercure+Mysuru",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Sophisticated modern luxury reflecting Mysuru's silk and sandalwood legacy."
+    }
+  ],
+  "ka-gokarna": [
+    {
+      "name": "Kahani Paradise Gokarna",
+      "tier": "Luxury",
+      "type": "Luxury Cliff-Top Villa Estate",
+      "pricePerNightINR": 14500,
+      "rating": 4.9,
+      "reviewsCount": 340,
+      "address": "Near Paradise Beach, Belekan, Gokarna",
+      "amenities": [
+        "Infinity Cliff Pool",
+        "Panoramic Ocean & River Views",
+        "Gourmet Chef Dining",
+        "Ayurvedic Massages"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Gokarna?q=Kahani+Paradise+Gokarna",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Exclusive cliff villa set amidst 20 acres of tropical gardens with private beach trail."
+    },
+    {
+      "name": "Kudle Ocean Front Resort",
+      "tier": "Standard",
+      "type": "Beachfront Cottages",
+      "pricePerNightINR": 2800,
+      "rating": 4.5,
+      "reviewsCount": 1120,
+      "address": "Kudle Beach, Gokarna",
+      "amenities": [
+        "Beachfront Access",
+        "Seafood Shack Restaurant",
+        "AC Cottages",
+        "Free WiFi"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Gokarna?q=Kudle+Ocean+Front+Gokarna",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": true,
+      "reasonForRecommendation": "Step directly onto Kudle beach sands with vibrant sunset views."
+    },
+    {
+      "name": "Zostel Gokarna",
+      "tier": "Budget",
+      "type": "Cliffside Hostel & Private Cottages",
+      "pricePerNightINR": 1600,
+      "rating": 4.6,
+      "reviewsCount": 2100,
+      "address": "Kudle Beach Road, Dandebagh, Gokarna",
+      "amenities": [
+        "Cliff-top Sunset Point",
+        "Mantra Cafe",
+        "Common Room",
+        "Free High-Speed WiFi"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Gokarna?q=Zostel+Gokarna",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Perched on the cliff overlooking Gokarna beach, celebrated for its cafe and community vibes."
+    }
+  ],
+  "kl-wayanad": [
+    {
+      "name": "Vythiri Resort Wayanad",
+      "tier": "Luxury",
+      "type": "Rainforest Treehouse & Spa Resort",
+      "pricePerNightINR": 12500,
+      "rating": 4.8,
+      "reviewsCount": 2800,
+      "address": "Lakkidi PO, Vythiri, Wayanad",
+      "amenities": [
+        "Canopy Treehouses",
+        "Rope Bridge over Stream",
+        "Ayurveda Spa",
+        "Natural Pool",
+        "Guided Rainforest Hikes"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Wayanad?q=Vythiri+Resort+Wayanad",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": true,
+      "reasonForRecommendation": "Pioneer eco-resort with authentic thatched treehouses in an untouched Western Ghats rainforest."
+    },
+    {
+      "name": "Greenex Farms Homestay",
+      "tier": "Budget",
+      "type": "Coffee Plantation Homestay",
+      "pricePerNightINR": 1800,
+      "rating": 4.6,
+      "reviewsCount": 620,
+      "address": "Chundale, Kalpetta, Wayanad",
+      "amenities": [
+        "Coffee Estate Walks",
+        "Homestyle Kerala Meals",
+        "Campfire",
+        "Free WiFi"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Wayanad?q=Greenex+Farms+Wayanad",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Warm farmstay hospitality with authentic Kerala sadhya meals and plantation walks."
+    },
+    {
+      "name": "Sterling Wayanad",
+      "tier": "Standard",
+      "type": "4-Star Nature Resort",
+      "pricePerNightINR": 3400,
+      "rating": 4.6,
+      "reviewsCount": 1640,
+      "address": "Valluvadi Road, Sultan Bathery, Wayanad",
+      "amenities": [
+        "Swimming Pool",
+        "Clubhouse Games",
+        "Multi-cuisine Restaurant",
+        "Spa",
+        "Elephant Sightings"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Wayanad?q=Sterling+Wayanad",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Set on the border of Muthanga Wildlife Sanctuary, ideal for families and nature lovers."
+    }
+  ],
+  "kl-alleppey": [
+    {
+      "name": "Lakes & Lagoons Houseboat Cruise",
+      "tier": "Standard",
+      "type": "Deluxe Backwater Houseboat",
+      "pricePerNightINR": 4200,
+      "rating": 4.7,
+      "reviewsCount": 1950,
+      "address": "Finishing Point Jetty, Alappuzha",
+      "amenities": [
+        "Private AC Bedroom",
+        "Chef Onboard (3 Fresh Meals)",
+        "Upper Deck Viewing Lounge",
+        "Canoe Excursion"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Alleppey?q=Lakes+and+Lagoons+Houseboat+Alleppey",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": true,
+      "reasonForRecommendation": "Government-certified luxury kettuvallam houseboats cruising deep into tranquil village backwaters."
+    },
+    {
+      "name": "Kondai Lip Backwater Heritage Resort",
+      "tier": "Budget",
+      "type": "Heritage Backwater Cottages",
+      "pricePerNightINR": 2100,
+      "rating": 4.6,
+      "reviewsCount": 780,
+      "address": "Kondai, Eramalloor, Near Alappuzha",
+      "amenities": [
+        "Canal-side Wooden Cottages",
+        "Country Boat Rides",
+        "Ayurvedic Center",
+        "Kerala Cuisine"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Alleppey?q=Kondai+Lip+Backwater+Resort",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "200-year-old traditional wooden cottages set along a private palm canal."
+    },
+    {
+      "name": "Kumarakom Lake Resort",
+      "tier": "Luxury",
+      "type": "5-Star Heritage Luxury Resort",
+      "pricePerNightINR": 18000,
+      "rating": 4.9,
+      "reviewsCount": 3200,
+      "address": "Vembanad Lake, Kumarakom / Alleppey Backwaters",
+      "amenities": [
+        "Meandering Pool Villas",
+        "Ayurmana Heritage Spa",
+        "Sunset Lake Cruise",
+        "Seafood Bar"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Alleppey?q=Kumarakom+Lake+Resort",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Consistently rated India's leading backwater resort, featuring villas with private plunge pools."
+    }
+  ],
+  "kl-kochi": [
+    {
+      "name": "Forte Kochi Heritage Hotel",
+      "tier": "Standard",
+      "type": "Colonial Heritage Hotel",
+      "pricePerNightINR": 4200,
+      "rating": 4.8,
+      "reviewsCount": 1100,
+      "address": "1/373 Princess Street, Fort Kochi",
+      "amenities": [
+        "Courtyard Pool",
+        "Colonial Architecture",
+        "Free High-Speed WiFi",
+        "Heritage Cafe"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Kochi?q=Forte+Kochi+Hotel",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": true,
+      "reasonForRecommendation": "Restored 19th-century Dutch mansion on famous Princess Street, walking distance to beach nets."
+    },
+    {
+      "name": "Zostel Kochi (Fort Kochi)",
+      "tier": "Budget",
+      "type": "Hostel & Private Rooms",
+      "pricePerNightINR": 1700,
+      "rating": 4.6,
+      "reviewsCount": 1850,
+      "address": "Bazaar Road, Mattancherry, Kochi",
+      "amenities": [
+        "Art Rooftop",
+        "Common Lounge",
+        "Bicycle Rental",
+        "Walking Tours"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Kochi?q=Zostel+Kochi",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Located between Fort Kochi and Jew Town, perfect for art lovers and backpackers."
+    },
+    {
+      "name": "Brunton Boatyard - CGH Earth",
+      "tier": "Luxury",
+      "type": "5-Star Waterfront Heritage Resort",
+      "pricePerNightINR": 15500,
+      "rating": 4.9,
+      "reviewsCount": 1640,
+      "address": "1/498 Calvathy, Fort Kochi",
+      "amenities": [
+        "Harbour View Rooms",
+        "Historic Shipyard Architecture",
+        "Sunset Ferry",
+        "History Fine Dining"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Kochi?q=Brunton+Boatyard+Kochi",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Restored Victorian shipyard hotel directly on the harbor channel with views of dolphins and ships."
+    }
+  ],
+  "kl-varkala": [
+    {
+      "name": "Clafouti Beach Resort",
+      "tier": "Standard",
+      "type": "Cliff-Top Beach Resort",
+      "pricePerNightINR": 2900,
+      "rating": 4.6,
+      "reviewsCount": 1420,
+      "address": "North Cliff, Kurakkanni, Varkala",
+      "amenities": [
+        "Cliff-top Ocean Views",
+        "Ayurvedic Treatments",
+        "Seafood Restaurant",
+        "Yoga Deck"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Varkala?q=Clafouti+Beach+Resort+Varkala",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": true,
+      "reasonForRecommendation": "Prime North Cliff location with sea-facing wooden cottages and direct stairway to the beach."
+    },
+    {
+      "name": "The Lost Hostels Varkala - Helipad",
+      "tier": "Budget",
+      "type": "Backpacker Hostel & Private Rooms",
+      "pricePerNightINR": 1450,
+      "rating": 4.7,
+      "reviewsCount": 980,
+      "address": "Near Helipad, North Cliff, Varkala",
+      "amenities": [
+        "Garden Chillout Zone",
+        "Campfire Evenings",
+        "Surfing Lessons",
+        "High-Speed WiFi"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Varkala?q=Lost+Hostels+Varkala",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Laidback surfer hostel steps from the clifftop sunset point."
+    },
+    {
+      "name": "The Gateway Hotel Varkala - IHCL",
+      "tier": "Luxury",
+      "type": "5-Star Luxury Clifftop Resort",
+      "pricePerNightINR": 9200,
+      "rating": 4.8,
+      "reviewsCount": 1820,
+      "address": "Janardhanapuram, Varkala",
+      "amenities": [
+        "Cliff-Edge Pool",
+        "Ayurvedic Wellness Spa",
+        "Coastal Cuisine",
+        "Tennis Courts"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Varkala?q=The+Gateway+Hotel+Varkala",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Luxury Taj hospitality perched atop the cliff overlooking the red cliffs and Arabian Sea."
+    }
+  ],
+  "up-agra": [
+    {
+      "name": "ITC Mughal, a Luxury Collection Resort",
+      "tier": "Luxury",
+      "type": "5-Star Palatial Mughal Resort",
+      "pricePerNightINR": 9800,
+      "rating": 4.8,
+      "reviewsCount": 4200,
+      "address": "Fatehabad Road, Tajganj, Agra",
+      "amenities": [
+        "Kaya Kalp Royal Spa (India's Largest Spa)",
+        "Mughal Gardens",
+        "Swimming Pools",
+        "Fine Dining (Peshawri)"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Agra?q=ITC+Mughal+Agra",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": true,
+      "reasonForRecommendation": "Aga Khan Award-winning architecture set across 35 acres of Mughal gardens."
+    },
+    {
+      "name": "Hotel Taj Resorts",
+      "tier": "Budget",
+      "type": "Boutique Hotel Near Taj Gate",
+      "pricePerNightINR": 1800,
+      "rating": 4.5,
+      "reviewsCount": 1650,
+      "address": "Near Shilpgram, VIP Road, Taj Mahal East Gate, Agra",
+      "amenities": [
+        "Rooftop Taj View Pool",
+        "500m to Taj Mahal East Gate",
+        "Free WiFi",
+        "Restaurant"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Agra?q=Hotel+Taj+Resorts+Agra",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Closest quality hotel to the Taj Mahal East Gate, ideal for sunrise visits."
+    },
+    {
+      "name": "Crystal Sarovar Premiere",
+      "tier": "Standard",
+      "type": "4-Star Modern Hotel",
+      "pricePerNightINR": 3400,
+      "rating": 4.6,
+      "reviewsCount": 2100,
+      "address": "Fatehabad Road, Tajganj, Agra",
+      "amenities": [
+        "Rooftop Infinity Pool with Taj Views",
+        "Fitness Center",
+        "Multi-cuisine Restaurant"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Agra?q=Crystal+Sarovar+Premiere+Agra",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Great value comfortable stay with rooftop swimming pool facing the Taj Mahal."
+    }
+  ],
+  "hp-shimla": [
+    {
+      "name": "The Oberoi Cecil, Shimla",
+      "tier": "Luxury",
+      "type": "5-Star Grand Heritage Hotel",
+      "pricePerNightINR": 18500,
+      "rating": 4.9,
+      "reviewsCount": 2600,
+      "address": "Chaura Maidan, Shimla",
+      "amenities": [
+        "Heated Indoor Pool",
+        "Oberoi Spa",
+        "Cedar Garden",
+        "Fine Heritage Dining",
+        "Children's Activity Center"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Shimla?q=The+Oberoi+Cecil+Shimla",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": true,
+      "reasonForRecommendation": "130-year-old grand heritage landmark hotel with roaring fireplaces and classic colonial luxury."
+    },
+    {
+      "name": "Hotel Combermere",
+      "tier": "Standard",
+      "type": "Centrally Located Hill Hotel",
+      "pricePerNightINR": 3800,
+      "rating": 4.6,
+      "reviewsCount": 1940,
+      "address": "The Mall, Opposite Tourism Lift, Shimla",
+      "amenities": [
+        "Direct Passenger Lift to Mall Road",
+        "Spa",
+        "Multi-cuisine Dining",
+        "Mountain Valley Views"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Shimla?q=Hotel+Combermere+Shimla",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Connected directly to Mall Road via private passenger lift, offering unmatched convenience."
+    },
+    {
+      "name": "Zostel Homes Mashobra (Shimla)",
+      "tier": "Budget",
+      "type": "Apple Orchard Homestay",
+      "pricePerNightINR": 1900,
+      "rating": 4.7,
+      "reviewsCount": 850,
+      "address": "Mashobra Valley, 12 km from Shimla",
+      "amenities": [
+        "Apple Orchard Views",
+        "Campfire",
+        "Homestyle Food",
+        "Free High-Speed WiFi"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Shimla?q=Zostel+Homes+Mashobra",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Peaceful pine-forest retreat away from city crowds with breathtaking valley views."
+    }
+  ],
+  "hp-dharamshala": [
+    {
+      "name": "Fortune Park Moksha, McLeod Ganj",
+      "tier": "Standard",
+      "type": "4-Star Mountain Resort",
+      "pricePerNightINR": 3600,
+      "rating": 4.6,
+      "reviewsCount": 1540,
+      "address": "Strawberry Hills, Near Dal Lake, McLeod Ganj",
+      "amenities": [
+        "Dhauladhar Mountain Views",
+        "Heated Swimming Pool",
+        "Spa & Sauna",
+        "Multi-cuisine Restaurant"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Dharamshala?q=Fortune+Park+Moksha+McLeodganj",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": true,
+      "reasonForRecommendation": "Peacefully set in deodar forests with magnificent vistas of the snow-clad Dhauladhar peaks."
+    },
+    {
+      "name": "The Hosteller McLeodGanj - Bhagsu",
+      "tier": "Budget",
+      "type": "Modern Backpacker Hostel & Stay",
+      "pricePerNightINR": 1600,
+      "rating": 4.6,
+      "reviewsCount": 1240,
+      "address": "Bhagsu Nag, McLeod Ganj, Dharamshala",
+      "amenities": [
+        "Rooftop Mountain Cafe",
+        "Workstation Desk",
+        "Free WiFi",
+        "Trek Guidance"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Dharamshala?q=The+Hosteller+McLeodganj",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Vibrant budget stay right at the starting trail of the famous Triund trek."
+    },
+    {
+      "name": "Hyatt Regency Dharamshala Resort",
+      "tier": "Luxury",
+      "type": "5-Star Luxury Mountain Resort",
+      "pricePerNightINR": 14000,
+      "rating": 4.9,
+      "reviewsCount": 2100,
+      "address": "Village Dharamkot, McLeod Ganj, Dharamshala",
+      "amenities": [
+        "Indoor Heated Pool",
+        "Shambhala Spa",
+        "Forest Walks",
+        "Tibetan Herb Infusion Bar"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Dharamshala?q=Hyatt+Regency+Dharamshala",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Serene luxury resort spread over 24 acres of virgin cedar forests with world-class wellness."
+    }
+  ],
+  "hp-spiti": [
+    {
+      "name": "Spiti Valley Homestay & Mud Hut",
+      "tier": "Budget",
+      "type": "Authentic Mud Homestay",
+      "pricePerNightINR": 1600,
+      "rating": 4.7,
+      "reviewsCount": 540,
+      "address": "Kaza Old Village, Spiti Valley",
+      "amenities": [
+        "Traditional Tandoor Heating",
+        "Home-cooked Spitian Food",
+        "Hot Water Buckets",
+        "Stargazing Terrace"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Kaza?q=Spiti+Homestay+Kaza",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": true,
+      "reasonForRecommendation": "Experience genuine Spitian hospitality with organic barley soup (Thukpa) and cozy mud architecture."
+    },
+    {
+      "name": "The Grand Dewachen",
+      "tier": "Standard",
+      "type": "Luxury Spitian Eco Hotel",
+      "pricePerNightINR": 3500,
+      "rating": 4.6,
+      "reviewsCount": 680,
+      "address": "Rangrik Village, Near Kaza, Spiti Valley",
+      "amenities": [
+        "Solar Heated Rooms",
+        "Oxygen Cylinder Assistance",
+        "Spitian & Indian Dining",
+        "Valley Views"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Kaza?q=Grand+Dewachen+Spiti",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "The premier solar-heated boutique hotel in Spiti, offering mountain vistas across the Spiti river."
+    },
+    {
+      "name": "Parasol Camps Chandratal",
+      "tier": "Standard",
+      "type": "High-Altitude Glamping Tent",
+      "pricePerNightINR": 3800,
+      "rating": 4.5,
+      "reviewsCount": 420,
+      "address": "Chandratal Camp Zone (3 km from lake), Spiti",
+      "amenities": [
+        "Swiss Tents with Attached Bath",
+        "Dinner & Breakfast",
+        "Campfire",
+        "Milky Way Stargazing"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Spiti?q=Chandratal+Camps+Spiti",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Camp under crystal-clear Himalayan night skies just 15 minutes walk from sacred Chandratal lake."
+    }
+  ],
+  "uk-mussoorie": [
+    {
+      "name": "Welcomhotel by ITC Hotels, The Savoy",
+      "tier": "Luxury",
+      "type": "5-Star Historic Heritage Hotel",
+      "pricePerNightINR": 16500,
+      "rating": 4.8,
+      "reviewsCount": 2400,
+      "address": "Library Chowk, Mussoorie",
+      "amenities": [
+        "Gothic Ballroom",
+        "Kaya Kalp Spa",
+        "Historic Writers' Bar",
+        "Heated Swimming Pool"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Mussoorie?q=The+Savoy+Mussoorie",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": true,
+      "reasonForRecommendation": "Built in 1902, The Savoy is the iconic crown jewel of Mussoorie, immortalized by Ruskin Bond."
+    },
+    {
+      "name": "Hotel SunGrace Mussoorie",
+      "tier": "Standard",
+      "type": "Panoramic Mountain View Hotel",
+      "pricePerNightINR": 3200,
+      "rating": 4.5,
+      "reviewsCount": 1150,
+      "address": "Baroda Estate, Library End, Mussoorie",
+      "amenities": [
+        "Panoramic Valley Balconies",
+        "Multi-cuisine Dining",
+        "Free WiFi",
+        "Travel Desk"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Mussoorie?q=Hotel+SunGrace+Mussoorie",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Peaceful location away from Mall Road congestion with sweeping views of the Doon valley."
+    },
+    {
+      "name": "Bunkstop Hostel Mussoorie",
+      "tier": "Budget",
+      "type": "Backpacker Hostel & Private Rooms",
+      "pricePerNightINR": 1750,
+      "rating": 4.6,
+      "reviewsCount": 780,
+      "address": "Picture Palace, Mall Road, Mussoorie",
+      "amenities": [
+        "Terrace Cafe",
+        "Board Games",
+        "High-Speed WiFi",
+        "Guided Hikes"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Mussoorie?q=Bunkstop+Mussoorie",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Budget-friendly stay with youthful vibes and easy walking access to eastern Mall Road."
+    }
+  ],
+  "uk-nainital": [
+    {
+      "name": "The Naini Retreat, by Leisure Hotels",
+      "tier": "Standard",
+      "type": "Heritage Royal Palace Hotel",
+      "pricePerNightINR": 4200,
+      "rating": 4.7,
+      "reviewsCount": 2100,
+      "address": "Ayarpatta Slopes, Mallital, Nainital",
+      "amenities": [
+        "Lake View Gardens",
+        "Colonial Heritage Dining",
+        "Spa",
+        "Billiards Room",
+        "Free Shuttle to Mall Road"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Nainital?q=The+Naini+Retreat+Nainital",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": true,
+      "reasonForRecommendation": "Former residence of Maharaja of Pilibhit, perched on pine slopes with royal heritage charm."
+    },
+    {
+      "name": "Hotel Lake View Nainital",
+      "tier": "Budget",
+      "type": "Lakefront Budget Hotel",
+      "pricePerNightINR": 1800,
+      "rating": 4.4,
+      "reviewsCount": 980,
+      "address": "Mall Road, Tallital, Nainital",
+      "amenities": [
+        "Direct Naini Lake Views",
+        "Restaurant",
+        "Free WiFi",
+        "Boating Assistance"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Nainital?q=Hotel+Lake+View+Nainital",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Convenient budget hotel right across from the boating jetty on Mall Road."
+    },
+    {
+      "name": "The Manu Maharani",
+      "tier": "Luxury",
+      "type": "4-Star Luxury Resort",
+      "pricePerNightINR": 9500,
+      "rating": 4.8,
+      "reviewsCount": 2800,
+      "address": "Grassmere Estate, Mallital, Nainital",
+      "amenities": [
+        "Olive Spa",
+        "Panoramic Naini Lake Views",
+        "Fine Dining",
+        "Fitness Center"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Nainital?q=The+Manu+Maharani+Nainital",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Elevated luxury property commanding the most scenic full view of the emerald Naini lake."
+    }
+  ],
+  "uk-corbett": [
+    {
+      "name": "Taj Corbett Resort & Spa, Uttarakhand",
+      "tier": "Luxury",
+      "type": "5-Star Riverbank Jungle Resort",
+      "pricePerNightINR": 14500,
+      "rating": 4.9,
+      "reviewsCount": 2900,
+      "address": "Zero Garjia, Dhikuli, Ramnagar, Jim Corbett",
+      "amenities": [
+        "Kosi Riverbank Dining",
+        "Jiva Spa",
+        "Outdoor Pool",
+        "Jeep Safari Desk",
+        "Birdwatching Walks"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Corbett?q=Taj+Corbett+Resort",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": true,
+      "reasonForRecommendation": "Sprawling across 10 acres of mango groves along the Kosi river with world-class naturalists."
+    },
+    {
+      "name": "Aahana The Corbett Wilderness",
+      "tier": "Standard",
+      "type": "Luxury Eco-Sanctuary Resort",
+      "pricePerNightINR": 4800,
+      "rating": 4.8,
+      "reviewsCount": 1850,
+      "address": "Vill. Sawaldeh, PO Semalkhaliya, Ramnagar",
+      "amenities": [
+        "Organic Farming",
+        "Infinity Pool",
+        "Ayurvedic Spa",
+        "Open 4x4 Gypsy Safaris"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Corbett?q=Aahana+Corbett+Wilderness",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Award-winning sustainable luxury resort bordering Corbett forest with lush bird life."
+    },
+    {
+      "name": "Corbett Jungle Inn",
+      "tier": "Budget",
+      "type": "Budget Wildlife Lodge",
+      "pricePerNightINR": 1950,
+      "rating": 4.5,
+      "reviewsCount": 720,
+      "address": "Dhikuli, Ramnagar, Jim Corbett",
+      "amenities": [
+        "Swimming Pool",
+        "Garden Restaurant",
+        "Safari Booking Assistance",
+        "Free WiFi"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Corbett?q=Corbett+Jungle+Inn",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Affordable lodge in Dhikuli strip, close to Bijrani and Garjia safari gates."
+    }
+  ],
+  "uk-auli": [
+    {
+      "name": "The Himalayan High, Auli",
+      "tier": "Standard",
+      "type": "Alpine Ski Lodge",
+      "pricePerNightINR": 4200,
+      "rating": 4.7,
+      "reviewsCount": 860,
+      "address": "Near TV Tower, Auli Laga Salude, Joshimath",
+      "amenities": [
+        "Ski Equipment Rental & Lessons",
+        "Panoramic Nanda Devi Views",
+        "Fireplace Lounge",
+        "Restaurant"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Auli?q=The+Himalayan+High+Auli",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": true,
+      "reasonForRecommendation": "Boutique ski lodge directly on the slopes with front-row vistas of India's highest peaks."
+    },
+    {
+      "name": "Blue Poppy Resort Auli",
+      "tier": "Budget",
+      "type": "Wooden Swiss Chalets",
+      "pricePerNightINR": 2400,
+      "rating": 4.6,
+      "reviewsCount": 680,
+      "address": "Auli Laga Joshimath, Chamoli, Uttarakhand",
+      "amenities": [
+        "Wooden Heated Cottages",
+        "Mountain Views",
+        "Home-cooked Food",
+        "Bonfire"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Auli?q=Blue+Poppy+Resort+Auli",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Charming all-wood pine chalets offering warm mountain hospitality amidst deep winter snow."
+    },
+    {
+      "name": "Cliff Top Club Auli",
+      "tier": "Luxury",
+      "type": "High-Altitude Ski Resort (10,000 ft)",
+      "pricePerNightINR": 9800,
+      "rating": 4.5,
+      "reviewsCount": 1420,
+      "address": "Auli, Joshimath, Chamoli, Uttarakhand",
+      "amenities": [
+        "Ski-In / Ski-Out Access",
+        "Helipad",
+        "Indoor Games",
+        "Multi-cuisine Dining",
+        "Ropeway Access"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Auli?q=Cliff+Top+Club+Auli",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Located directly at Tower 8 on the ski slopes, India's highest fully equipped resort."
+    }
+  ],
+  "mh-mahabaleshwar": [
+    {
+      "name": "Le Méridien Mahabaleshwar Resort & Spa",
+      "tier": "Luxury",
+      "type": "5-Star Forest Luxury Resort",
+      "pricePerNightINR": 13500,
+      "rating": 4.8,
+      "reviewsCount": 3200,
+      "address": "211 / 212 Mahabaleshwar-Medha Road, Mahabaleshwar",
+      "amenities": [
+        "Infinity Forest Pool",
+        "Explore Spa",
+        "Chingari Rooftop Restaurant",
+        "Children's Club"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Mahabaleshwar?q=Le+Meridien+Mahabaleshwar",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": true,
+      "reasonForRecommendation": "Perched inside 27 acres of pristine evergreen forest with world-class Marriott luxury."
+    },
+    {
+      "name": "Brightland Resort & Spa",
+      "tier": "Standard",
+      "type": "4-Star Cliffside Resort",
+      "pricePerNightINR": 3800,
+      "rating": 4.6,
+      "reviewsCount": 2400,
+      "address": "Kates Point Road, Mahabaleshwar",
+      "amenities": [
+        "Valley Overlook Pool",
+        "Prana Spa",
+        "Italian Dining (Angkor)",
+        "Solar Heated Jacuzzi"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Mahabaleshwar?q=Brightland+Resort+Mahabaleshwar",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Stunning cliff-edge location overlooking the Krishna river valley and Sahyadri mountains."
+    },
+    {
+      "name": "Treebo Trend JP Cottage",
+      "tier": "Budget",
+      "type": "Budget Family Hotel",
+      "pricePerNightINR": 1800,
+      "rating": 4.4,
+      "reviewsCount": 980,
+      "address": "Near Venna Lake, Panchgani Road, Mahabaleshwar",
+      "amenities": [
+        "Garden Setting",
+        "Free Breakfast",
+        "Free WiFi",
+        "Near Venna Lake"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Mahabaleshwar?q=Treebo+JP+Cottage+Mahabaleshwar",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Pocket-friendly hotel close to Venna Lake and strawberry picking farms."
+    }
+  ],
+  "mh-alibaug": [
+    {
+      "name": "Radisson Blu Resort & Spa Alibaug",
+      "tier": "Luxury",
+      "type": "5-Star Coastal Luxury Resort",
+      "pricePerNightINR": 8900,
+      "rating": 4.7,
+      "reviewsCount": 3800,
+      "address": "Gondhalpada, Veshvi, Alibaug",
+      "amenities": [
+        "Sprawling Lagoon Pool",
+        "Full-Service Mandara Spa",
+        "Multi-cuisine Dining",
+        "Discotheque",
+        "Tennis Courts"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Alibaug?q=Radisson+Blu+Alibaug",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": true,
+      "reasonForRecommendation": "The premier luxury resort in Alibaug, featuring villas with private gardens and tranquil water bodies."
+    },
+    {
+      "name": "Outpost @ Karjat / Alibaug Road",
+      "tier": "Standard",
+      "type": "Boutique Wellness Resort",
+      "pricePerNightINR": 3600,
+      "rating": 4.5,
+      "reviewsCount": 1250,
+      "address": "Chorande, Mapgaon, Alibaug",
+      "amenities": [
+        "Swimming Pool",
+        "Movie Amphitheater",
+        "Treehouse Dining",
+        "Spa & Wellness"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Alibaug?q=Outpost+Alibaug",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Serene greenery escape nestled under coconut plantations between Mandwa and Alibaug."
+    },
+    {
+      "name": "Kashid Beach Resort",
+      "tier": "Budget",
+      "type": "Beachfront Cottages",
+      "pricePerNightINR": 1900,
+      "rating": 4.4,
+      "reviewsCount": 890,
+      "address": "Kashid Beach, Murud Road, Alibaug",
+      "amenities": [
+        "Beachfront Access",
+        "Konkani Seafood Restaurant",
+        "Free Parking",
+        "AC Rooms"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Alibaug?q=Kashid+Beach+Resort",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Step directly onto the golden sands of Kashid beach, ideal for watersports."
+    }
+  ],
+  "rj-ranthambore": [
+    {
+      "name": "The Oberoi Vanyavilas Wildlife Resort",
+      "tier": "Luxury",
+      "type": "5-Star Luxury Tented Jungle Camp",
+      "pricePerNightINR": 38000,
+      "rating": 4.9,
+      "reviewsCount": 1820,
+      "address": "Ranthambhore Road, Sawai Madhopur",
+      "amenities": [
+        "Triple-Canopied Luxury Tents",
+        "Private Waterways & Lily Ponds",
+        "Oberoi Spa",
+        "Private Naturalist Safaris"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Ranthambore?q=The+Oberoi+Vanyavilas+Ranthambore",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Ranked among the top luxury resorts in the world, combining royal tiger tracking with opulence."
+    },
+    {
+      "name": "Ranthambhore National Resort",
+      "tier": "Standard",
+      "type": "Wildlife Heritage Hotel",
+      "pricePerNightINR": 3400,
+      "rating": 4.6,
+      "reviewsCount": 1420,
+      "address": "Ranthambhore Road, Sawai Madhopur",
+      "amenities": [
+        "Swimming Pool",
+        "Safari Booking Center",
+        "Rajasthani Dining & Cultural Show",
+        "Spacious Lawns"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Ranthambore?q=Ranthambhore+National+Resort",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": true,
+      "reasonForRecommendation": "Prime location on Ranthambhore road with experienced naturalist staff and comfortable cottages."
+    },
+    {
+      "name": "Tiger Safari Resort",
+      "tier": "Budget",
+      "type": "Budget Safari Lodge",
+      "pricePerNightINR": 1850,
+      "rating": 4.5,
+      "reviewsCount": 920,
+      "address": "Subhash Nagar, Ranthambhore Road, Sawai Madhopur",
+      "amenities": [
+        "Swimming Pool",
+        "AC Deluxe Rooms",
+        "Safari Guidance",
+        "Restaurant"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Ranthambore?q=Tiger+Safari+Resort+Ranthambore",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Well-kept budget resort with swimming pool and direct access to park safari pickup points."
+    }
+  ],
+  "mp-kanha": [
+    {
+      "name": "Singinawa Jungle Lodge, Kanha",
+      "tier": "Luxury",
+      "type": "Eco-Luxury Safari Lodge",
+      "pricePerNightINR": 16500,
+      "rating": 4.9,
+      "reviewsCount": 980,
+      "address": "Kohka, Mocha, Kanha National Park",
+      "amenities": [
+        "110-Acre Private Forest",
+        "Tribal Art Museum",
+        "Naturalist-led Safaris",
+        "Swimming Pool",
+        "Ayurvedic Spa"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Kanha?q=Singinawa+Jungle+Lodge+Kanha",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": true,
+      "reasonForRecommendation": "Award-winning wildlife lodge dedicated to ecological conservation with on-site tribal art museum."
+    },
+    {
+      "name": "Kanha Earth Lodge",
+      "tier": "Standard",
+      "type": "Eco-Friendly Wilderness Lodge",
+      "pricePerNightINR": 4800,
+      "rating": 4.8,
+      "reviewsCount": 740,
+      "address": "Narna Village, Kanha Buffer Zone",
+      "amenities": [
+        "Mud & Wood Chalets",
+        "Infinity Forest Pool",
+        "Birding Trails",
+        "Farm-to-Table Dining"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Kanha?q=Kanha+Earth+Lodge",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Constructed from local mud and recycled wood, blending seamlessly into Kipling's sal wilderness."
+    },
+    {
+      "name": "Mocha Safari Resort Kanha",
+      "tier": "Budget",
+      "type": "Jungle Lodge",
+      "pricePerNightINR": 1900,
+      "rating": 4.5,
+      "reviewsCount": 540,
+      "address": "Mocha, Mandla, Kanha National Park",
+      "amenities": [
+        "Near Khatia Safari Gate",
+        "Swimming Pool",
+        "Garden Restaurant",
+        "Gypsy Assistance"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Kanha?q=Mocha+Safari+Resort+Kanha",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Affordable lodge situated 2 km from the main Khatia entry gate of Kanha National Park."
+    }
+  ],
+  "mp-pachmarhi": [
+    {
+      "name": "WelcomHeritage Golf View, Pachmarhi",
+      "tier": "Standard",
+      "type": "Colonial Heritage Resort",
+      "pricePerNightINR": 3400,
+      "rating": 4.6,
+      "reviewsCount": 1150,
+      "address": "Mahadeo Road, Pachmarhi",
+      "amenities": [
+        "Golf Course Views",
+        "Colonial Architecture",
+        "Lush Lawns",
+        "Multi-cuisine Restaurant"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Pachmarhi?q=WelcomHeritage+Golf+View+Pachmarhi",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": true,
+      "reasonForRecommendation": "Colonial-era estate overlooking the verdant golf course, offering quiet Satpura charm."
+    },
+    {
+      "name": "MPT Glen View, Pachmarhi",
+      "tier": "Standard",
+      "type": "MP Tourism Heritage Property",
+      "pricePerNightINR": 2800,
+      "rating": 4.5,
+      "reviewsCount": 1450,
+      "address": "Near Club, Pachmarhi",
+      "amenities": [
+        "Spacious Heritage Suites",
+        "Bar & Dining",
+        "Open Gardens",
+        "Government Verified Service"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Pachmarhi?q=MPT+Glen+View+Pachmarhi",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Flagship Madhya Pradesh Tourism hotel set in lush deodar groves with trusted hospitality."
+    },
+    {
+      "name": "Hotel Utkarsh Pachmarhi",
+      "tier": "Budget",
+      "type": "Budget Mountain Hotel",
+      "pricePerNightINR": 1500,
+      "rating": 4.4,
+      "reviewsCount": 620,
+      "address": "Subhash Road, Pachmarhi Market",
+      "amenities": [
+        "Clean AC Rooms",
+        "Pure Veg Restaurant",
+        "Travel Desk for Gypsy Booking",
+        "Free WiFi"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Pachmarhi?q=Hotel+Utkarsh+Pachmarhi",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Central location in Pachmarhi town near local markets and gypsy union counter."
+    }
+  ],
+  "tn-kodaikanal": [
+    {
+      "name": "The Tamara Kodai",
+      "tier": "Luxury",
+      "type": "5-Star Heritage Luxury Resort",
+      "pricePerNightINR": 13500,
+      "rating": 4.9,
+      "reviewsCount": 2600,
+      "address": "St. Mary's Road, Kodaikanal",
+      "amenities": [
+        "Heated Outdoor Swimming Pool",
+        "Elevation Spa",
+        "Historic 1840s Monastery Architecture",
+        "French Cuisine"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Kodaikanal?q=The+Tamara+Kodai",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": true,
+      "reasonForRecommendation": "Restored 1840s heritage building with luxury heated pool overlooking misty pine forests."
+    },
+    {
+      "name": "Villa Retreat - Boutique Hotel",
+      "tier": "Standard",
+      "type": "Boutique Cliffside Hotel",
+      "pricePerNightINR": 3400,
+      "rating": 4.7,
+      "reviewsCount": 1820,
+      "address": "Coaker's Walk, Kodaikanal",
+      "amenities": [
+        "Direct Access to Coaker's Walk",
+        "Fireplace Suites",
+        "Valley View Garden Cafe",
+        "Free WiFi"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Kodaikanal?q=Villa+Retreat+Kodaikanal",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Right on the edge of Coaker's Walk with spectacular views of misty Dolphin's Nose valley."
+    },
+    {
+      "name": "Zostel Kodaikanal",
+      "tier": "Budget",
+      "type": "Hostel & Private Rooms",
+      "pricePerNightINR": 1600,
+      "rating": 4.6,
+      "reviewsCount": 1450,
+      "address": "Bear Shola Road, Kodaikanal",
+      "amenities": [
+        "Bonfire Nights",
+        "Common Room",
+        "Cafe",
+        "Free WiFi",
+        "Trek Assistance"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Kodaikanal?q=Zostel+Kodaikanal",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Nestled near Bear Shola Falls with vibrant community gatherings and cozy wooden interiors."
+    }
+  ],
+  "tn-madurai": [
+    {
+      "name": "Heritage Madurai",
+      "tier": "Standard",
+      "type": "Geoffrey Bawa Architecture Resort",
+      "pricePerNightINR": 3600,
+      "rating": 4.7,
+      "reviewsCount": 2100,
+      "address": "11 Park Town, Melakkal Main Road, Madurai",
+      "amenities": [
+        "Temple-Tank Swimming Pool",
+        "Bawa Architecture",
+        "Ayurvedic Spa",
+        "Traditional South Indian Dining"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Madurai?q=Heritage+Madurai",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": true,
+      "reasonForRecommendation": "Designed by master architect Geoffrey Bawa with a massive swimming pool modeled on a temple tank."
+    },
+    {
+      "name": "The Gateway Hotel Pasumalai Madurai - IHCL",
+      "tier": "Luxury",
+      "type": "5-Star Hilltop Luxury Hotel",
+      "pricePerNightINR": 7500,
+      "rating": 4.8,
+      "reviewsCount": 2400,
+      "address": "Pasumalai Hills, Madurai",
+      "amenities": [
+        "Hilltop Temple Views",
+        "Peacocks in Gardens",
+        "Outdoor Pool",
+        "Fine Dining"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Madurai?q=The+Gateway+Hotel+Pasumalai+Madurai",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Perched atop Pasumalai Hill amidst 62 acres of gardens with peacocks roaming freely."
+    },
+    {
+      "name": "Hotel Supreme Madurai",
+      "tier": "Budget",
+      "type": "Central Heritage Hotel",
+      "pricePerNightINR": 1500,
+      "rating": 4.4,
+      "reviewsCount": 1800,
+      "address": "110 West Perumal Maistry Street, Madurai",
+      "amenities": [
+        "Rooftop Temple View Restaurant",
+        "Walking Distance to Meenakshi Temple",
+        "AC Rooms",
+        "Free Parking"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Madurai?q=Hotel+Supreme+Madurai",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Rooftop dining with direct view of Meenakshi Temple gopurams at night."
+    }
+  ],
+  "tn-rameshwaram": [
+    {
+      "name": "Daiwik Hotels Rameswaram",
+      "tier": "Standard",
+      "type": "4-Star Pilgrimage Hospitality Hotel",
+      "pricePerNightINR": 2900,
+      "rating": 4.6,
+      "reviewsCount": 2400,
+      "address": "NH 49, Near Rameswaram Railway Station",
+      "amenities": [
+        "Aham Spa (Ayurvedic Foot Massages)",
+        "Pure Vegetarian Dining (Ahaan)",
+        "Puja Assistance Desk"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Rameshwaram?q=Daiwik+Hotels+Rameswaram",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": true,
+      "reasonForRecommendation": "India's first four-star hotel chain designed specifically for spiritual pilgrims and leisure travelers."
+    },
+    {
+      "name": "Hotel MCM Towers",
+      "tier": "Budget",
+      "type": "Budget Temple Hotel",
+      "pricePerNightINR": 1400,
+      "rating": 4.4,
+      "reviewsCount": 980,
+      "address": "Near West Car Street, Rameswaram",
+      "amenities": [
+        "Walking Distance to Ramanathaswamy Temple",
+        "AC Rooms",
+        "Pure Veg Restaurant",
+        "Free Parking"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Rameshwaram?q=Hotel+MCM+Towers+Rameswaram",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Located 300 meters from the West Tower of Ramanathaswamy temple for early morning spatika lingam darshan."
+    },
+    {
+      "name": "Hyatt Place Rameswaram",
+      "tier": "Luxury",
+      "type": "5-Star Contemporary Hotel",
+      "pricePerNightINR": 6800,
+      "rating": 4.8,
+      "reviewsCount": 1820,
+      "address": "Madhakottai, NH 49, Rameswaram",
+      "amenities": [
+        "Outdoor Swimming Pool",
+        "24/7 Fitness Center",
+        "Gallery Kitchen",
+        "Modern Suites"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Rameshwaram?q=Hyatt+Place+Rameswaram",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "The highest standard of international modern luxury on the sacred island of Rameshwaram."
+    }
+  ],
+  "tn-kanyakumari": [
+    {
+      "name": "Sparsa Resort Kanyakumari",
+      "tier": "Standard",
+      "type": "Eco-Friendly Oceanfront Resort",
+      "pricePerNightINR": 3200,
+      "rating": 4.6,
+      "reviewsCount": 2100,
+      "address": "6/112 B, Beach Road, Near Sunset Point, Kanyakumari",
+      "amenities": [
+        "Direct Ocean Views",
+        "Swimming Pool",
+        "Spa",
+        "Multi-cuisine Dining",
+        "Sunset Lawn"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Kanyakumari?q=Sparsa+Resort+Kanyakumari",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": true,
+      "reasonForRecommendation": "Eco-friendly resort located directly on Beach Road with stunning views of Vivekananda Rock Memorial."
+    },
+    {
+      "name": "Hotel Sea View Kanyakumari",
+      "tier": "Budget",
+      "type": "Sea-Facing Modern Hotel",
+      "pricePerNightINR": 1750,
+      "rating": 4.5,
+      "reviewsCount": 2400,
+      "address": "East Car Street, Kanyakumari",
+      "amenities": [
+        "Rooms with Balconies Facing Ocean",
+        "Rooftop Sunrise Viewing",
+        "Restaurant",
+        "Free WiFi"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Kanyakumari?q=Hotel+Sea+View+Kanyakumari",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Watch the morning sunrise directly from your private bedroom balcony over the Bay of Bengal."
+    },
+    {
+      "name": "The Seashore Hotel",
+      "tier": "Standard",
+      "type": "Contemporary Waterfront Hotel",
+      "pricePerNightINR": 2800,
+      "rating": 4.5,
+      "reviewsCount": 1680,
+      "address": "Main Road, Kanyakumari",
+      "amenities": [
+        "Panoramic Oceanfront Restaurant",
+        "Elevated Viewing Deck",
+        "AC Rooms",
+        "Free Parking"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Kanyakumari?q=The+Seashore+Hotel+Kanyakumari",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Perched right where the three seas converge, walking distance to ferry launch and sunrise point."
+    }
+  ],
+  "wb-sundarbans": [
+    {
+      "name": "Sundarban Tiger Camp",
+      "tier": "Standard",
+      "type": "Eco Jungle Resort",
+      "pricePerNightINR": 3200,
+      "rating": 4.6,
+      "reviewsCount": 1200,
+      "address": "Dayapur Island, Gosaba, Sundarbans",
+      "amenities": [
+        "Private Safari Boats",
+        "Mud & Bamboo Thatched Cottages",
+        "Bonobibi Tribal Folk Dance",
+        "Guided Mangrove Tours"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Sundarbans?q=Sundarban+Tiger+Camp",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": true,
+      "reasonForRecommendation": "Located directly across the river from the Tiger Reserve watchtower with private safari boat fleet."
+    },
+    {
+      "name": "Sundarban Gateway Resort",
+      "tier": "Budget",
+      "type": "Riverbank Eco-Lodge",
+      "pricePerNightINR": 1600,
+      "rating": 4.4,
+      "reviewsCount": 540,
+      "address": "Pakhiralay, Gosaba, Sundarbans",
+      "amenities": [
+        "River Views",
+        "Authentic Bengali Fish Curry Meals",
+        "Boat Trip Arrangement",
+        "Clean AC Rooms"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Sundarbans?q=Sundarban+Gateway+Resort",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Affordable village stay in Pakhiralay, hub for mangrove cruise departures."
+    },
+    {
+      "name": "Tora Eco Resort Sundarbans",
+      "tier": "Standard",
+      "type": "Sustainable Island Homestay",
+      "pricePerNightINR": 2800,
+      "rating": 4.7,
+      "reviewsCount": 420,
+      "address": "Bali Island, Sundarbans Delta",
+      "amenities": [
+        "Organic Farming",
+        "Solar Powered Cottages",
+        "Country Boat Birding",
+        "Village Cultural Walks"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Sundarbans?q=Tora+Eco+Resort+Sundarbans",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Award-winning community-based eco-resort on Bali Island with pristine silence and starry skies."
+    }
+  ],
+  "wb-kalimpong": [
+    {
+      "name": "The Elgin Silver Oaks, Kalimpong",
+      "tier": "Standard",
+      "type": "Colonial Heritage Hotel",
+      "pricePerNightINR": 3800,
+      "rating": 4.7,
+      "reviewsCount": 1420,
+      "address": "Rinkingpong Road, Kalimpong",
+      "amenities": [
+        "Landscaped English Gardens",
+        "Kanchenjunga Views",
+        "Heritage Lounge with Fireplace",
+        "High Tea on Lawns"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Kalimpong?q=The+Elgin+Silver+Oaks+Kalimpong",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": true,
+      "reasonForRecommendation": "1930s British architect Frederick Desraj's home, adorned with lithographs and period furniture."
+    },
+    {
+      "name": "Morgan House Kalimpong (WBTDCL)",
+      "tier": "Budget",
+      "type": "British Stone Cottage Lodge",
+      "pricePerNightINR": 1800,
+      "rating": 4.5,
+      "reviewsCount": 890,
+      "address": "Durpin Dara, Kalimpong",
+      "amenities": [
+        "Stone Fireplace",
+        "Colonial Architecture",
+        "Government Verified Service",
+        "Mountain Forest Setting"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Kalimpong?q=Morgan+House+Kalimpong",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Classic 1930s British stone mansion perched on Durpin ridge overlooking undulating pine valleys."
+    },
+    {
+      "name": "Mayfair Himalayan Spa Resort",
+      "tier": "Luxury",
+      "type": "5-Star Luxury Mountain Resort",
+      "pricePerNightINR": 8500,
+      "rating": 4.8,
+      "reviewsCount": 1950,
+      "address": "Upper Cart Road, Kalimpong",
+      "amenities": [
+        "Outdoor Heated Pool",
+        "Mayfair Spa by the Sea",
+        "Billiards Room",
+        "Tiffany's Multi-cuisine Dining"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Kalimpong?q=Mayfair+Himalayan+Spa+Resort+Kalimpong",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "The highest standard of luxury in Kalimpong with panoramic views of the Teesta valley and mountains."
+    }
+  ],
+  "ap-tirupati": [
+    {
+      "name": "Fortune Select Grand Ridge, Tirupati",
+      "tier": "Standard",
+      "type": "4-Star Upscale Pilgrimage Hotel",
+      "pricePerNightINR": 3200,
+      "rating": 4.7,
+      "reviewsCount": 3100,
+      "address": "Shilparamam Theme Park, Tiruchanoor Road, Tirupati",
+      "amenities": [
+        "Swimming Pool",
+        "Pure Veg Specialty Dining",
+        "Darshan Assistance",
+        "Free High-Speed WiFi"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Tirupati?q=Fortune+Select+Grand+Ridge+Tirupati",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": true,
+      "reasonForRecommendation": "Prime upscale property near Shilparamam with sweeping views of the Tirumala sacred hills."
+    },
+    {
+      "name": "Marasa Sarovar Premiere, Tirupati",
+      "tier": "Luxury",
+      "type": "5-Star Temple Architecture Luxury Hotel",
+      "pricePerNightINR": 6200,
+      "rating": 4.8,
+      "reviewsCount": 2600,
+      "address": "Upadhyaya Nagar, Karakambadi Road, Tirupati",
+      "amenities": [
+        "Navrasa Themed Luxury",
+        "Swimming Pool",
+        "Spa & Wellness",
+        "Pure Vegetarian Gourmet Cuisine"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Tirupati?q=Marasa+Sarovar+Premiere+Tirupati",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "World's only hotel inspired by the 10 avatars of Lord Vishnu (Dasavatara) with exquisite water courts."
+    },
+    {
+      "name": "Hotel Bliss Tirupati",
+      "tier": "Budget",
+      "type": "Comfortable Central Hotel",
+      "pricePerNightINR": 1700,
+      "rating": 4.5,
+      "reviewsCount": 2200,
+      "address": "Near Ramanuja Circle, Renigunta Road, Tirupati",
+      "amenities": [
+        "Pure Veg Restaurant (Surabhi)",
+        "Swimming Pool",
+        "Travel Counter for TTD Darshan",
+        "Free WiFi"
+      ],
+      "googleBookingUrl": "https://www.google.com/travel/hotels/Tirupati?q=Hotel+Bliss+Tirupati",
+      "bookingProvider": "Google Travel Stays",
+      "isRecommended": false,
+      "reasonForRecommendation": "Popular trusted hotel close to railway station with famous South Indian thali dining."
+    }
   ]
 }

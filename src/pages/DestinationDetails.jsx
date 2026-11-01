@@ -576,8 +576,38 @@ export default function DestinationDetails() {
                   )}
                 </div>
 
-                {/* Flight Route Carrier Price Comparison */}
-                {transit.mode === "Flight" && (transit.carrierComparison || transit.flightComparison?.carriers) && (
+                {/* Flight Route Carrier Price Comparison or Non-Flight Alternative */}
+                {transit.mode === "Flight" && transit.flightPossible === false && (
+                  <div className="flight-carrier-breakdown-card non-flight-card">
+                    <div className="flight-carrier-header">
+                      <span className="carrier-header-title">🚗 Direct Flight Not Applicable</span>
+                      <span className="carrier-origin-pill">From {destination.originCity || "Origin Hub"}</span>
+                    </div>
+                    <p className="non-flight-reason-p">
+                      ⚠️ <strong>Route Advisory:</strong> {transit.flightNotViableReason}
+                    </p>
+                    <div className="alt-transport-spec-grid">
+                      <div className="alt-spec-item">
+                        <span className="spec-label">Recommended Mode</span>
+                        <strong className="spec-val">{transit.recommendedAlternative?.altMode || "Road Trip"}</strong>
+                      </div>
+                      <div className="alt-spec-item">
+                        <span className="spec-label">Travel Time</span>
+                        <strong className="spec-val">{transit.recommendedAlternative?.duration || "1.5 - 2 hrs"}</strong>
+                      </div>
+                      <div className="alt-spec-item">
+                        <span className="spec-label">Highway / Train</span>
+                        <strong className="spec-val">{transit.recommendedAlternative?.highway || transit.recommendedAlternative?.trainOption || "Expressway"}</strong>
+                      </div>
+                      <div className="alt-spec-item">
+                        <span className="spec-label">Transit Cost</span>
+                        <strong className="spec-val">₹{transit.roundTripPerPersonINR?.toLocaleString()}/person</strong>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {transit.mode === "Flight" && transit.flightPossible !== false && (transit.carrierComparison || transit.flightComparison?.carriers) && (
                   <div className="flight-carrier-breakdown-card">
                     <div className="flight-carrier-header">
                       <span className="carrier-header-title">✈️ Route Flight Price Comparison</span>
@@ -616,7 +646,7 @@ export default function DestinationDetails() {
                       rel="noreferrer"
                       className="transit-action-btn"
                     >
-                      <span>Check Live {transit.mode} Availability</span>
+                      <span>{transit.flightPossible === false ? 'View Driving Directions on Google Maps' : `Check Live ${transit.mode} Availability`}</span>
                       <ExternalLink size={14} strokeWidth={2.2} />
                     </a>
                     <span className="transit-provider-note">Powered by {transit.bookingProvider}</span>

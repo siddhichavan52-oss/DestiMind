@@ -571,7 +571,7 @@ export default function PreferenceForm() {
       city: cityName || null,
       weather: effWeather,
       vibes,
-      budget: budget || 25000,
+      budget: Math.max(Number(budget) || 25000, effectiveBudgetFloor),
       days: effDays,
       startDate: effStart,
       endDate: effEnd,
@@ -650,6 +650,7 @@ export default function PreferenceForm() {
             llmUsed: data.llmUsed,
             userLearning: data.userLearning,
             hiddenGemsCount: data.hiddenGemsCount,
+            flightComparison: data.flightComparison,
           },
         });
       }, 350);

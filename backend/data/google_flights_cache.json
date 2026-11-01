@@ -1,0 +1,2323 @@
+{
+  "BOM_GOI_2026-11-17_2026-11-21": {
+    "timestamp": 1793101859.8438818,
+    "data": {
+      "lowestFareINR": 7981,
+      "topCarrier": "Air India",
+      "carriers": [
+        {
+          "carrier": "Air India",
+          "roundTripINR": 7981,
+          "type": "Live Google Flights Rate (Lowest)"
+        },
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 8171,
+          "type": "Standard Scheduled"
+        },
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 8256,
+          "type": "Standard Scheduled"
+        }
+      ],
+      "uniqueFares": [
+        7981,
+        8171,
+        8256,
+        8284
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+GOI+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹7,981 (Air India)"
+    }
+  },
+  "DEL_COK_2026-11-17_2026-11-21": {
+    "timestamp": 1793101952.0460823,
+    "data": {
+      "lowestFareINR": 23375,
+      "topCarrier": "Air India",
+      "carriers": [
+        {
+          "carrier": "Air India",
+          "roundTripINR": 23375,
+          "type": "Live Google Flights Rate (Lowest)"
+        },
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 26377,
+          "type": "Standard Scheduled"
+        },
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 26446,
+          "type": "Standard Scheduled"
+        }
+      ],
+      "uniqueFares": [
+        23375,
+        26377,
+        26446,
+        26508
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+COK+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹23,375 (Air India)"
+    }
+  },
+  "DEL_IXL_2026-11-17_2026-11-21": {
+    "timestamp": 1793101952.0557144,
+    "data": {
+      "lowestFareINR": 13009,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 13009,
+          "type": "Live Google Flights Rate (Lowest)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 13434,
+          "type": "Standard Scheduled"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 14098,
+          "type": "Standard Scheduled"
+        }
+      ],
+      "uniqueFares": [
+        13009,
+        13434,
+        14098,
+        14899
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+IXL+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹13,009 (IndiGo)"
+    }
+  },
+  "DEL_SXR_2026-11-17_2026-11-21": {
+    "timestamp": 1793101952.0434012,
+    "data": {
+      "lowestFareINR": 13442,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 13442,
+          "type": "Live Google Flights Rate (Lowest)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 13601,
+          "type": "Standard Scheduled"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 14067,
+          "type": "Standard Scheduled"
+        }
+      ],
+      "uniqueFares": [
+        13442,
+        13601,
+        14067,
+        14211
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+SXR+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹13,442 (IndiGo)"
+    }
+  },
+  "DEL_GOI_2026-11-17_2026-11-21": {
+    "timestamp": 1793101952.0420299,
+    "data": {
+      "lowestFareINR": 19644,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 19644,
+          "type": "Live Google Flights Rate (Lowest)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 19719,
+          "type": "Standard Scheduled"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 20454,
+          "type": "Standard Scheduled"
+        }
+      ],
+      "uniqueFares": [
+        19644,
+        19719,
+        20454,
+        20537
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+GOI+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹19,644 (IndiGo)"
+    }
+  },
+  "DEL_DED_2026-11-17_2026-11-21": {
+    "timestamp": 1793101952.0443578,
+    "data": {
+      "lowestFareINR": 7641,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 7641,
+          "type": "Live Google Flights Rate (Lowest)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 8493,
+          "type": "Standard Scheduled"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 10059,
+          "type": "Standard Scheduled"
+        }
+      ],
+      "uniqueFares": [
+        7641,
+        8493,
+        10059,
+        10479
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+DED+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹7,641 (IndiGo)"
+    }
+  },
+  "DEL_ATQ_2026-11-17_2026-11-21": {
+    "timestamp": 1793101952.4776115,
+    "data": {
+      "lowestFareINR": 8556,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 8556,
+          "type": "Live Google Flights Rate (Lowest)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 8976,
+          "type": "Standard Scheduled"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 9737,
+          "type": "Standard Scheduled"
+        }
+      ],
+      "uniqueFares": [
+        8556,
+        8976,
+        9737,
+        10015
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+ATQ+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹8,556 (IndiGo)"
+    }
+  },
+  "DEL_BBI_2026-11-17_2026-11-21": {
+    "timestamp": 1793101952.5128942,
+    "data": {
+      "lowestFareINR": 20718,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 20718,
+          "type": "Live Google Flights Rate (Lowest)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 23028,
+          "type": "Standard Scheduled"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 23658,
+          "type": "Standard Scheduled"
+        }
+      ],
+      "uniqueFares": [
+        20718,
+        23028,
+        23658,
+        24725
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+BBI+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹20,718 (IndiGo)"
+    }
+  },
+  "DEL_VNS_2026-11-17_2026-11-21": {
+    "timestamp": 1793101952.0452125,
+    "data": {
+      "lowestFareINR": 13945,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 13945,
+          "type": "Live Google Flights Rate (Lowest)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 14283,
+          "type": "Standard Scheduled"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 14327,
+          "type": "Standard Scheduled"
+        }
+      ],
+      "uniqueFares": [
+        13945,
+        14283,
+        14327,
+        14973
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+VNS+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹13,945 (IndiGo)"
+    }
+  },
+  "DEL_IXB_2026-11-17_2026-11-21": {
+    "timestamp": 1793102103.2640707,
+    "data": {
+      "lowestFareINR": 18625,
+      "topCarrier": "Air India",
+      "carriers": [
+        {
+          "carrier": "Air India",
+          "roundTripINR": 18625,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 20114,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 20723,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        18625,
+        20114,
+        20723,
+        21714
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+IXB+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹18,625 (Air India)"
+    }
+  },
+  "DEL_VTZ_2026-11-17_2026-11-21": {
+    "timestamp": 1793102103.0399528,
+    "data": {
+      "lowestFareINR": 15904,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 15904,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 16219,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 16677,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        15904,
+        16219,
+        16677,
+        17696
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+VTZ+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹15,904 (IndiGo)"
+    }
+  },
+  "DEL_DMU_2026-11-17_2026-11-21": {
+    "timestamp": 1793102103.6396334,
+    "data": {
+      "lowestFareINR": 18601,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 18601,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 19159,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 40291,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        18601,
+        19159,
+        40291
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+DMU+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹18,601 (IndiGo)"
+    }
+  },
+  "DEL_GAU_2026-11-17_2026-11-21": {
+    "timestamp": 1793102103.4548442,
+    "data": {
+      "lowestFareINR": 17634,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 17634,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 17834,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 17934,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        17634,
+        17834,
+        17934,
+        18034
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+GAU+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹17,634 (IndiGo)"
+    }
+  },
+  "DEL_IXZ_2026-11-17_2026-11-21": {
+    "timestamp": 1793102103.0839067,
+    "data": {
+      "lowestFareINR": 29939,
+      "topCarrier": "SpiceJet",
+      "carriers": [
+        {
+          "carrier": "SpiceJet",
+          "roundTripINR": 29939,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 31035,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 31596,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        29939,
+        31035,
+        31596,
+        35630
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+IXZ+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹29,939 (SpiceJet)"
+    }
+  },
+  "DEL_BLR_2026-11-17_2026-11-21": {
+    "timestamp": 1793102114.399324,
+    "data": {
+      "lowestFareINR": 24129,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 24129,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 24511,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 24781,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        24129,
+        24511,
+        24781,
+        24988
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+BLR+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹24,129 (IndiGo)"
+    }
+  },
+  "DEL_HGI_2026-11-17_2026-11-21": {
+    "timestamp": 1793102116.1932898,
+    "data": {
+      "lowestFareINR": 17151,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 17151,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 19683,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        17151,
+        19683
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+HGI+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹17,151 (IndiGo)"
+    }
+  },
+  "DEL_JRH_2026-11-17_2026-11-21": {
+    "timestamp": 1793102117.381999,
+    "data": {
+      "lowestFareINR": 18911,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 18911,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 39638,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        18911,
+        39638
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+JRH+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹18,911 (IndiGo)"
+    }
+  },
+  "DEL_GAY_2026-11-17_2026-11-21": {
+    "timestamp": 1793102118.8805585,
+    "data": {
+      "lowestFareINR": 15774,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 15774,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 16298,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 24114,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        15774,
+        16298,
+        24114
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+GAY+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹15,774 (IndiGo)"
+    }
+  },
+  "DEL_GOP_2026-11-17_2026-11-21": {
+    "timestamp": 1793102120.4638155,
+    "data": {
+      "lowestFareINR": 16131,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 16131,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 16179,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 16523,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        16131,
+        16179,
+        16523,
+        17210
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+GOP+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹16,131 (IndiGo)"
+    }
+  },
+  "DEL_IXC_2026-11-17_2026-11-21": {
+    "timestamp": 1793102121.7145953,
+    "data": {
+      "lowestFareINR": 9387,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 9387,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 9813,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 10872,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        9387,
+        9813,
+        10872,
+        11103
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+IXC+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹9,387 (IndiGo)"
+    }
+  },
+  "DEL_RPR_2026-11-17_2026-11-21": {
+    "timestamp": 1793102123.2744,
+    "data": {
+      "lowestFareINR": 14158,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 14158,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 14533,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 15176,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        14158,
+        14533,
+        15176,
+        15313
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+RPR+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹14,158 (IndiGo)"
+    }
+  },
+  "DEL_GOX_2026-11-17_2026-11-21": {
+    "timestamp": 1793102127.1869445,
+    "data": {
+      "lowestFareINR": 18083,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 18083,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 18764,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 18878,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        18083,
+        18764,
+        18878,
+        19130
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+GOX+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹18,083 (IndiGo)"
+    }
+  },
+  "DEL_HYD_2026-11-17_2026-11-21": {
+    "timestamp": 1793102204.0649393,
+    "data": {
+      "lowestFareINR": 18624,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 18624,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 18922,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 19281,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        18624,
+        18922,
+        19281,
+        19530
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+HYD+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹18,624 (IndiGo)"
+    }
+  },
+  "DEL_HBX_2026-11-17_2026-11-21": {
+    "timestamp": 1793102204.0678976,
+    "data": {
+      "lowestFareINR": 16827,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 16827,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 17303,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 38359,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        16827,
+        17303,
+        38359
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+HBX+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹16,827 (IndiGo)"
+    }
+  },
+  "DEL_AMD_2026-11-17_2026-11-21": {
+    "timestamp": 1793102204.065651,
+    "data": {
+      "lowestFareINR": 16791,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 16791,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 18260,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 19520,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        16791,
+        18260,
+        19520,
+        21452
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+AMD+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹16,791 (IndiGo)"
+    }
+  },
+  "BOM_GOX_2026-11-17_2026-11-21": {
+    "timestamp": 1793102210.6760051,
+    "data": {
+      "lowestFareINR": 7058,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 7058,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 7917,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 8944,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        7058,
+        7917,
+        8944,
+        10777
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+GOX+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹7,058 (IndiGo)"
+    }
+  },
+  "BOM_VTZ_2026-11-17_2026-11-21": {
+    "timestamp": 1793102210.6749797,
+    "data": {
+      "lowestFareINR": 15606,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 15606,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 24338,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 31000,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        15606,
+        24338,
+        31000,
+        35384
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+VTZ+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹15,606 (IndiGo)"
+    }
+  },
+  "BOM_COK_2026-11-17_2026-11-21": {
+    "timestamp": 1793102210.67969,
+    "data": {
+      "lowestFareINR": 14381,
+      "topCarrier": "Akasa Air",
+      "carriers": [
+        {
+          "carrier": "Akasa Air",
+          "roundTripINR": 14381,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 14445,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 15517,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        14381,
+        14445,
+        15517,
+        16430
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+COK+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹14,381 (Akasa Air)"
+    }
+  },
+  "BOM_IXM_2026-11-17_2026-11-21": {
+    "timestamp": 1793102210.6787438,
+    "data": {
+      "lowestFareINR": 19006,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 19006,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 37056,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 38926,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        19006,
+        37056,
+        38926,
+        40267
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+IXM+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹19,006 (IndiGo)"
+    }
+  },
+  "BOM_IXZ_2026-11-17_2026-11-21": {
+    "timestamp": 1793102213.5728397,
+    "data": {
+      "lowestFareINR": 31422,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 31422,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 32249,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 33795,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        31422,
+        32249,
+        33795,
+        33848
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+IXZ+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹31,422 (IndiGo)"
+    }
+  },
+  "BOM_BBI_2026-11-17_2026-11-21": {
+    "timestamp": 1793102214.073447,
+    "data": {
+      "lowestFareINR": 16596,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 16596,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 17860,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 18698,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        16596,
+        17860,
+        18698,
+        22375
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+BBI+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹16,596 (IndiGo)"
+    }
+  },
+  "BOM_BLR_2026-11-17_2026-11-21": {
+    "timestamp": 1793102224.028687,
+    "data": {
+      "lowestFareINR": 12114,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 12114,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 12513,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 12828,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        12114,
+        12513,
+        12828,
+        13090
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+BLR+on+2026-11-17+return+2026-11-21",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹12,114 (IndiGo)"
+    }
+  },
+  "DEL_SXR_2026-11-10_2026-11-15": {
+    "timestamp": 1793102415.1407318,
+    "data": {
+      "lowestFareINR": 19524,
+      "topCarrier": "SpiceJet",
+      "carriers": [
+        {
+          "carrier": "SpiceJet",
+          "roundTripINR": 19524,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 19711,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 20053,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        19524,
+        19711,
+        20053,
+        21800
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+SXR+on+2026-11-10+return+2026-11-15",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹19,524 (SpiceJet)"
+    }
+  },
+  "DEL_DED_2026-11-10_2026-11-15": {
+    "timestamp": 1793102419.2365682,
+    "data": {
+      "lowestFareINR": 11488,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 11488,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 12224,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 14326,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        11488,
+        12224,
+        14326,
+        14691
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+DED+on+2026-11-10+return+2026-11-15",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹11,488 (IndiGo)"
+    }
+  },
+  "DEL_IXB_2026-11-10_2026-11-15": {
+    "timestamp": 1793102415.3104498,
+    "data": {
+      "lowestFareINR": 20243,
+      "topCarrier": "Air India",
+      "carriers": [
+        {
+          "carrier": "Air India",
+          "roundTripINR": 20243,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 20358,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 24653,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        20243,
+        20358,
+        24653,
+        24951
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+IXB+on+2026-11-10+return+2026-11-15",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹20,243 (Air India)"
+    }
+  },
+  "DEL_GAU_2026-11-10_2026-11-15": {
+    "timestamp": 1793102415.5528116,
+    "data": {
+      "lowestFareINR": 20797,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 20797,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 20847,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 21328,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        20797,
+        20847,
+        21328,
+        21397
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+GAU+on+2026-11-10+return+2026-11-15",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹20,797 (IndiGo)"
+    }
+  },
+  "DEL_DMU_2026-11-10_2026-11-15": {
+    "timestamp": 1793102415.3501408,
+    "data": {
+      "lowestFareINR": 22001,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 22001,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 22635,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 42786,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        22001,
+        22635,
+        42786
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+DMU+on+2026-11-10+return+2026-11-15",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹22,001 (IndiGo)"
+    }
+  },
+  "DEL_IXL_2026-11-10_2026-11-15": {
+    "timestamp": 1793102421.167706,
+    "data": {
+      "lowestFareINR": 12364,
+      "topCarrier": "SpiceJet",
+      "carriers": [
+        {
+          "carrier": "SpiceJet",
+          "roundTripINR": 12364,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 13009,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 13639,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        12364,
+        13009,
+        13639,
+        14047
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+IXL+on+2026-11-10+return+2026-11-15",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹12,364 (SpiceJet)"
+    }
+  },
+  "DEL_IXZ_2026-11-10_2026-11-15": {
+    "timestamp": 1793102415.1491344,
+    "data": {
+      "lowestFareINR": 33661,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 33661,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 34960,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 48116,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        33661,
+        34960,
+        48116,
+        60107
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+DEL+to+IXZ+on+2026-11-10+return+2026-11-15",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹33,661 (IndiGo)"
+    }
+  },
+  "BOM_GWL_2026-11-10_2026-11-15": {
+    "timestamp": 1793102765.6323595,
+    "data": {
+      "lowestFareINR": 22470,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 22470,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        }
+      ],
+      "uniqueFares": [
+        22470
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+GWL+on+2026-11-10+return+2026-11-15",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹22,470 (IndiGo)"
+    }
+  },
+  "BOM_DED_2026-11-10_2026-11-15": {
+    "timestamp": 1793102765.641173,
+    "data": {
+      "lowestFareINR": 31649,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 31649,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 34087,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 35231,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        31649,
+        34087,
+        35231,
+        38048
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+DED+on+2026-11-10+return+2026-11-15",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹31,649 (IndiGo)"
+    }
+  },
+  "BOM_IXL_2026-11-10_2026-11-15": {
+    "timestamp": 1793102767.4785855,
+    "data": {
+      "lowestFareINR": 33144,
+      "topCarrier": "SpiceJet",
+      "carriers": [
+        {
+          "carrier": "SpiceJet",
+          "roundTripINR": 33144,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 34093,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        33144,
+        34093
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+IXL+on+2026-11-10+return+2026-11-15",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹33,144 (SpiceJet)"
+    }
+  },
+  "BOM_GAU_2026-11-10_2026-11-15": {
+    "timestamp": 1793102765.6345305,
+    "data": {
+      "lowestFareINR": 33159,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 33159,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 38382,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 39040,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        33159,
+        38382,
+        39040,
+        40719
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+GAU+on+2026-11-10+return+2026-11-15",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹33,159 (IndiGo)"
+    }
+  },
+  "BOM_IXB_2026-11-10_2026-11-15": {
+    "timestamp": 1793102765.6334553,
+    "data": {
+      "lowestFareINR": 37203,
+      "topCarrier": "SpiceJet",
+      "carriers": [
+        {
+          "carrier": "SpiceJet",
+          "roundTripINR": 37203,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 42641,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 46776,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        37203,
+        42641,
+        46776,
+        54291
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+IXB+on+2026-11-10+return+2026-11-15",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹37,203 (SpiceJet)"
+    }
+  },
+  "BOM_SXR_2026-11-10_2026-11-15": {
+    "timestamp": 1793102768.228942,
+    "data": {
+      "lowestFareINR": 40310,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 40310,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 42500,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 43942,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        40310,
+        42500,
+        43942,
+        46462
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+SXR+on+2026-11-10+return+2026-11-15",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹40,310 (IndiGo)"
+    }
+  },
+  "BOM_GOX_2026-11-15_2026-11-19": {
+    "timestamp": 1793198287.680601,
+    "data": {
+      "lowestFareINR": 7967,
+      "topCarrier": "Akasa Air",
+      "carriers": [
+        {
+          "carrier": "Akasa Air",
+          "roundTripINR": 7967,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 8256,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 10601,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        7967,
+        8256,
+        10601,
+        13086
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+GOX+on+2026-11-15+return+2026-11-19",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹7,967 (Akasa Air)"
+    }
+  },
+  "BOM_IXL_2026-11-15_2026-11-19": {
+    "timestamp": 1793198306.134176,
+    "data": {
+      "lowestFareINR": 28252,
+      "topCarrier": "SpiceJet",
+      "carriers": [
+        {
+          "carrier": "SpiceJet",
+          "roundTripINR": 28252,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 29399,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        28252,
+        29399
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+IXL+on+2026-11-15+return+2026-11-19",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹28,252 (SpiceJet)"
+    }
+  },
+  "BOM_DED_2026-11-15_2026-11-19": {
+    "timestamp": 1793198320.469408,
+    "data": {
+      "lowestFareINR": 22525,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 22525,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 23755,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 24292,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        22525,
+        23755,
+        24292,
+        25411
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+DED+on+2026-11-15+return+2026-11-19",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹22,525 (IndiGo)"
+    }
+  },
+  "BOM_IXR_2026-11-15_2026-11-19": {
+    "timestamp": 1793198320.6265967,
+    "data": {
+      "lowestFareINR": 29716,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 29716,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 30202,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 30375,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        29716,
+        30202,
+        30375,
+        31171
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+IXR+on+2026-11-15+return+2026-11-19",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹29,716 (IndiGo)"
+    }
+  },
+  "BOM_JAI_2026-11-15_2026-11-19": {
+    "timestamp": 1793198320.3773906,
+    "data": {
+      "lowestFareINR": 15346,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 15346,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 15796,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 16098,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        15346,
+        15796,
+        16098,
+        16239
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+JAI+on+2026-11-15+return+2026-11-19",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹15,346 (IndiGo)"
+    }
+  },
+  "BOM_HYD_2026-11-15_2026-11-19": {
+    "timestamp": 1793198320.596874,
+    "data": {
+      "lowestFareINR": 11920,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 11920,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 12235,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 12550,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        11920,
+        12235,
+        12550,
+        12970
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+HYD+on+2026-11-15+return+2026-11-19",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹11,920 (IndiGo)"
+    }
+  },
+  "BOM_BBI_2026-11-15_2026-11-19": {
+    "timestamp": 1793198324.3534915,
+    "data": {
+      "lowestFareINR": 19330,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 19330,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 21113,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 21325,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        19330,
+        21113,
+        21325,
+        21773
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+BBI+on+2026-11-15+return+2026-11-19",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹19,330 (IndiGo)"
+    }
+  },
+  "BOM_SXR_2026-11-15_2026-11-19": {
+    "timestamp": 1793198327.3224576,
+    "data": {
+      "lowestFareINR": 28568,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 28568,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 31243,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 47633,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        28568,
+        31243,
+        47633,
+        48813
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+SXR+on+2026-11-15+return+2026-11-19",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹28,568 (IndiGo)"
+    }
+  },
+  "BOM_IXB_2026-11-15_2026-11-19": {
+    "timestamp": 1793198326.9753573,
+    "data": {
+      "lowestFareINR": 27655,
+      "topCarrier": "SpiceJet",
+      "carriers": [
+        {
+          "carrier": "SpiceJet",
+          "roundTripINR": 27655,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 29500,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 30606,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        27655,
+        29500,
+        30606,
+        31211
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+IXB+on+2026-11-15+return+2026-11-19",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹27,655 (SpiceJet)"
+    }
+  },
+  "BOM_IXC_2026-11-15_2026-11-19": {
+    "timestamp": 1793198327.929266,
+    "data": {
+      "lowestFareINR": 18222,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 18222,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 20394,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 20709,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        18222,
+        20394,
+        20709,
+        20845
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+IXC+on+2026-11-15+return+2026-11-19",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹18,222 (IndiGo)"
+    }
+  },
+  "BOM_DEL_2026-11-15_2026-11-19": {
+    "timestamp": 1793198377.1449091,
+    "data": {
+      "lowestFareINR": 13910,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 13910,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 14120,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 14313,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        13910,
+        14120,
+        14313,
+        14330
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+DEL+on+2026-11-15+return+2026-11-19",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹13,910 (IndiGo)"
+    }
+  },
+  "BOM_CCJ_2026-11-15_2026-11-19": {
+    "timestamp": 1793198377.1446505,
+    "data": {
+      "lowestFareINR": 18771,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 18771,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 34429,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 36338,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        18771,
+        34429,
+        36338
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+CCJ+on+2026-11-15+return+2026-11-19",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹18,771 (IndiGo)"
+    }
+  },
+  "BOM_PGH_2026-11-15_2026-11-19": {
+    "timestamp": 1793198449.3067381,
+    "data": {
+      "lowestFareINR": 30095,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 30095,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 55102,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        30095,
+        55102
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+PGH+on+2026-11-15+return+2026-11-19",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹30,095 (IndiGo)"
+    }
+  },
+  "BOM_VTZ_2026-11-15_2026-11-19": {
+    "timestamp": 1793198451.0968676,
+    "data": {
+      "lowestFareINR": 15921,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 15921,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 32285,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 35394,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        15921,
+        32285,
+        35394,
+        35778
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+VTZ+on+2026-11-15+return+2026-11-19",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹15,921 (IndiGo)"
+    }
+  },
+  "BOM_GOI_2026-11-15_2026-11-19": {
+    "timestamp": 1793198448.7988548,
+    "data": {
+      "lowestFareINR": 8257,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 8257,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 8677,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 8751,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        8257,
+        8677,
+        8751,
+        8864
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+GOI+on+2026-11-15+return+2026-11-19",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹8,257 (IndiGo)"
+    }
+  },
+  "BOM_GAY_2026-11-15_2026-11-19": {
+    "timestamp": 1793198448.9176602,
+    "data": {
+      "lowestFareINR": 79771,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 79771,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        }
+      ],
+      "uniqueFares": [
+        79771
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+GAY+on+2026-11-15+return+2026-11-19",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹79,771 (IndiGo)"
+    }
+  },
+  "BOM_GAU_2026-11-15_2026-11-19": {
+    "timestamp": 1793198453.4866767,
+    "data": {
+      "lowestFareINR": 24718,
+      "topCarrier": "Akasa Air",
+      "carriers": [
+        {
+          "carrier": "Akasa Air",
+          "roundTripINR": 24718,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 24969,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 25366,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        24718,
+        24969,
+        25366,
+        26153
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+GAU+on+2026-11-15+return+2026-11-19",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹24,718 (Akasa Air)"
+    }
+  },
+  "BOM_IXZ_2026-11-15_2026-11-19": {
+    "timestamp": 1793198449.0558493,
+    "data": {
+      "lowestFareINR": 32369,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 32369,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 33165,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 33218,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        32369,
+        33165,
+        33218,
+        33559
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+IXZ+on+2026-11-15+return+2026-11-19",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹32,369 (IndiGo)"
+    }
+  },
+  "BOM_TRV_2026-11-15_2026-11-19": {
+    "timestamp": 1793198449.4322689,
+    "data": {
+      "lowestFareINR": 26960,
+      "topCarrier": "Air India",
+      "carriers": [
+        {
+          "carrier": "Air India",
+          "roundTripINR": 26960,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 27074,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 27590,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        26960,
+        27074,
+        27590,
+        27595
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+TRV+on+2026-11-15+return+2026-11-19",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹26,960 (Air India)"
+    }
+  },
+  "BOM_GOP_2026-11-15_2026-11-19": {
+    "timestamp": 1793198454.4168708,
+    "data": {
+      "lowestFareINR": 25386,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 25386,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 27312,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 29391,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        25386,
+        27312,
+        29391,
+        37558
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+GOP+on+2026-11-15+return+2026-11-19",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹25,386 (IndiGo)"
+    }
+  },
+  "BOM_BLR_2026-11-15_2026-11-19": {
+    "timestamp": 1793198449.198179,
+    "data": {
+      "lowestFareINR": 12513,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 12513,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 12813,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 13143,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        12513,
+        12813,
+        13143,
+        13499
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+BLR+on+2026-11-15+return+2026-11-19",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹12,513 (IndiGo)"
+    }
+  },
+  "BOM_IXM_2026-11-15_2026-11-19": {
+    "timestamp": 1793198585.218709,
+    "data": {
+      "lowestFareINR": 20259,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 20259,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 35111,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        20259,
+        35111
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+IXM+on+2026-11-15+return+2026-11-19",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹20,259 (IndiGo)"
+    }
+  },
+  "BOM_UDR_2026-11-15_2026-11-19": {
+    "timestamp": 1793198586.1752512,
+    "data": {
+      "lowestFareINR": 2553,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 2553,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 12253,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 12570,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        2553,
+        12253,
+        12570,
+        12985
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+UDR+on+2026-11-15+return+2026-11-19",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹2,553 (IndiGo)"
+    }
+  },
+  "BOM_JDH_2026-11-15_2026-11-19": {
+    "timestamp": 1793198585.2201433,
+    "data": {
+      "lowestFareINR": 14675,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 14675,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 16258,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        14675,
+        16258
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+JDH+on+2026-11-15+return+2026-11-19",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹14,675 (IndiGo)"
+    }
+  },
+  "BOM_CCU_2026-11-15_2026-11-19": {
+    "timestamp": 1793198589.7260575,
+    "data": {
+      "lowestFareINR": 14699,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 14699,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 15697,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 16510,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        14699,
+        15697,
+        16510,
+        16922
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+CCU+on+2026-11-15+return+2026-11-19",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹14,699 (IndiGo)"
+    }
+  },
+  "BOM_HBX_2026-11-15_2026-11-19": {
+    "timestamp": 1793198584.906677,
+    "data": {
+      "lowestFareINR": 10814,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 10814,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 15369,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 34387,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        10814,
+        15369,
+        34387
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+HBX+on+2026-11-15+return+2026-11-19",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹10,814 (IndiGo)"
+    }
+  },
+  "BOM_JSA_2026-11-15_2026-11-19": {
+    "timestamp": 1793198585.2204933,
+    "data": {
+      "lowestFareINR": 21317,
+      "topCarrier": "IndiGo",
+      "carriers": [
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 21317,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "Air India",
+          "roundTripINR": 42004,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        21317,
+        42004
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+JSA+on+2026-11-15+return+2026-11-19",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹21,317 (IndiGo)"
+    }
+  },
+  "BOM_COK_2026-11-15_2026-11-19": {
+    "timestamp": 1793198585.2225366,
+    "data": {
+      "lowestFareINR": 14817,
+      "topCarrier": "SpiceJet",
+      "carriers": [
+        {
+          "carrier": "SpiceJet",
+          "roundTripINR": 14817,
+          "type": "Live Google Flights Rate (Lowest Available)"
+        },
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 14843,
+          "type": "Scheduled Carrier"
+        },
+        {
+          "carrier": "IndiGo",
+          "roundTripINR": 18516,
+          "type": "Scheduled Carrier"
+        }
+      ],
+      "uniqueFares": [
+        14817,
+        14843,
+        18516,
+        20549
+      ],
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=flights+from+BOM+to+COK+on+2026-11-15+return+2026-11-19",
+      "liveFetched": true,
+      "liveNote": "Verified live on Google Flights: starting from ₹14,817 (SpiceJet)"
+    }
+  }
+}
